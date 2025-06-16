@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="MobileInventoryItem" src="MobileInventoryItem.uxml" />
+    <Style src="ItemPopup.uss" />
+    <ui:VisualElement name="ItemPopup" class="modal_container" style="display: flex;">
+        <ui:VisualElement name="Modal" usage-hints="DynamicTransform" class="modal">
+            <ui:VisualElement name="top" class="modal_top">
+                <ui:Label text="Question?" display-tooltip-when-elided="true" name="Header" />
+            </ui:VisualElement>
+            <ui:Instance template="MobileInventoryItem" picking-mode="Ignore" class="modal_item"/>
+            <ui:VisualElement name="middle" class="modal_middle">
+                <ui:Label text="Item Title" display-tooltip-when-elided="true" name="ItemTitle" class="item_title" />
+                <ui:Label text="Explanation" display-tooltip-when-elided="true" name="Body" />
+                <ui:VisualElement class="combat_proficiency_container">
+                    <ui:Label text="Item Proficiency: " display-tooltip-when-elided="true" />
+                    <ui:Label name="ItemStat" class="modal_attribute_line" />
+                </ui:VisualElement>
+                <ui:VisualElement class="combat_proficiency_container player">
+                    <ui:Label text="Combat Proficiency: " display-tooltip-when-elided="true" />
+                    <ui:VisualElement name="AttributeLine" class="modal_attribute_line" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="ButtonContainer" class="modal_bottom" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

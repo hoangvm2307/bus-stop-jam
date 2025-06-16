@@ -1,0 +1,15 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="InventoryItem.uss" />
+    <CupkekGames.Luna.AspectRatioElement name="InventoryItem" class="inventory-item" >
+        <engine:Button name="Background" class="btn size-full size-min-128 p-0 flex-col" style="align-items: center; justify-content: center;">
+            <engine:VisualElement picking-mode="Ignore" class="h-50p flex-row w-full">
+                <engine:Label name="TopLeft" picking-mode="Ignore" class="w-50p m-0 p-8" />
+                <engine:Label name="TopRight" text="+9" picking-mode="Ignore" class="w-50p m-0 p-8" style="-unity-text-align: upper-right;" />
+            </engine:VisualElement>
+            <engine:VisualElement picking-mode="Ignore" class="h-50p flex-row w-full">
+                <engine:Label name="BottomLeft" picking-mode="Ignore" class="w-50p m-0 p-8" />
+                <engine:Label text="x2" name="BottomRight" picking-mode="Ignore" class="w-50p m-0 p-8" style="-unity-text-align: lower-right;" />
+            </engine:VisualElement>
+        </engine:Button>
+    </CupkekGames.Luna.AspectRatioElement>
+</engine:UXML>

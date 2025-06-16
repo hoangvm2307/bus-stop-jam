@@ -1,0 +1,8 @@
+.loading_mask {
+    background-size: 3000px;
+    transition-property: background-size;
+    transition-duration: 2s;
+    transition-timing-function: ease-out-sine;
+    overflow: hidden;
+    background-image: url("circle.svg")
+}

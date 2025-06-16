@@ -1,0 +1,32 @@
+namespace CupkekGames.Luna
+{
+  public enum UIColorName
+  {
+    BASE,
+    PRIMARY,
+    SECONDARY,
+    SLATE,
+    GRAY,
+    ZINC,
+    NEUTRAL,
+    STONE,
+    RED,
+    ORANGE,
+    AMBER,
+    YELLOW,
+    LIME,
+    GREEN,
+    EMERALD,
+    TEAL,
+    CYAN,
+    SKY,
+    BLUE,
+    INDIGO,
+    VIOLET,
+    PURPLE,
+    FUCHSIA,
+    PINK,
+    ROSE,
+    TRANSPARENT
+  }
+}

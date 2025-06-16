@@ -1,0 +1,18 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="Modal" class="absolute size-full items-center justify-center" style="display: flex;">
+        <engine:VisualElement class="size-90p rounded-2xl bg-purple-950">
+            <engine:VisualElement name="ButtonContainer" class="flex-row m-16 p-16 justify-end">
+                <CupkekGames.Luna.InputPrompt name="Prev" enabled="false" input-action-name="UI/Cancel" label-text="Close Modal" />
+            </engine:VisualElement>
+            <engine:VisualElement name="PageContainer" style="flex-grow: 1;">
+                <engine:VisualElement name="Page1" class="absolute size-full flex-row justify-evenly items-center" style="flex-direction: column;">
+                    <CupkekGames.Luna.InputPrompt enabled="false" label-text="Submit" />
+                    <CupkekGames.Luna.InputPrompt enabled="false" input-action-name="UI/InteractHold" label-text="Hold To Interact" />
+                    <engine:Label text="InputPrompts below will be hidden on Keyboard &amp; Mouse but visible on other devices." class="text-center text-4xl" style="-unity-text-align: upper-center; white-space: normal;" />
+                    <CupkekGames.Luna.InputPrompt enabled="false" label-text="Submit" hide-if="KeyboardMouse" />
+                    <CupkekGames.Luna.InputPrompt enabled="false" input-action-name="UI/InteractHold" label-text="Hold To Interact" hide-if="KeyboardMouse" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

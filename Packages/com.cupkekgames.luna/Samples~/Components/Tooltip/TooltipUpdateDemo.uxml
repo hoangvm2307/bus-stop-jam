@@ -1,0 +1,26 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement style="flex-grow: 1; align-items: center; justify-content: center;">
+        <engine:Label text="Tooltip Update Example" class="text-5xl" />
+        <engine:VisualElement name="Alignment" class="size-full" style="flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <engine:Button name="TooltipStatic" class="btn slate h-max-128 rounded-md size-128 bg-slate-900">
+                <engine:Label text="Static" picking-mode="Ignore" />
+            </engine:Button>
+            <engine:Button name="TooltipUpdate" class="btn slate h-max-128 rounded-md size-128 bg-slate-900">
+                <engine:Label text="Update" picking-mode="Ignore" />
+            </engine:Button>
+        </engine:VisualElement>
+        <engine:VisualElement name="Alignment" class="size-full" style="flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <engine:Button name="TooltipToggle" class="btn slate h-max-128 rounded-md size-128 bg-slate-900">
+                <engine:Label text="Toggle" picking-mode="Ignore" />
+            </engine:Button>
+        </engine:VisualElement>
+        <engine:VisualElement name="SwitchContainer" class="size-full" style="flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <engine:Button name="TooltipSwitch1" class="btn slate h-max-128 rounded-md size-128 bg-slate-900">
+                <engine:Label text="Switch 1" picking-mode="Ignore" />
+            </engine:Button>
+            <engine:Button name="TooltipSwitch2" class="btn slate h-max-128 rounded-md size-128 bg-slate-900">
+                <engine:Label text="Switch 2" picking-mode="Ignore" />
+            </engine:Button>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

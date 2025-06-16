@@ -1,0 +1,6 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement style="flex-grow: 1; align-items: center; justify-content: space-evenly;">
+        <engine:Label text="Pie Chart" style="-unity-text-align: middle-center;" />
+        <CupkekGames.Luna.PieChart values="2,2,3,2,4,1" colors="#FF0000FF,#FFFF00FF,#00FF00FF,#00FFFFFF,#0000FFFF,#FF00FFFF" gap-width="12" outline-width="12" background-color="#FFFFFFFF" class="size-512" />
+    </engine:VisualElement>
+</engine:UXML>

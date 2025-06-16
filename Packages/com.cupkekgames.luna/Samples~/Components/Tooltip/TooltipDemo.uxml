@@ -1,0 +1,65 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement style="flex-grow: 1; align-items: center; justify-content: center;">
+        <engine:Label text="Hover with mouse or Navigate with arrows" class="text-5xl" />
+        <engine:Label text="Alignment" />
+        <engine:VisualElement name="Alignment" class="size-full" style="flex-direction: row; justify-content: space-evenly; align-items: center;">
+            <engine:Button name="TooltipExample" class="btn slate h-max-128 rounded-md size-128 bg-slate-900 tooltip-left">
+                <engine:Label text="Left" picking-mode="Ignore" />
+            </engine:Button>
+            <engine:Button name="TooltipExample" class="btn slate h-max-128 rounded-md size-128 bg-slate-900 tooltip-right">
+                <engine:Label text="Right" picking-mode="Ignore" />
+            </engine:Button>
+            <engine:Button name="TooltipExample" class="btn slate h-max-128 rounded-md size-128 bg-slate-900">
+                <engine:Label text="Top" picking-mode="Ignore" />
+            </engine:Button>
+            <engine:Button name="TooltipExample" class="btn slate h-max-128 rounded-md size-128 bg-slate-900 tooltip-bottom">
+                <engine:Label text="Bottom" picking-mode="Ignore" />
+            </engine:Button>
+        </engine:VisualElement>
+        <engine:Label text="Follow Mouse" name="Label" />
+        <engine:VisualElement name="FollowMouse" class="size-full" style="flex-direction: row; align-items: center; justify-content: space-evenly;">
+            <engine:Button name="TooltipExample" class="btn slate h-max-128 rounded-md size-128 bg-slate-900 tooltip-left tooltip-follow">
+                <engine:Label text="Left" picking-mode="Ignore" />
+            </engine:Button>
+            <engine:Button name="TooltipExample" class="btn slate h-max-128 rounded-md size-128 bg-slate-900 tooltip-right tooltip-follow">
+                <engine:Label text="Right" picking-mode="Ignore" />
+            </engine:Button>
+            <engine:Button name="TooltipExample" class="btn slate h-max-128 rounded-md size-128 bg-slate-900 tooltip-follow">
+                <engine:Label text="Top" picking-mode="Ignore" />
+            </engine:Button>
+            <engine:Button name="TooltipExample" class="btn slate h-max-128 rounded-md size-128 bg-slate-900 tooltip-bottom tooltip-follow">
+                <engine:Label text="Bottom" picking-mode="Ignore" />
+            </engine:Button>
+        </engine:VisualElement>
+        <engine:Label text="Multiple Columns" />
+        <engine:VisualElement name="Multiple" class="size-full" style="flex-direction: row; align-items: center; justify-content: space-evenly;">
+            <engine:Button name="TooltipExample" class="btn slate h-max-128 rounded-md size-128 bg-slate-900 tooltip-left">
+                <engine:Label text="Left" picking-mode="Ignore" />
+            </engine:Button>
+            <engine:Button name="TooltipExample" class="btn slate h-max-128 rounded-md size-128 bg-slate-900 tooltip-right">
+                <engine:Label text="Right" picking-mode="Ignore" />
+            </engine:Button>
+            <engine:Button name="TooltipExample" class="btn slate h-max-128 rounded-md size-128 bg-slate-900">
+                <engine:Label text="Top" picking-mode="Ignore" />
+            </engine:Button>
+            <engine:Button name="TooltipExample" class="btn slate h-max-128 rounded-md size-128 bg-slate-900 tooltip-bottom">
+                <engine:Label text="Bottom" picking-mode="Ignore" />
+            </engine:Button>
+        </engine:VisualElement>
+        <engine:Label text="Colors" />
+        <engine:VisualElement name="Colors" class="size-full" style="flex-direction: row; align-items: center; justify-content: space-evenly;">
+            <engine:Button name="TooltipExample" class="btn slate h-max-128 rounded-md size-128 bg-slate-900 tooltip-left">
+                <engine:Label text="Left" picking-mode="Ignore" />
+            </engine:Button>
+            <engine:Button name="TooltipExample" class="btn slate h-max-128 rounded-md size-128 bg-slate-900 tooltip-right">
+                <engine:Label text="Right" picking-mode="Ignore" />
+            </engine:Button>
+            <engine:Button name="TooltipExample" class="btn slate h-max-128 rounded-md size-128 bg-slate-900 tooltip-top">
+                <engine:Label text="Top" picking-mode="Ignore" />
+            </engine:Button>
+            <engine:Button name="TooltipExample" class="btn slate h-max-128 rounded-md size-128 bg-slate-900 tooltip-bottom">
+                <engine:Label text="Bottom" picking-mode="Ignore" />
+            </engine:Button>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

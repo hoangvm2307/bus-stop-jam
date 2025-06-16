@@ -1,0 +1,2579 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UserInterfaceTable_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 542375a085a933644a6cf67688a114da, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 51939002318851
+    m_Localized: Klasse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101921722368
+    m_Localized: "Character l\xF6schen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665408
+    m_Localized: Neuer Charakter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665409
+    m_Localized: "K\xFCnstliche Intelligenz"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665410
+    m_Localized: Alien
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665411
+    m_Localized: Klon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665412
+    m_Localized: Cyborg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665413
+    m_Localized: Gottheit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665414
+    m_Localized: "D\xE4mon"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665415
+    m_Localized: Teuflin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665416
+    m_Localized: Drache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665417
+    m_Localized: Drachen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665418
+    m_Localized: Geist
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665419
+    m_Localized: Gott
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665420
+    m_Localized: "G\xF6tter"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665421
+    m_Localized: "G\xF6ttin"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665422
+    m_Localized: Magier
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665423
+    m_Localized: Mediziner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665424
+    m_Localized: Monster
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665425
+    m_Localized: Ninja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665426
+    m_Localized: Pirat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665427
+    m_Localized: Priester
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665428
+    m_Localized: Prinz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665429
+    m_Localized: Prinzessin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665430
+    m_Localized: Roboter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665431
+    m_Localized: Skelett
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665432
+    m_Localized: "Scharfsch\xFCtze"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665433
+    m_Localized: Soldat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665434
+    m_Localized: Dieb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665435
+    m_Localized: Krieger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665436
+    m_Localized: Zauberer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665437
+    m_Localized: Zombie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665438
+    m_Localized: Zombies
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665439
+    m_Localized: Erster Platz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665440
+    m_Localized: Platz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665441
+    m_Localized: Zweiter Platz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665442
+    m_Localized: Dritter Platz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665443
+    m_Localized: Brennender
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665444
+    m_Localized: Kritischer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665445
+    m_Localized: Toter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665446
+    m_Localized: Gefrohrener
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665447
+    m_Localized: Vergifteter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665448
+    m_Localized: Verlangsamter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665449
+    m_Localized: Erstarrter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665450
+    m_Localized: Bewusstloser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665451
+    m_Localized: Unverletzter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665452
+    m_Localized: Nasser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665453
+    m_Localized: Verwundeter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665454
+    m_Localized: "Gro\xDF"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665455
+    m_Localized: Riesig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665456
+    m_Localized: Klein
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665457
+    m_Localized: Winzig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665458
+    m_Localized: Luft
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665459
+    m_Localized: Erde
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665460
+    m_Localized: Feuer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665461
+    m_Localized: Metall
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665462
+    m_Localized: Wasser
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665463
+    m_Localized: Wette
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665464
+    m_Localized: Abbrechen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665465
+    m_Localized: "H\xF6chstgewinn"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665466
+    m_Localized: Max
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665467
+    m_Localized: Min
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665468
+    m_Localized: "R\xFCstung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665469
+    m_Localized: Pfeil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665470
+    m_Localized: Pfeile
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665471
+    m_Localized: Brett
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665472
+    m_Localized: Bombe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665473
+    m_Localized: Buch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665474
+    m_Localized: Stiefel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665475
+    m_Localized: Bogen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665476
+    m_Localized: Karte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665477
+    m_Localized: Karten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665478
+    m_Localized: Truhe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665479
+    m_Localized: Magischer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665480
+    m_Localized: Rostig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665481
+    m_Localized: Dolch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665482
+    m_Localized: "W\xFCrfel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665483
+    m_Localized: "W\xFCrfel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665484
+    m_Localized: "T\xFCr"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665485
+    m_Localized: Panzerhandschuh
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665486
+    m_Localized: Juwel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665487
+    m_Localized: Geschenk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665488
+    m_Localized: Geschenke
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665489
+    m_Localized: Handschuhe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665490
+    m_Localized: Pistole
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665491
+    m_Localized: Hammer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665492
+    m_Localized: Helm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665493
+    m_Localized: "Schl\xFCssel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665494
+    m_Localized: Messer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665495
+    m_Localized: Schloss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665496
+    m_Localized: Liebe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665497
+    m_Localized: Maschinengewehr
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665498
+    m_Localized: Magie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665499
+    m_Localized: Pistole
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665500
+    m_Localized: Auftrag
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665501
+    m_Localized: Platz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665502
+    m_Localized: Gewehr
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665503
+    m_Localized: Raketenwerfer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665504
+    m_Localized: Raketenwerfer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665505
+    m_Localized: Schriftrolle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665506
+    m_Localized: Schild
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665507
+    m_Localized: Schilder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665508
+    m_Localized: Schutzschild
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665509
+    m_Localized: Schutzschilde
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665510
+    m_Localized: Schrotflinte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665511
+    m_Localized: "Scharfsch\xFCtzengewehr"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665512
+    m_Localized: Zauberspruch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665513
+    m_Localized: Gehstock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665514
+    m_Localized: Schwert
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665515
+    m_Localized: Schatz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665516
+    m_Localized: Epischer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665517
+    m_Localized: Schrott
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665518
+    m_Localized: Stab
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665519
+    m_Localized: Holz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665520
+    m_Localized: "H\xF6he"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665521
+    m_Localized: Bremsen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665522
+    m_Localized: Chassis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665523
+    m_Localized: Tiefe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665524
+    m_Localized: Kraftstoff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665525
+    m_Localized: Gang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665526
+    m_Localized: Handling
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665527
+    m_Localized: Geschwindigkeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665528
+    m_Localized: Lenkung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665529
+    m_Localized: "\xDCbersetzung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665530
+    m_Localized: "R\xE4der"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665531
+    m_Localized: "Fl\xFCgel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665532
+    m_Localized: Medallie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665533
+    m_Localized: Bronzemedallie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665534
+    m_Localized: Goldmedallie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665535
+    m_Localized: Silbermedallie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665536
+    m_Localized: Bronze
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665537
+    m_Localized: "M\xFCnze"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665538
+    m_Localized: Gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665539
+    m_Localized: Barren
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665540
+    m_Localized: Platin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665541
+    m_Localized: Silber
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665542
+    m_Localized: Schloss
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665543
+    m_Localized: "H\xF6hle"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665544
+    m_Localized: Kerker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665545
+    m_Localized: Herberge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665546
+    m_Localized: Planet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665547
+    m_Localized: Erde
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665548
+    m_Localized: Raum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665549
+    m_Localized: Raumschiff
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665550
+    m_Localized: Geschichte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665551
+    m_Localized: Abenteuer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665552
+    m_Localized: Kapitel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665553
+    m_Localized: Seite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665554
+    m_Localized: Spiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665555
+    m_Localized: Spielentwicklung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665556
+    m_Localized: Spielentwickler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665557
+    m_Localized: Entwickelt von
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665558
+    m_Localized: Produktion
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665559
+    m_Localized: Produzent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665560
+    m_Localized: Publisher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665561
+    m_Localized: Regisseur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665562
+    m_Localized: Chef
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665563
+    m_Localized: Assistenz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665564
+    m_Localized: Mitarbeiter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665565
+    m_Localized: Senior
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665566
+    m_Localized: Junior
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665567
+    m_Localized: Technischer Direktor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665568
+    m_Localized: Technischer Direktor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665569
+    m_Localized: Kreativdirektor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665570
+    m_Localized: Animationsdirektor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665571
+    m_Localized: Kunstdirektor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665572
+    m_Localized: Audiodirektor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665573
+    m_Localized: Designdirektor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665574
+    m_Localized: Programmmanager
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665575
+    m_Localized: Projektmanager
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665576
+    m_Localized: Gamedesign
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665577
+    m_Localized: Gamedesigner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665578
+    m_Localized: Code
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665579
+    m_Localized: Programmierung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665580
+    m_Localized: Programmierer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665581
+    m_Localized: Programmierer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665582
+    m_Localized: Chefprogrammierer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101963665583
+    m_Localized: Grafikdesigner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859712
+    m_Localized: "Technischer K\xFCnstler"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859713
+    m_Localized: "Konzeptk\xFCnstler"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859714
+    m_Localized: Charakterdesigner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859715
+    m_Localized: Kunst
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859716
+    m_Localized: "K\xFCnstler"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859717
+    m_Localized: "K\xFCnstler"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859718
+    m_Localized: Leveldesign
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859719
+    m_Localized: Leveldesigner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859720
+    m_Localized: Zwischensequenzregisseur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859721
+    m_Localized: Zwischensequenzanimator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859722
+    m_Localized: "Interfacek\xFCnstler"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859723
+    m_Localized: Komponist
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859724
+    m_Localized: Musiker
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859725
+    m_Localized: Besonderer Dank
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859726
+    m_Localized: Besonderen Dank an
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859727
+    m_Localized: Bild
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859728
+    m_Localized: Bilder
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859729
+    m_Localized: Schriftart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859730
+    m_Localized: Schriftarten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859731
+    m_Localized: Soundtrack
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859732
+    m_Localized: Schriftsteller
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859733
+    m_Localized: Handschrift
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859734
+    m_Localized: Drehbuch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859735
+    m_Localized: Animation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859736
+    m_Localized: Animator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859737
+    m_Localized: Sprecher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859738
+    m_Localized: Sprecher
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859739
+    m_Localized: Sounddesigner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859740
+    m_Localized: Toningenieur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859741
+    m_Localized: Soundeffekte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859742
+    m_Localized: Spezialeffekte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859743
+    m_Localized: Aufnahmeleiter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859744
+    m_Localized: "Ger\xE4uschemacher"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859745
+    m_Localized: Testmanager
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859746
+    m_Localized: Testleiter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859747
+    m_Localized: Tester
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859748
+    m_Localized: Datenbankadministrator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859749
+    m_Localized: 3D-Modellierung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859750
+    m_Localized: Modelle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859751
+    m_Localized: Lokalisierung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859752
+    m_Localized: "\xDCbersetzung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859753
+    m_Localized: "\xDCbersetzt von Polyglot Project."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859754
+    m_Localized: Action-Spiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859755
+    m_Localized: Adventure
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859756
+    m_Localized: Karten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859757
+    m_Localized: Casual-Spiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859758
+    m_Localized: Fantasy-Spiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859759
+    m_Localized: Hardcore-Spiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859760
+    m_Localized: Indie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859761
+    m_Localized: Mittlealter-Spiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859762
+    m_Localized: Verschiedene
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859763
+    m_Localized: Mehrspieler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859764
+    m_Localized: Genre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859765
+    m_Localized: Platformer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859766
+    m_Localized: Puzzle-Spiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859767
+    m_Localized: Quiz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859768
+    m_Localized: Rennspiele
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859769
+    m_Localized: Retrospiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859770
+    m_Localized: Rollenspiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859771
+    m_Localized: Echtzeitstrategie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859772
+    m_Localized: Science-Fiction-Spiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859773
+    m_Localized: Shooter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859774
+    m_Localized: Simulation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859775
+    m_Localized: Einzelspieler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859776
+    m_Localized: Sport-Spiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859777
+    m_Localized: Strategiespiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859778
+    m_Localized: Rundenbasierte Strategie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859779
+    m_Localized: Verteidigungsspiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859780
+    m_Localized: '{0} nicht erkannt.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859781
+    m_Localized: "Au\xDFerhalb des Tracking-Bereichs."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859782
+    m_Localized: Kein HMD erkannt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859783
+    m_Localized: 'Fehlercode:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859784
+    m_Localized: Ein Fehler ist aufgetreten.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859785
+    m_Localized: "Ung\xFCltiger Name."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859786
+    m_Localized: "Ung\xFCltiger Produktschl\xFCssel."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859787
+    m_Localized: Cheats entdeckt!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859788
+    m_Localized: Verbindung verloren.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859789
+    m_Localized: Dein Gegner hat die Verbindung getrennt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859790
+    m_Localized: Der andere Spieler hat die Verbindung getrennt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859791
+    m_Localized: Dein Mitspieler hat die Verbindung getrennt.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859792
+    m_Localized: Es konnte keine Verbindung zum Server hergestellt werden.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859793
+    m_Localized: "Speicherstand besch\xE4digt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859794
+    m_Localized: "Keine Speicherst\xE4nde gefunden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859795
+    m_Localized: Keine Spiele gefunden.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859796
+    m_Localized: Attackiere
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859797
+    m_Localized: Boost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859798
+    m_Localized: Bauen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859799
+    m_Localized: Werfe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859800
+    m_Localized: "Beschw\xF6re"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859801
+    m_Localized: Beanspruchen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859802
+    m_Localized: Klettern
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859803
+    m_Localized: "Schlie\xDFen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859804
+    m_Localized: Sammle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859805
+    m_Localized: Kochen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859806
+    m_Localized: Herstellen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859807
+    m_Localized: Ducken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859808
+    m_Localized: Ausweichen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859809
+    m_Localized: Fahren
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859810
+    m_Localized: Fliegen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859811
+    m_Localized: "H\xF6chstgeschwindigkeit"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859812
+    m_Localized: Gehen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859813
+    m_Localized: Hierher gehen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859814
+    m_Localized: Halbe Geschwindigkeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859815
+    m_Localized: Heile
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859816
+    m_Localized: Springen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859817
+    m_Localized: Landen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859818
+    m_Localized: Gucken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859819
+    m_Localized: Mixen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859820
+    m_Localized: "\xD6ffnen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859821
+    m_Localized: Aufnehmen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859822
+    m_Localized: Rase
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859823
+    m_Localized: Lesen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859824
+    m_Localized: Ersetze
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859825
+    m_Localized: Rennen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859826
+    m_Localized: Lauf weg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859827
+    m_Localized: "Schie\xDFe"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859828
+    m_Localized: Schleichen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859829
+    m_Localized: Drehen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859830
+    m_Localized: Sprinten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859831
+    m_Localized: Lenken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859832
+    m_Localized: Abheben
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859833
+    m_Localized: Reden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859834
+    m_Localized: Werfe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859835
+    m_Localized: Laufen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859836
+    m_Localized: Ausdauer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859837
+    m_Localized: Erfahrungspunkte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859838
+    m_Localized: Weiblich
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859839
+    m_Localized: Gesundheit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859840
+    m_Localized: Herz
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859841
+    m_Localized: Herzen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859842
+    m_Localized: Level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859843
+    m_Localized: Level up!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859844
+    m_Localized: Leben
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859845
+    m_Localized: "M\xE4nnlich"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859846
+    m_Localized: Mann
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859847
+    m_Localized: "M\xE4nner"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859848
+    m_Localized: Wiederbelebung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859849
+    m_Localized: 'Wiederbelebung in:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859850
+    m_Localized: Wiederbeleben?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859851
+    m_Localized: Wiederbeleben
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859852
+    m_Localized: "F\xE4higkeiten"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859853
+    m_Localized: Spawn-Punkt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859854
+    m_Localized: Transsexuell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859855
+    m_Localized: Frau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859856
+    m_Localized: Frauen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859857
+    m_Localized: Schaden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859858
+    m_Localized: Kritischer Treffer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859859
+    m_Localized: Kritischer Fehltreffer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859860
+    m_Localized: Treffer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859861
+    m_Localized: Kraftpunkte
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859862
+    m_Localized: Verfehlt!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859863
+    m_Localized: Schaden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859864
+    m_Localized: Schaden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859865
+    m_Localized: Gegner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859866
+    m_Localized: Gegnerin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859867
+    m_Localized: Gegnerinnen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859868
+    m_Localized: Gegner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859869
+    m_Localized: Inventar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859870
+    m_Localized: Munition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859871
+    m_Localized: Munition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859872
+    m_Localized: Patrone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859873
+    m_Localized: Patronen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859874
+    m_Localized: Kaufen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859875
+    m_Localized: "Inventarkapazit\xE4t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859876
+    m_Localized: wegwerfen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859877
+    m_Localized: Beladung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859878
+    m_Localized: Inventar voll
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859879
+    m_Localized: Gegenstand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859880
+    m_Localized: "Schl\xFCssel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859881
+    m_Localized: Power-Up
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859882
+    m_Localized: Verkaufen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859883
+    m_Localized: Benutze
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859884
+    m_Localized: Waffe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859885
+    m_Localized: Waffen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859886
+    m_Localized: "Sie k\xF6nnen nichts mehr tragen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859887
+    m_Localized: Sei vorsichtig!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859888
+    m_Localized: Bitte sei vorsichtig.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859889
+    m_Localized: Taktiken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859890
+    m_Localized: Ziel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859891
+    m_Localized: Hilfe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859892
+    m_Localized: Hilfen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859893
+    m_Localized: Attackiere
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859894
+    m_Localized: Bonus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859895
+    m_Localized: Fang
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859896
+    m_Localized: "Vollst\xE4ndig"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859897
+    m_Localized: Tod
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859898
+    m_Localized: Tode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859899
+    m_Localized: Verteidige
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859900
+    m_Localized: "Zerst\xF6re"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859901
+    m_Localized: Entkomme
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859902
+    m_Localized: Ende
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859903
+    m_Localized: Spiel vorbei!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859904
+    m_Localized: SPIEL VORBEI!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859905
+    m_Localized: "H\xF6chstpunktzahl"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859906
+    m_Localized: "Unvollst\xE4ndig"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859907
+    m_Localized: "T\xF6ten"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859908
+    m_Localized: Assistiert
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859909
+    m_Localized: Kill
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859910
+    m_Localized: Kills
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859911
+    m_Localized: Gesperrt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859912
+    m_Localized: Niederlagen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859913
+    m_Localized: Spiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859914
+    m_Localized: Mission
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859915
+    m_Localized: Missionsziele
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859916
+    m_Localized: Missionsziel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859917
+    m_Localized: Multiplikator
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859918
+    m_Localized: Ziele
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859919
+    m_Localized: Position
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859920
+    m_Localized: Runde
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859921
+    m_Localized: Runden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859922
+    m_Localized: Runde
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859923
+    m_Localized: Punktzahl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859924
+    m_Localized: Zeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859925
+    m_Localized: "Zeit \xFCbrig"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859926
+    m_Localized: Wettkampf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859927
+    m_Localized: "Wettk\xE4mpfe"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859928
+    m_Localized: Siege
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859929
+    m_Localized: Niederlage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859930
+    m_Localized: Du wurdest besiegt!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859931
+    m_Localized: Verlierer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859932
+    m_Localized: Team hat verloren
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859933
+    m_Localized: Team hat gewonnen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859934
+    m_Localized: Sieg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859935
+    m_Localized: Gewinner
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859936
+    m_Localized: Du bist tot.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859937
+    m_Localized: Du bist gestorben.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859938
+    m_Localized: Verloren!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859939
+    m_Localized: Du hast verloren!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859940
+    m_Localized: Gewonnen!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859941
+    m_Localized: Du hast gewonnen!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859942
+    m_Localized: Kamera
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859943
+    m_Localized: Invertiert
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859944
+    m_Localized: Normal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859945
+    m_Localized: Kamera X-Achse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859946
+    m_Localized: Kamera Y-Achse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859947
+    m_Localized: Knopf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859948
+    m_Localized: Anklicken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859949
+    m_Localized: Tote Zone
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859950
+    m_Localized: Doppelklick
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859951
+    m_Localized: Ziehen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859952
+    m_Localized: Klicken und ziehen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859953
+    m_Localized: Finger
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859954
+    m_Localized: Gamepad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859955
+    m_Localized: Lagesensor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859956
+    m_Localized: Taste
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859957
+    m_Localized: Tastatur
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859958
+    m_Localized: Maus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859959
+    m_Localized: Mausempfindlichkeit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859960
+    m_Localized: Zusammenziehen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859961
+    m_Localized: Drehen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859962
+    m_Localized: Scrollen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859963
+    m_Localized: "Sch\xFCtteln"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859964
+    m_Localized: Auseinanderziehen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859965
+    m_Localized: Wischen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859966
+    m_Localized: Antippen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859967
+    m_Localized: Der Knopf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859968
+    m_Localized: Die Taste
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859969
+    m_Localized: Kippen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859970
+    m_Localized: Arm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859971
+    m_Localized: Arme
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859972
+    m_Localized: Brust
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859973
+    m_Localized: Kinn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859974
+    m_Localized: Farbe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859975
+    m_Localized: Ohr
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859976
+    m_Localized: Ohren
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859977
+    m_Localized: Auge
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859978
+    m_Localized: Augen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859979
+    m_Localized: "F\xFC\xDFe"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859980
+    m_Localized: "Fu\xDF"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859981
+    m_Localized: Haare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859982
+    m_Localized: Bart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859983
+    m_Localized: Fell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859984
+    m_Localized: Haare
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859985
+    m_Localized: Hand
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859986
+    m_Localized: "H\xE4nde"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859987
+    m_Localized: Kopf
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859988
+    m_Localized: "H\xFCften"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859989
+    m_Localized: Bein
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859990
+    m_Localized: Beine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859991
+    m_Localized: Mund
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859992
+    m_Localized: Genick
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859993
+    m_Localized: Nase
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859994
+    m_Localized: Haut
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859995
+    m_Localized: Brustkorb
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859996
+    m_Localized: Schwierigkeitsgrad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859997
+    m_Localized: Einfach
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859998
+    m_Localized: Schwer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967859999
+    m_Localized: "Unm\xF6glich"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860000
+    m_Localized: Wahnsinn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860001
+    m_Localized: Mittel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860002
+    m_Localized: Sehr einfach
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860003
+    m_Localized: Sehr schwer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860004
+    m_Localized: Unten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860005
+    m_Localized: Links
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860006
+    m_Localized: Rechts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860007
+    m_Localized: Oben
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860008
+    m_Localized: Laden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860009
+    m_Localized: Spiel laden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860010
+    m_Localized: "L\xE4dt..."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860011
+    m_Localized: Bitte warten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860012
+    m_Localized: "Spielstand zur\xFCcksetzen?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860013
+    m_Localized: Speichern
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860014
+    m_Localized: Spiel speichern
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860015
+    m_Localized: Spiel speichern
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860016
+    m_Localized: Spiel wird gespeichert...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860017
+    m_Localized: Alle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860018
+    m_Localized: Alter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860019
+    m_Localized: Bist du wirklich sicher?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860020
+    m_Localized: Bist du sicher?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860021
+    m_Localized: "Zur\xFCck"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860022
+    m_Localized: Hintergrundmusik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860023
+    m_Localized: Abbrechen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860024
+    m_Localized: "Schlie\xDFen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860025
+    m_Localized: "Best\xE4tigen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860026
+    m_Localized: Fortsetzen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860027
+    m_Localized: Fortfahren?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860028
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860029
+    m_Localized: "Zur\xFCck zum Desktop"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860030
+    m_Localized: "Zum Desktop zur\xFCckkehren?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860031
+    m_Localized: DLC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860032
+    m_Localized: Herunterladen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860033
+    m_Localized: Inhalte zum Herunterladen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860034
+    m_Localized: Beenden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860035
+    m_Localized: Beenden?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860036
+    m_Localized: Extras
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860037
+    m_Localized: FPS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860038
+    m_Localized: Kunstgalerie
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860039
+    m_Localized: Auf Wiedersehen!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860040
+    m_Localized: Grafik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860041
+    m_Localized: "In-App-Verk\xE4ufe"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860042
+    m_Localized: Sprache
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860043
+    m_Localized: Level
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860044
+    m_Localized: Mailbox
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860045
+    m_Localized: "Hauptmen\xFC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860046
+    m_Localized: Mehr
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860047
+    m_Localized: Musik
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860048
+    m_Localized: Musikspieler
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860049
+    m_Localized: Neues Spiel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860050
+    m_Localized: Weiter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860051
+    m_Localized: "N\xE4chster Titel"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860052
+    m_Localized: Nein
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860053
+    m_Localized: NEIN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860054
+    m_Localized: "N\xF6"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860055
+    m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860056
+    m_Localized: Pause
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860057
+    m_Localized: Pausiert
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860058
+    m_Localized: Spielen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860059
+    m_Localized: Noch einmal spielen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860060
+    m_Localized: "Dr\xFCcke eine beliebige Taste"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860061
+    m_Localized: "Dr\xFCcke eine beliebige Taste um fortzufahren"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860062
+    m_Localized: "Start dr\xFCcken"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860063
+    m_Localized: "Dr\xFCcke Start um fortzufahren"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860064
+    m_Localized: "Zur\xFCck"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860065
+    m_Localized: Vorheriger Titel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860066
+    m_Localized: Preis
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860067
+    m_Localized: Kostenlos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860068
+    m_Localized: Kaufen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860069
+    m_Localized: Beenden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860070
+    m_Localized: Wirklich beenden?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860071
+    m_Localized: Spiel beenden?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860072
+    m_Localized: Replay
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860073
+    m_Localized: "Zur\xFCck"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860074
+    m_Localized: "Zur\xFCck zum Hauptmen\xFC"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860075
+    m_Localized: "Zum Hauptmen\xFC zur\xFCckkehren?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860076
+    m_Localized: Teilen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860077
+    m_Localized: "Replay \xFCberspringen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860078
+    m_Localized: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860079
+    m_Localized: Danke!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860080
+    m_Localized: Freischalten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860081
+    m_Localized: Video
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860082
+    m_Localized: Stimmen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860083
+    m_Localized: Warnung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860084
+    m_Localized: Willkommen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860085
+    m_Localized: Welt
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860086
+    m_Localized: Jo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860087
+    m_Localized: Ja
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860088
+    m_Localized: JA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860089
+    m_Localized: ltr
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860090
+    m_Localized: Deutsch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860091
+    m_Localized: German
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860092
+    m_Localized: Login
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860093
+    m_Localized: E-Mail
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860094
+    m_Localized: Passwort vergessen?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860095
+    m_Localized: Passwort
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860096
+    m_Localized: Registrieren
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860097
+    m_Localized: "Auf diesem Ger\xE4t merken?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860098
+    m_Localized: Herausforderung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860099
+    m_Localized: Herausforderungsmodus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860100
+    m_Localized: Koop
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860101
+    m_Localized: Koop-Modus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860102
+    m_Localized: Deathmatch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860103
+    m_Localized: Hilfe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860104
+    m_Localized: Anleitung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860105
+    m_Localized: Mehrspielermodus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860106
+    m_Localized: Lokaler Mehrspielermodus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860107
+    m_Localized: Online Mehrspielermodus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860108
+    m_Localized: Online spielen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860109
+    m_Localized: Einzelspielermodus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860110
+    m_Localized: Training
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860111
+    m_Localized: Tutorial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860112
+    m_Localized: Versus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860113
+    m_Localized: Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860114
+    m_Localized: Vorname
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860115
+    m_Localized: Nachname
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860116
+    m_Localized: Nickname
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860117
+    m_Localized: Optionen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860118
+    m_Localized: Erweiterte Grafikeinstellungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860119
+    m_Localized: Antialiasing
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860120
+    m_Localized: Bloom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860121
+    m_Localized: Tastenbelegung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860122
+    m_Localized: Schwierigkeitseinstellungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860123
+    m_Localized: Anzeige
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860124
+    m_Localized: Egoperspektive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860125
+    m_Localized: Sichtfeld
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860126
+    m_Localized: Vollbild
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860127
+    m_Localized: Gameplay-Optionen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860128
+    m_Localized: Grafikeinstellungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860129
+    m_Localized: Anzeige
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860130
+    m_Localized: "Musiklautst\xE4rke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860131
+    m_Localized: Netzwerkoptionen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860132
+    m_Localized: "Qualit\xE4t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860133
+    m_Localized: "Aufl\xF6sung"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860134
+    m_Localized: "Soundeffektlautst\xE4rke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860135
+    m_Localized: Schatten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860136
+    m_Localized: Schatten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860137
+    m_Localized: "Gr\xF6\xDFe"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860138
+    m_Localized: Audioeinstellungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860139
+    m_Localized: "Lautst\xE4rke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860140
+    m_Localized: Geteilter Bildschirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860141
+    m_Localized: Verfolgerperspektive
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860142
+    m_Localized: Videoeinstellungen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860143
+    m_Localized: "Qualit\xE4t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860144
+    m_Localized: "Stimmenlautst\xE4rke"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860145
+    m_Localized: Bildschirmsynchronisation
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860146
+    m_Localized: Fenstermodus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860147
+    m_Localized: Shader-Detail
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860148
+    m_Localized: Texturdetails
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860149
+    m_Localized: Multicore-Rendering
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860150
+    m_Localized: Modelldetails
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860151
+    m_Localized: Breitbild
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860152
+    m_Localized: Effektdetails
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860153
+    m_Localized: Anisotropisch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860154
+    m_Localized: Bilinear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860155
+    m_Localized: Trilinear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860156
+    m_Localized: Filtermodus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860157
+    m_Localized: Sehr hoch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860158
+    m_Localized: Sehr hoch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860159
+    m_Localized: Hoch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860160
+    m_Localized: Mittel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860161
+    m_Localized: Niedrig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860162
+    m_Localized: Version
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860163
+    m_Localized: Demo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860164
+    m_Localized: Kostenlos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860165
+    m_Localized: Komplett
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860166
+    m_Localized: Lite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860167
+    m_Localized: Premium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860168
+    m_Localized: Shareware
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860169
+    m_Localized: Trial
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860170
+    m_Localized: VR Comfort Mode
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860171
+    m_Localized: "HMD-Orientierung zur\xFCcksetzen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2296101967860172
+    m_Localized: "Virtuelle Realit\xE4t"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

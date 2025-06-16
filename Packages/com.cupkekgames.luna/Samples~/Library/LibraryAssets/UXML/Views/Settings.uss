@@ -1,0 +1,82 @@
+.settings_container {
+    flex: 1;
+    flex-direction: row;
+}
+
+.settings_container TabView {
+    background-color: var(--color-base-700);
+}
+
+.settings_container TabView .unity-tab-view__header-container {
+    background-color: var(--color-base-800);
+}
+
+.settings_container TabView .TabView__header-container {
+    background-color: var(--color-base-800);
+}
+
+.settings_title {
+    -unity-text-align: middle-center;
+    font-size: var(--length-48);
+    -unity-font-definition: var(--font-bold);
+    width: 100%;
+    margin-top: var(--length-48);
+}
+
+.settings_tab {
+    flex-grow: 1;
+    margin-left: var(--length-96);
+    margin-right: var(--length-96);
+    margin-top: var(--length-64);
+    margin-bottom: var(--length-128);
+}
+
+.settings_line {
+    width: 100%;
+    flex-direction: row;
+    margin-top: var(--length-8);
+    margin-bottom: var(--length-8);
+    padding-left: var(--length-20);
+    padding-right: var(--length-20);
+    padding-top: var(--length-8);
+    padding-bottom: var(--length-8);
+    align-items: center;
+    border-radius: var(--length-20);
+    background-color: var(--color-base-800);
+    height: var(--length-64);
+}
+
+.settings_line > * {
+    -unity-text-align: upper-left;
+    -unity-font-definition: var(--font-bold);
+    flex-grow: 1;
+}
+
+.settings_line > * > RadioButtonGroup {
+    align-self: flex-end;
+}
+
+.settings_line > * > Toggle {
+    align-self: flex-end;
+}
+
+.settings_line_right_container SliderInt {
+    width: var(--length-448);
+    margin-right: var(--length-20);
+    align-self: flex-end;
+}
+
+.settings_line_right_container > Label {
+    width: var(--length-48);
+    margin-right: var(--length-8);
+    -unity-text-align: middle-center;
+}
+
+.settings_controls {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

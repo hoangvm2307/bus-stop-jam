@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3882272147560746744
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7265453332040801568}
+  - component: {fileID: 965578280216773774}
+  - component: {fileID: 5008035588430196522}
+  m_Layer: 0
+  m_Name: Inventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7265453332040801568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3882272147560746744}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &965578280216773774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3882272147560746744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PanelSettings: {fileID: 11400000, guid: 8be4852dadaea7f44bc19c529429e414, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: 2f6608dfe1581d3409e4b584dc092cf5, type: 3}
+  m_SortingOrder: 10
+  m_WorldSpaceSizeMode: 1
+  m_WorldSpaceWidth: 1920
+  m_WorldSpaceHeight: 1080
+--- !u!114 &5008035588430196522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3882272147560746744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 591357e8618d8f346a4140e455a23189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _uiDocument: {fileID: 0}
+  _parentName: 
+  _focusName: 
+  _fadeDuration: 0.5
+  _startVisibility: 1
+  _easingMode: 12
+  _addDefaultEscapeAction: 1
+  _disableOtherViewsOnFadeIn: 1
+  _debug: 0
+  _itemSlotTemplate: {fileID: 9197481963319205126, guid: 401785a83a19ed543b18d3553980ec82, type: 3}
+  _itemReferences:
+  - ItemType: 0
+    Key: Sword
+    Amount: 1
+  - ItemType: 0
+    Key: Axe
+    Amount: 1
+  - ItemType: 0
+    Key: WoodenSword
+    Amount: 1
+  - ItemType: 0
+    Key: Armor
+    Amount: 1
+  - ItemType: 0
+    Key: Shield
+    Amount: 1
+  - ItemType: 1
+    Key: PotionHealth
+    Amount: 4
+  - ItemType: 1
+    Key: PotionMana
+    Amount: 3
+  - ItemType: 1
+    Key: PotionMana
+    Amount: 4
+  _equipmentBackgrounds:
+  - {fileID: 21300000, guid: cce8e89ed57dbe041beb9e98cb326001, type: 3}
+  - {fileID: 21300000, guid: 625e1e18654e8ce4d8467d1dce0c3e8e, type: 3}
+  - {fileID: 21300000, guid: 2ba6b7162300b5f43b207c7cef3eae38, type: 3}
+  - {fileID: 21300000, guid: dd71f173ca971cd46af756b60006e65c, type: 3}
+  - {fileID: 21300000, guid: 194be4f5db9e5d544b7622981aab2f12, type: 3}
+  - {fileID: 21300000, guid: 3f2c154d086bdf943bc3848070610771, type: 3}
+  - {fileID: 21300000, guid: aeff3da9eb7dc214b934cbf35dbfed6e, type: 3}
+  _lineCount: 3
+  _buttonCountPerLine: 5
+  _itemWidth: 150
+  _hideEmpty: 0
+  _paginationNormal: 1
+  _paginationActive: 2
+  _paginationMaxButtons: 3
+  _itemDatabase: {fileID: 0}
+  _tooltipController: {fileID: 0}

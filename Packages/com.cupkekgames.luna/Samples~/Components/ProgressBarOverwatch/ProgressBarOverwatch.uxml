@@ -1,0 +1,32 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement class="absolute size-full" style="flex-grow: 1; background-color: rgb(95, 58, 204);" />
+    <engine:VisualElement style="flex-grow: 1; align-items: center; justify-content: space-evenly;">
+        <engine:VisualElement style="flex-direction: row; align-items: center; rotate: -4deg;">
+            <engine:VisualElement class="size-128 mr-16 size-160 size-176" style="flex-grow: 1; background-image: url(&quot;d8_outline.png?fileID=2800000&amp;guid=1ef5f428fbe529c4c94bcdfd5b48b70e&amp;type=3#d8_outline&quot;); -unity-background-image-tint-color: rgb(26, 209, 255);">
+                <engine:VisualElement style="flex-grow: 1; background-image: url(&quot;portrait.png?fileID=2800000&amp;guid=f26b98fc13790d64983b6b28d6cd33ed&amp;type=3#portrait&quot;); translate: 0 -16px;" />
+            </engine:VisualElement>
+            <engine:VisualElement>
+                <engine:VisualElement class="mb-4" style="flex-grow: 1; flex-direction: row; align-items: center;">
+                    <engine:Label text="1000" name="Health" style="font-size: 32px; -unity-font-style: bold;" />
+                    <engine:VisualElement style="background-color: rgb(255, 255, 255); width: 6px; height: 90%; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; margin-right: 4px; margin-left: 4px;" />
+                    <engine:Label text="1000" name="MaxHealth" style="font-size: 30px; -unity-font-style: normal; color: rgba(250, 250, 250, 0.75);" />
+                    <engine:VisualElement style="flex-grow: 1;" />
+                    <engine:Label text="1000" name="Shield" style="-unity-font-style: bold; font-size: 30px; color: rgb(76, 220, 255);" />
+                    <engine:Label text="1000" name="Armor" style="-unity-font-style: bold; font-size: 30px; color: rgb(255, 255, 76);" />
+                </engine:VisualElement>
+                <engine:VisualElement style="background-color: rgba(0, 0, 0, 0.6); border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; padding-top: 10px; padding-right: 10px; padding-bottom: 2px; padding-left: 10px;">
+                    <CupkekGames.Luna.ProgressBar _current-indicator="0.9" vertical-line="false" instant="false" color-bar="LIME|V_400" color-indicator-positive="#DDFF99FF" target-indicator="0.9" target-value="0.31,0.46" color-segments="LIME|V_400,CYAN|V_400" segment-amount="2" segment-weights="10" refresh="false" color-b-g="TRANSPARENT|V_900" instant-negative="false" overlay-image="overwatch.svg?fileID=7388822144124034973&amp;guid=2b835e246a641914098a6872d673c16d&amp;type=3#overwatch" overlay-image-width="50" color-background="#FFFFFF00" progress="0.55|0.6|53E653FF|,0|0|53C9E6FF|,0|0|E6C217FF|" color-overlay="#FFFFFF80" color-indicator-negative="#FF4848FF" instant-positive="false" style="width: 500px; height: 80px;" />
+                    <engine:Label text="JOHN WICK" style="font-size: 28px; -unity-font-style: normal;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement style="width: 50%; flex-grow: 0; height: 300px;">
+            <engine:VisualElement style="flex-grow: 1; flex-direction: row; justify-content: space-evenly; align-items: center;">
+                <engine:Button text="100 Damage" name="Damage" class="btn red" />
+                <engine:Button text="+100 Health" name="Heal" class="btn lime" />
+                <engine:Button text="+100 Shield" name="Shield" class="btn cyan" />
+                <engine:Button text="+100 Armor" name="Armor" class="btn yellow" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

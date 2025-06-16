@@ -1,0 +1,33 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="PauseMenu.uss" />
+    <ui:VisualElement name="Background" class="main_background absolute size-full" />
+    <ui:VisualElement class="main_container_outside h-full absolute justify-center items-center border-base-400">
+        <ui:VisualElement name="Title" class="main_title">
+            <ui:Label text="PAUSE" />
+        </ui:VisualElement>
+        <ui:VisualElement name="container" class="w-320">
+            <ui:VisualElement name="MainButtonContainer" class="main_button_container">
+                <ui:Button display-tooltip-when-elided="true" name="ButtonContinue" class="main_button_item btn secondary">
+                    <ui:VisualElement class="icon_ui icon_ui_play main_button_item_icon" />
+                    <ui:Label text="Continue" display-tooltip-when-elided="true" class="main_button_item_text" />
+                </ui:Button>
+                <ui:Button display-tooltip-when-elided="true" name="ButtonLoad" class="main_button_item btn primary">
+                    <ui:VisualElement class="icon_ui icon_ui_save_flat main_button_item_icon" />
+                    <ui:Label text="Load Game" display-tooltip-when-elided="true" class="main_button_item_text" />
+                </ui:Button>
+                <ui:Button display-tooltip-when-elided="true" name="ButtonSettings" class="main_button_item btn primary">
+                    <ui:VisualElement class="icon_ui icon_ui_gear main_button_item_icon" />
+                    <ui:Label text="Settings" display-tooltip-when-elided="true" class="main_button_item_text" />
+                </ui:Button>
+                <ui:Button display-tooltip-when-elided="true" name="ButtonMainMenu" class="main_button_item btn primary">
+                    <ui:VisualElement class="icon_ui main_button_item_icon icon_ui_return" />
+                    <ui:Label text="Main Menu" display-tooltip-when-elided="true" class="main_button_item_text" />
+                </ui:Button>
+                <ui:Button display-tooltip-when-elided="true" name="ButtonQuit" class="main_button_item btn primary">
+                    <ui:VisualElement class="icon_ui icon_ui_exit main_button_item_icon" />
+                    <ui:Label text="Quit Game" display-tooltip-when-elided="true" class="main_button_item_text" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

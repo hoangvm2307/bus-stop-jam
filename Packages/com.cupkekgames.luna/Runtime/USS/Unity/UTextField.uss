@@ -1,0 +1,35 @@
+.unity-base-text-field__input {
+    background-color: #fff;
+    border-color: var(--color-slate-400);
+    border-radius: var(--length-4);
+    border-width: var(--length-2);
+    padding: var(--length-4);
+    align-items: center;
+    justify-content: center;
+}
+
+.unity-base-text-field__input,
+.unity-base-text-field__input * {
+  cursor: var(--cursor-text);
+}
+
+.unity-base-text-field__input:disabled,
+.unity-base-text-field__input:disabled * {
+  cursor: var(--cursor-not-allowed);
+}
+
+.unity-text-element--inner-input-field-component {
+    color: var(--color-neutral-950);
+    -unity-text-align: middle-left;
+    font-size: var(--length-24);
+    min-width: var(--length-128);
+}
+
+.unity-base-text-field__input--placeholder .unity-text-element--inner-input-field-component {
+    color: var(--color-neutral-400);
+}
+
+.unity-base-text-field:hover:enabled > .unity-base-text-field__input,
+.unity-base-text-field:focus:enabled > .unity-base-text-field__input {
+    border-color: var(--color-primary-400);
+}

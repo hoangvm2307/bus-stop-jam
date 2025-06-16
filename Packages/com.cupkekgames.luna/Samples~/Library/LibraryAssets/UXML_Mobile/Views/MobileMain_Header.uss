@@ -1,0 +1,55 @@
+.header {
+    background-color: var(--color-slate-600);
+    border-color: var(--color-slate-900);
+    border-bottom-width: var(--length-8);
+    padding: 0;
+    height: 5%;
+}
+
+.currency-container {
+    flex: 24;
+    flex-direction: row;
+    margin-left: var(--length-16);
+    margin-right: var(--length-8);
+}
+
+.currency-container > * {
+    flex: 1;
+    margin-top: var(--length-12);
+    margin-bottom: var(--length-16);
+    margin-left: var(--length-4);
+    margin-right: var(--length-4);
+}
+
+.player-info {
+    flex: 10;
+    flex-direction: row;
+}
+
+.player-info-inner {
+    flex: 1;
+    flex-direction: row;
+    background-color: var(--color-slate-800);
+    align-items: center;
+    padding: var(--length-4);
+}
+
+.player-avatar {
+    height: 100%;
+    width: 100%;
+    margin: var(--length-12);
+    background-color: var(--color-slate-900);
+    -unity-background-scale-mode: scale-to-fit;
+    border-radius: var(--length-16);
+    border-width: var(--length-4);
+    border-color: var(--color-slate-50);
+}
+
+.player-name {
+    -unity-text-align: middle-right;
+    font-size: var(--length-32);
+    -unity-font-definition: var(--font-bold);
+    color: var(--color-neutral-50);
+    height: 100%;
+    margin-left: var(--length-12);
+}

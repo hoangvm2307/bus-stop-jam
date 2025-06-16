@@ -1,0 +1,13 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement style="flex-grow: 1; align-items: center; justify-content: space-evenly; flex-direction: row;">
+        <engine:VisualElement style="flex-grow: 1; align-items: center;">
+            <engine:RadioButtonGroup choices="a,b,c,d" label="Default" />
+        </engine:VisualElement>
+        <engine:VisualElement style="flex-grow: 1; align-items: center;">
+            <engine:RadioButtonGroup choices="a,b,c,d" label="Horizontal" class="radio-horizontal" />
+        </engine:VisualElement>
+        <engine:VisualElement style="flex-grow: 1; align-items: center;">
+            <engine:RadioButtonGroup choices="a,b,c,d" label="Horizontal Red" class="radio-horizontal red" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

@@ -1,0 +1,253 @@
+.ProgressBar {
+  height: var(--length-64);
+  width: var(--length-448);
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.ProgressBar__icon {
+  border-radius: var(--length-8);
+  margin-right: var(--length-2);
+}
+
+.ProgressBar__background {
+  flex: 1;
+  border-radius: var(--length-8);
+  height: 100%;
+}
+
+.ProgressBar__progress-container {
+  flex: 1;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: var(--length-8);
+  overflow: hidden;
+  background-repeat: repeat-x;
+  background-position-x: left 0px;
+  background-position-y: top 0px;
+}
+
+.ProgressBar__progress-elements-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.ProgressBar__progress-element {
+  position: absolute;
+  height: 100%;
+}
+
+.ProgressBar__change-indicator {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ProgressBar__progress-vertical-line {
+  position: absolute;
+  right: 0;
+  top: -20%;
+  width: var(--length-16);
+  height: 140%;
+  border-radius: var(--length-8);
+  background-color: white;
+}
+
+.ProgressBar__title-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+
+.ProgressBar__title {
+  color: rgb(255, 255, 255);
+  flex: 1;
+  -unity-text-align: middle-center;
+  -unity-font-definition: var(--font-bold);
+  font-size: var(--length-32);
+}
+
+.ProgressBar__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+}
+
+.ProgressBar.primary {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-primary-600);
+    --progress-bar-indicator-positive-color: var(--color-primary-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.secondary {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-secondary-600);
+    --progress-bar-indicator-positive-color: var(--color-secondary-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.base {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-base-600);
+    --progress-bar-indicator-positive-color: var(--color-base-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.slate {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-slate-600);
+    --progress-bar-indicator-positive-color: var(--color-slate-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.gray {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-gray-600);
+    --progress-bar-indicator-positive-color: var(--color-gray-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.zinc {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-zinc-600);
+    --progress-bar-indicator-positive-color: var(--color-zinc-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.neutral {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-neutral-600);
+    --progress-bar-indicator-positive-color: var(--color-neutral-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.stone {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-stone-600);
+    --progress-bar-indicator-positive-color: var(--color-stone-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.red {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-red-600);
+    --progress-bar-indicator-positive-color: var(--color-red-400);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.orange {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-orange-600);
+    --progress-bar-indicator-positive-color: var(--color-orange-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.amber {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-amber-600);
+    --progress-bar-indicator-positive-color: var(--color-amber-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.yellow {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-yellow-600);
+    --progress-bar-indicator-positive-color: var(--color-yellow-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.lime {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-lime-600);
+    --progress-bar-indicator-positive-color: var(--color-lime-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.green {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-green-600);
+    --progress-bar-indicator-positive-color: var(--color-green-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.emerald {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-emerald-600);
+    --progress-bar-indicator-positive-color: var(--color-emerald-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.teal {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-teal-600);
+    --progress-bar-indicator-positive-color: var(--color-teal-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.cyan {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-cyan-600);
+    --progress-bar-indicator-positive-color: var(--color-cyan-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.sky {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-sky-600);
+    --progress-bar-indicator-positive-color: var(--color-sky-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.blue {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-blue-600);
+    --progress-bar-indicator-positive-color: var(--color-blue-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.indigo {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-indigo-600);
+    --progress-bar-indicator-positive-color: var(--color-indigo-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.violet {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-violet-600);
+    --progress-bar-indicator-positive-color: var(--color-violet-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.purple {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-purple-600);
+    --progress-bar-indicator-positive-color: var(--color-purple-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.fuchsia {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-fuchsia-600);
+    --progress-bar-indicator-positive-color: var(--color-fuchsia-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.pink {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-pink-600);
+    --progress-bar-indicator-positive-color: var(--color-pink-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}
+
+.ProgressBar.rose {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-progress-color-0: var(--color-rose-600);
+    --progress-bar-indicator-positive-color: var(--color-rose-300);
+    --progress-bar-indicator-negative-color: var(--color-red-400);
+}

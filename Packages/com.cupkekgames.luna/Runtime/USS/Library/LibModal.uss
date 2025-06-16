@@ -1,0 +1,52 @@
+.modal_background {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal_container {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    background-color: var(--color-base-900);
+    border-radius: var(--length-16);
+    padding-left: var(--length-16);
+    padding-right: var(--length-16);
+    padding-top: var(--length-24);
+    padding-bottom: var(--length-24);
+    width: 90%;
+    height: 90%;
+}
+
+.modal_title_container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--length-16);
+}
+
+.modal_title_container > Button {
+    position: absolute;
+    right: 0;
+    background-image: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Cursor/Double/cross_small.png?fileID=2800000&guid=0a34f35197eb335498d9221b45cae285&type=3#cross_small");
+    width: var(--length-56);
+    height: var(--length-56);
+    max-width: var(--length-56);
+    max-height: var(--length-56);
+}
+
+.modal_title_container > Label {
+    -unity-font-definition: var(--font-bold);
+    font-size: var(--length-32);
+    -unity-text-align: middle-center;
+}

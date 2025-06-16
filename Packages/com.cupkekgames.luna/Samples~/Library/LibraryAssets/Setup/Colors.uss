@@ -1,0 +1,73 @@
+:root {
+  --color-base-50: #f8fafc;
+  --color-base-100: #f1f5f9;
+  --color-base-200: #e2e8f0;
+  --color-base-300: #cbd5e1;
+  --color-base-400: #94a3b8;
+  --color-base-500: #64748b;
+  --color-base-600: #475569;
+  --color-base-700: #334155;
+  --color-base-800: #1e293b;
+  --color-base-900: #0f172a;
+  --color-base-950: #020617;
+
+  --color-primary-50: #faf5ff;
+  --color-primary-100: #f3e8ff;
+  --color-primary-200: #e9d5ff;
+  --color-primary-300: #d8b4fe;
+  --color-primary-400: #c084fc;
+  --color-primary-500: #a855f7;
+  --color-primary-600: #9333ea;
+  --color-primary-700: #7e22ce;
+  --color-primary-800: #6b21a8;
+  --color-primary-900: #581c87;
+  --color-primary-950: #3b0764;
+
+  --color-secondary-50: #f0fdfa;
+  --color-secondary-100: #ccfbf1;
+  --color-secondary-200: #99f6e4;
+  --color-secondary-300: #5eead4;
+  --color-secondary-400: #2dd4bf;
+  --color-secondary-500: #14b8a6;
+  --color-secondary-600: #0d9488;
+  --color-secondary-700: #0f766e;
+  --color-secondary-800: #115e59;
+  --color-secondary-900: #134e4a;
+  --color-secondary-950: #042f2e;
+
+  --color-base-50-half: rgba(248, 250, 252, 0.5);
+  --color-base-100-half: rgba(241, 245, 249, 0.5);
+  --color-base-200-half: rgba(226, 232, 240, 0.5);
+  --color-base-300-half: rgba(203, 213, 225, 0.5);
+  --color-base-400-half: rgba(148, 163, 184, 0.5);
+  --color-base-500-half: rgba(100, 116, 139, 0.5);
+  --color-base-600-half: rgba(71, 85, 105, 0.5);
+  --color-base-700-half: rgba(51, 65, 85, 0.5);
+  --color-base-800-half: rgba(30, 41, 59, 0.5);
+  --color-base-900-half: rgba(15, 23, 42, 0.5);
+  --color-base-950-half: rgba(2, 6, 23, 0.5);
+
+  --color-primary-50-half: rgba(244, 240, 252, 0.5);
+  --color-primary-100-half: rgba(228, 218, 247, 0.5);
+  --color-primary-200-half: rgba(206, 188, 241, 0.5);
+  --color-primary-300-half: rgba(184, 158, 235, 0.5);
+  --color-primary-400-half: rgba(162, 128, 229, 0.5);
+  --color-primary-500-half: rgba(131, 95, 202, 0.5);
+  --color-primary-600-half: rgba(102, 74, 157, 0.5);
+  --color-primary-700-half: rgba(73, 53, 112, 0.5);
+  --color-primary-800-half: rgba(44, 32, 67, 0.5);
+  --color-primary-900-half: rgba(22, 16, 34, 0.5);
+  --color-primary-950-half: rgba(11, 8, 17, 0.5);
+
+  --color-secondary-50-half: rgba(242, 253, 251, 0.5);
+  --color-secondary-100-half: rgba(223, 249, 244, 0.5);
+  --color-secondary-200-half: rgba(197, 244, 235, 0.5);
+  --color-secondary-300-half: rgba(171, 239, 226, 0.5);
+  --color-secondary-400-half: rgba(145, 235, 217, 0.5);
+  --color-secondary-500-half: rgba(113, 208, 189, 0.5);
+  --color-secondary-600-half: rgba(88, 162, 147, 0.5);
+  --color-secondary-700-half: rgba(63, 116, 105, 0.5);
+  --color-secondary-800-half: rgba(38, 69, 63, 0.5);
+  --color-secondary-900-half: rgba(19, 35, 32, 0.5);
+  --color-secondary-950-half: rgba(9, 17, 16, 0.5);
+}

@@ -1,0 +1,16 @@
+.ProgressBar {
+    --progress-bar-bg-color: var(--color-base-700);
+    --progress-bar-indicator-positive-color: var(--color-secondary-500);
+    --progress-bar-indicator-negative-color: var(--color-red-500);
+    
+    --progress-bar-progress-color-0: var(--color-primary-500);
+    --progress-bar-progress-color-1: var(--color-primary-500);
+    --progress-bar-progress-color-2: var(--color-primary-500);
+    --progress-bar-progress-color-3: var(--color-primary-500);
+    --progress-bar-progress-color-4: var(--color-primary-500);
+    --progress-bar-progress-color-5: var(--color-primary-500);
+    --progress-bar-progress-color-6: var(--color-primary-500);
+    --progress-bar-progress-color-7: var(--color-primary-500);
+    --progress-bar-progress-color-8: var(--color-primary-500);
+    --progress-bar-progress-color-9: var(--color-primary-500);
+}

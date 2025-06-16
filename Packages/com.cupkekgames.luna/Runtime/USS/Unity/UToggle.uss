@@ -1,0 +1,570 @@
+.unity-toggle__checkmark {
+  width: var(--length-48);
+  height: var(--length-48);
+  border-width: var(--length-6);
+  border-radius: var(--length-6);
+  padding: var(--length-4);
+  -unity-slice-scale: 8px;
+  -unity-slice-left: 1;
+  -unity-slice-top: 1;
+  -unity-slice-right: 1;
+  -unity-slice-bottom: 1;
+  -unity-background-image-tint-color: var(--color-slate-50);
+  border-color: var(--color-slate-500);
+}
+
+.unity-toggle__checkmark,
+.unity-toggle__checkmark * {
+  cursor: var(--cursor-pointer);
+}
+
+.unity-toggle__checkmark:disabled,
+.unity-toggle__checkmark:disabled * {
+  cursor: var(--cursor-not-allowed);
+}
+
+.unity-toggle > .unity-toggle__input {
+  flex: 0;
+  width: var(--length-48);
+  height: var(--length-48);
+  min-width: var(--length-48);
+  min-height: var(--length-48);
+}
+
+.unity-toggle > .unity-label {
+  flex: 1;
+  font-size: var(--length-24);
+  -unity-text-align: middle-left; 
+}
+
+.unity-toggle > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-image: var(--icon-check);
+}
+
+.unity-toggle > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark,
+.unity-toggle > .unity-toggle__input:focus:enabled:checked > .unity-toggle__checkmark {
+  background-image: var(--icon-check);
+}
+
+.unity-toggle > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-primary-400);
+}
+
+.unity-toggle > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle > .unity-toggle__input:checked > .unity-toggle__checkmark
+{
+  border-color: var(--color-primary-400);
+}
+
+.unity-toggle:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-primary-200);
+}
+
+.unity-base-field:focus:enabled > .unity-base-field__label {
+  color: var(--color-primary-400);
+}
+
+
+.unity-toggle.base > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-base-400);
+}
+
+.unity-toggle.base > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.base:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.base > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.base > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-base-400);
+}
+
+.unity-toggle.base:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.base > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-base-200);
+}
+
+.unity-base-field.base:focus:enabled > .unity-base-field__label {
+  color: var(--color-base-400);
+}
+  
+.unity-toggle.primary > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-primary-400);
+}
+
+.unity-toggle.primary > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.primary:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.primary > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.primary > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-primary-400);
+}
+
+.unity-toggle.primary:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.primary > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-primary-200);
+}
+
+.unity-base-field.primary:focus:enabled > .unity-base-field__label {
+  color: var(--color-primary-400);
+}
+  
+.unity-toggle.secondary > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-secondary-400);
+}
+
+.unity-toggle.secondary > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.secondary:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.secondary > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.secondary > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-secondary-400);
+}
+
+.unity-toggle.secondary:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.secondary > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-secondary-200);
+}
+
+.unity-base-field.secondary:focus:enabled > .unity-base-field__label {
+  color: var(--color-secondary-400);
+}
+  
+.unity-toggle.slate > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-slate-400);
+}
+
+.unity-toggle.slate > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.slate:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.slate > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.slate > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-slate-400);
+}
+
+.unity-toggle.slate:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.slate > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-slate-200);
+}
+
+.unity-base-field.slate:focus:enabled > .unity-base-field__label {
+  color: var(--color-slate-400);
+}
+  
+.unity-toggle.gray > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-gray-400);
+}
+
+.unity-toggle.gray > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.gray:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.gray > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.gray > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-gray-400);
+}
+
+.unity-toggle.gray:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.gray > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-gray-200);
+}
+
+.unity-base-field.gray:focus:enabled > .unity-base-field__label {
+  color: var(--color-gray-400);
+}
+  
+.unity-toggle.zinc > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-zinc-400);
+}
+
+.unity-toggle.zinc > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.zinc:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.zinc > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.zinc > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-zinc-400);
+}
+
+.unity-toggle.zinc:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.zinc > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-zinc-200);
+}
+
+.unity-base-field.zinc:focus:enabled > .unity-base-field__label {
+  color: var(--color-zinc-400);
+}
+  
+.unity-toggle.neutral > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-neutral-400);
+}
+
+.unity-toggle.neutral > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.neutral:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.neutral > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.neutral > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-neutral-400);
+}
+
+.unity-toggle.neutral:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.neutral > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-neutral-200);
+}
+
+.unity-base-field.neutral:focus:enabled > .unity-base-field__label {
+  color: var(--color-neutral-400);
+}
+  
+.unity-toggle.stone > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-stone-400);
+}
+
+.unity-toggle.stone > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.stone:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.stone > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.stone > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-stone-400);
+}
+
+.unity-toggle.stone:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.stone > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-stone-200);
+}
+
+.unity-base-field.stone:focus:enabled > .unity-base-field__label {
+  color: var(--color-stone-400);
+}
+  
+.unity-toggle.red > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-red-400);
+}
+
+.unity-toggle.red > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.red:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.red > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.red > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-red-400);
+}
+
+.unity-toggle.red:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.red > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-red-200);
+}
+
+.unity-base-field.red:focus:enabled > .unity-base-field__label {
+  color: var(--color-red-400);
+}
+  
+.unity-toggle.orange > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-orange-400);
+}
+
+.unity-toggle.orange > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.orange:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.orange > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.orange > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-orange-400);
+}
+
+.unity-toggle.orange:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.orange > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-orange-200);
+}
+
+.unity-base-field.orange:focus:enabled > .unity-base-field__label {
+  color: var(--color-orange-400);
+}
+  
+.unity-toggle.amber > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-amber-400);
+}
+
+.unity-toggle.amber > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.amber:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.amber > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.amber > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-amber-400);
+}
+
+.unity-toggle.amber:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.amber > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-amber-200);
+}
+
+.unity-base-field.amber:focus:enabled > .unity-base-field__label {
+  color: var(--color-amber-400);
+}
+  
+.unity-toggle.yellow > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-yellow-400);
+}
+
+.unity-toggle.yellow > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.yellow:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.yellow > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.yellow > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-yellow-400);
+}
+
+.unity-toggle.yellow:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.yellow > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-yellow-200);
+}
+
+.unity-base-field.yellow:focus:enabled > .unity-base-field__label {
+  color: var(--color-yellow-400);
+}
+  
+.unity-toggle.lime > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-lime-400);
+}
+
+.unity-toggle.lime > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.lime:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.lime > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.lime > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-lime-400);
+}
+
+.unity-toggle.lime:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.lime > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-lime-200);
+}
+
+.unity-base-field.lime:focus:enabled > .unity-base-field__label {
+  color: var(--color-lime-400);
+}
+  
+.unity-toggle.green > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-green-400);
+}
+
+.unity-toggle.green > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.green:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.green > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.green > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-green-400);
+}
+
+.unity-toggle.green:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.green > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-green-200);
+}
+
+.unity-base-field.green:focus:enabled > .unity-base-field__label {
+  color: var(--color-green-400);
+}
+  
+.unity-toggle.emerald > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-emerald-400);
+}
+
+.unity-toggle.emerald > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.emerald:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.emerald > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.emerald > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-emerald-400);
+}
+
+.unity-toggle.emerald:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.emerald > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-emerald-200);
+}
+
+.unity-base-field.emerald:focus:enabled > .unity-base-field__label {
+  color: var(--color-emerald-400);
+}
+  
+.unity-toggle.teal > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-teal-400);
+}
+
+.unity-toggle.teal > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.teal:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.teal > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.teal > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-teal-400);
+}
+
+.unity-toggle.teal:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.teal > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-teal-200);
+}
+
+.unity-base-field.teal:focus:enabled > .unity-base-field__label {
+  color: var(--color-teal-400);
+}
+  
+.unity-toggle.cyan > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-cyan-400);
+}
+
+.unity-toggle.cyan > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.cyan:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.cyan > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.cyan > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-cyan-400);
+}
+
+.unity-toggle.cyan:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.cyan > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-cyan-200);
+}
+
+.unity-base-field.cyan:focus:enabled > .unity-base-field__label {
+  color: var(--color-cyan-400);
+}
+  
+.unity-toggle.sky > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-sky-400);
+}
+
+.unity-toggle.sky > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.sky:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.sky > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.sky > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-sky-400);
+}
+
+.unity-toggle.sky:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.sky > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-sky-200);
+}
+
+.unity-base-field.sky:focus:enabled > .unity-base-field__label {
+  color: var(--color-sky-400);
+}
+  
+.unity-toggle.blue > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-blue-400);
+}
+
+.unity-toggle.blue > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.blue:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.blue > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.blue > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-blue-400);
+}
+
+.unity-toggle.blue:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.blue > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-blue-200);
+}
+
+.unity-base-field.blue:focus:enabled > .unity-base-field__label {
+  color: var(--color-blue-400);
+}
+  
+.unity-toggle.indigo > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-indigo-400);
+}
+
+.unity-toggle.indigo > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.indigo:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.indigo > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.indigo > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-indigo-400);
+}
+
+.unity-toggle.indigo:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.indigo > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-indigo-200);
+}
+
+.unity-base-field.indigo:focus:enabled > .unity-base-field__label {
+  color: var(--color-indigo-400);
+}
+  
+.unity-toggle.violet > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-violet-400);
+}
+
+.unity-toggle.violet > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.violet:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.violet > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.violet > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-violet-400);
+}
+
+.unity-toggle.violet:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.violet > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-violet-200);
+}
+
+.unity-base-field.violet:focus:enabled > .unity-base-field__label {
+  color: var(--color-violet-400);
+}
+  
+.unity-toggle.purple > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-purple-400);
+}
+
+.unity-toggle.purple > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.purple:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.purple > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.purple > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-purple-400);
+}
+
+.unity-toggle.purple:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.purple > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-purple-200);
+}
+
+.unity-base-field.purple:focus:enabled > .unity-base-field__label {
+  color: var(--color-purple-400);
+}
+  
+.unity-toggle.fuchsia > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-fuchsia-400);
+}
+
+.unity-toggle.fuchsia > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.fuchsia:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.fuchsia > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.fuchsia > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-fuchsia-400);
+}
+
+.unity-toggle.fuchsia:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.fuchsia > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-fuchsia-200);
+}
+
+.unity-base-field.fuchsia:focus:enabled > .unity-base-field__label {
+  color: var(--color-fuchsia-400);
+}
+  
+.unity-toggle.pink > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-pink-400);
+}
+
+.unity-toggle.pink > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.pink:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.pink > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.pink > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-pink-400);
+}
+
+.unity-toggle.pink:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.pink > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-pink-200);
+}
+
+.unity-base-field.pink:focus:enabled > .unity-base-field__label {
+  color: var(--color-pink-400);
+}
+  
+.unity-toggle.rose > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  background-color: var(--color-rose-400);
+}
+
+.unity-toggle.rose > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.rose:focus:enabled > .unity-toggle__input > .unity-toggle__checkmark,
+.unity-toggle.rose > .unity-toggle__input:hover:enabled > .unity-toggle__checkmark,
+.unity-toggle.rose > .unity-toggle__input:checked > .unity-toggle__checkmark {
+  border-color: var(--color-rose-400);
+}
+
+.unity-toggle.rose:focus:enabled > .unity-toggle__input:checked > .unity-toggle__checkmark,
+.unity-toggle.rose > .unity-toggle__input:hover:enabled:checked > .unity-toggle__checkmark {
+  border-color: var(--color-rose-200);
+}
+
+.unity-base-field.rose:focus:enabled > .unity-base-field__label {
+  color: var(--color-rose-400);
+}
+  

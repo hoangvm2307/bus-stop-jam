@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="flex-direction: row; justify-content: center;">
+        <ui:Button name="Previous" class="btn" style="background-image: url(left.png);" />
+        <ui:Label text="1" name="PageLabel" class="w-min-32 p-4 text-4xl mr-16 ml-16 text-slate-50 font-bold" style="-unity-text-align: middle-center; -unity-font-style: bold;" />
+        <ui:Button name="Next" class="btn icon-right" style="background-image: url(right.png);" />
+    </ui:VisualElement>
+</ui:UXML>

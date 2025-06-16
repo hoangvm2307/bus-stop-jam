@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c6726ee75c9f8a4584dfc9de8ae1724, type: 3}
+  m_Name: MobileSettingsDefaultSectionGraphics
+  m_EditorClassIdentifier: 
+  RenderPipelineAssets:
+  - {fileID: 11400000, guid: 409c58af6357eed47a16564175ba3eb0, type: 2}
+  - {fileID: 11400000, guid: 32491ba3cb8592d42ba606b0b3c0d580, type: 2}
+  - {fileID: 11400000, guid: e663e9d5821f6974ab795ca829007b68, type: 2}
+  - {fileID: 11400000, guid: b3ca09e6e8726464a8b779f1fb6e1184, type: 2}
+  _refreshRateDenominator: 1
+  _refreshRateNumerator: 120
+  _resolutionWidth: 0
+  _resolutionHeight: 0
+  _fullScreenMode: 1
+  _vSync: 1
+  _targetFrameRate: -1
+  _antiAliasing: 8
+  _postProcessing: 3
+  _shadows: 3
+  _textureQuality: 0
+  _effectsQuality: 3

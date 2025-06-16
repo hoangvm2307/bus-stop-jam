@@ -1,0 +1,122 @@
+.notification {
+    margin-top: var(--length-4);
+    margin-bottom: var(--length-4);
+    flex-direction: row-reverse;
+    align-items: center;
+    border-radius: var(--length-8);
+    transition-timing-function: ease-in-out-back;
+    transition-duration: 0.4s;
+    transition-property: all;
+    translate: 110% 0;
+}
+
+.notification-static {
+    transition-timing-function: ease-in-out-back;
+    transition-duration: 0.4s;
+    transition-property: none;
+    translate: 0 0;
+    flex: 1;
+    background-color: var(--color-base-900);
+    margin-left: var(--length-16);
+    margin-right: var(--length-16);
+    flex-direction: row;
+}
+
+.notification > .btn {
+    width: 100%;
+    padding: 0;
+}
+
+.notification,
+.notification > .btn {
+    height: var(--length-96);
+    max-height: var(--length-96);
+}
+
+.notification.notification-sm,
+.notification.notification-sm > .btn {
+    height: var(--length-64);
+    max-height: var(--length-64);
+}
+
+.notification.notification-lg,
+.notification.notification-lg > .btn {
+    height: var(--length-128);
+    max-height: var(--length-128);
+}
+
+.notification > .btn {
+    width: 100%;
+}
+
+.notification.active {
+    translate: 0 0;
+}
+
+.notification.removing {
+    transition-timing-function: ease-in-sine;
+    transition-duration: 0.4s;
+    translate: 110% 0;
+}
+
+.notification.remove {
+    transition-timing-function: ease-in-sine;
+    transition-duration: 0.2s;
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.notification.remove * {
+    display: none;
+}
+
+.notification_avatar {
+    margin-left: var(--length-8);
+    margin-right: var(--length-8);
+    margin-top: var(--length-2);
+    margin-bottom: var(--length-2);
+    height: var(--length-80);
+    width: var(--length-80);
+    min-width: var(--length-80);
+    min-height: var(--length-80);
+    border-radius: var(--length-8);
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.notification_text_container {
+    align-self: flex-start;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.notification_title {
+    -unity-font-definition: var(--font-bold);
+    font-size: var(--length-32);
+    margin: 0;
+}
+
+.notification_body {
+    flex: 1;
+    white-space: normal;
+    -unity-text-align: upper-left;
+}
+
+.notification.notification-sm .notification_body, {
+    display: none;
+}
+
+.notification.notification-sm .notification_avatar, {
+    height: var(--length-56);
+    width: var(--length-56);
+    min-width: var(--length-56);
+    min-height: var(--length-56);
+}
+
+.notification.notification-lg .notification_avatar, {
+    height: var(--length-112);
+    width: var(--length-112);
+    min-width: var(--length-112);
+    min-height: var(--length-112);
+}

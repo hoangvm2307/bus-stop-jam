@@ -1,0 +1,174 @@
+.radial-progress.primary {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-primary-600);
+    --radial-progress-indicator-positive-color: var(--color-primary-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.secondary {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-secondary-600);
+    --radial-progress-indicator-positive-color: var(--color-secondary-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.base {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-base-600);
+    --radial-progress-indicator-positive-color: var(--color-base-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.slate {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-slate-600);
+    --radial-progress-indicator-positive-color: var(--color-slate-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.gray {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-gray-600);
+    --radial-progress-indicator-positive-color: var(--color-gray-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.zinc {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-zinc-600);
+    --radial-progress-indicator-positive-color: var(--color-zinc-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.neutral {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-neutral-600);
+    --radial-progress-indicator-positive-color: var(--color-neutral-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.stone {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-stone-600);
+    --radial-progress-indicator-positive-color: var(--color-stone-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.red {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-red-600);
+    --radial-progress-indicator-positive-color: var(--color-red-400);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.orange {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-orange-600);
+    --radial-progress-indicator-positive-color: var(--color-orange-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.amber {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-amber-600);
+    --radial-progress-indicator-positive-color: var(--color-amber-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.yellow {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-yellow-600);
+    --radial-progress-indicator-positive-color: var(--color-yellow-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.lime {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-lime-600);
+    --radial-progress-indicator-positive-color: var(--color-lime-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.green {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-green-600);
+    --radial-progress-indicator-positive-color: var(--color-green-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.emerald {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-emerald-600);
+    --radial-progress-indicator-positive-color: var(--color-emerald-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.teal {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-teal-600);
+    --radial-progress-indicator-positive-color: var(--color-teal-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.cyan {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-cyan-600);
+    --radial-progress-indicator-positive-color: var(--color-cyan-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.sky {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-sky-600);
+    --radial-progress-indicator-positive-color: var(--color-sky-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.blue {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-blue-600);
+    --radial-progress-indicator-positive-color: var(--color-blue-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.indigo {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-indigo-600);
+    --radial-progress-indicator-positive-color: var(--color-indigo-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.violet {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-violet-600);
+    --radial-progress-indicator-positive-color: var(--color-violet-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.purple {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-purple-600);
+    --radial-progress-indicator-positive-color: var(--color-purple-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.fuchsia {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-fuchsia-600);
+    --radial-progress-indicator-positive-color: var(--color-fuchsia-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.pink {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-pink-600);
+    --radial-progress-indicator-positive-color: var(--color-pink-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}
+
+.radial-progress.rose {
+    --radial-progress-bg-color: var(--color-base-700);
+    --radial-progress-progress-color: var(--color-rose-600);
+    --radial-progress-indicator-positive-color: var(--color-rose-300);
+    --radial-progress-indicator-negative-color: var(--color-red-400);
+}

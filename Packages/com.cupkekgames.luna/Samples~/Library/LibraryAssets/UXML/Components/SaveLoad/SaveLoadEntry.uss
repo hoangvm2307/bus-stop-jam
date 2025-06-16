@@ -1,0 +1,30 @@
+.load-entry {
+    height: var(--length-144);
+    max-height: var(--length-144);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: var(--length-16);
+    padding-right: var(--length-16);
+    margin-top: var(--length-8);
+    margin-bottom: var(--length-8);
+    margin-left: var(--length-8);
+    margin-right: var(--length-8);
+    border-radius: var(--length-16);
+    background-color: var(--color-base-700);
+    border-width: var(--length-8);
+    border-color: var(--color-base-700);
+}
+
+.load-entry:hover,
+.load-entry:focus {
+  background-color: var(--color-base-600);
+}
+
+#LoadList .unity-collection-view__item--selected .load-entry {
+    border-color: var(--color-base-100);
+}
+
+#LoadList:focus:enabled .unity-collection-view__item--selected .load-entry {
+    background-color: var(--color-base-400);
+}

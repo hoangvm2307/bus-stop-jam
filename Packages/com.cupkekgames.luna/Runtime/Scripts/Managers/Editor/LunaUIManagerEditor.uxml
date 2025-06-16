@@ -1,0 +1,37 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.cupkekgames.luna/Runtime/Scripts/Managers/Editor/LunaUIManagerEditor.uss?fileID=7433441132597879392&amp;guid=59b22b9af4e35834b8220c8dbc34c755&amp;type=3#LunaUIManagerEditor" />
+    <engine:VisualElement class="page" style="flex-grow: 1;">
+        <engine:VisualElement name="FirstContainer" style="flex-grow: 1; margin-top: 4px; align-items: center;">
+            <engine:VisualElement style="flex-grow: 1; flex-direction: row; justify-content: flex-start; align-items: center; margin-top: 8px; margin-right: 8px; margin-bottom: 8px; margin-left: 8px;">
+                <engine:VisualElement style="flex-grow: 1; width: 32px; height: 32px; max-width: 32px; max-height: 32px; min-width: 32px; min-height: 32px; background-image: url(&quot;project://database/Packages/com.cupkekgames.luna/Editor/logo_mini_final.png?fileID=2800000&amp;guid=57be8e6aaaa37634ea8ab6bdf2286b88&amp;type=3#logo_mini_final&quot;); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; margin-right: 8px;" />
+                <engine:VisualElement>
+                    <engine:Label text="Luna UI Manager" style="font-size: 16px; -unity-font-style: bold;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement style="flex-grow: 1; flex-direction: row; align-items: center; margin-top: 8px; margin-bottom: 8px;">
+                <engine:Label text="Documentation: " style="-unity-font-style: bold; font-size: 16px;" />
+                <engine:Button text="Open Url" icon-image="project://database/Packages/com.cupkekgames.luna/Editor/share1.png?fileID=2800000&amp;guid=9791ca73313d53840be5a215fb54a154&amp;type=3#share1" name="OpenUrlDocs" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="SettingsContainer" class="container">
+            <engine:Label text="Settings" class="title" />
+            <engine:VisualElement class="section">
+                <engine:Label text="Input Settings" class="subtitle" />
+                <engine:VisualElement name="WithInput" style="flex-grow: 1;">
+                    <editor:ObjectField label="Player Input" binding-path="_playerInput" type="UnityEngine.InputSystem.PlayerInput, Unity.InputSystem" />
+                    <editor:PropertyField label="Escape Action Names" binding-path="_escapeActionNames" />
+                    <editor:ObjectField label="Input Icon Database" binding-path="_iconDatabase" type="CupkekGames.Core.InputIconDatabaseSO, CupkekGames.Core" />
+                </engine:VisualElement>
+                <engine:VisualElement name="WithoutInput" style="flex-grow: 1;">
+                    <engine:Label text="New Input System is not installed" class="subtitle" />
+                    <editor:PropertyField label="Starting Control Scheme" binding-path="_startingControlScheme" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement class="section last">
+                <engine:Label text="UI Element Manager" class="subtitle" />
+                <engine:Label text="List of VisualElement names to ignore.\nUIElementManager automatically adds hover and click sounds to focusable elements.\nAdd elements here if you cannot disable their focusable state but do not want sounds applied to them." parse-escape-sequences="true" class="description" />
+                <editor:PropertyField label="Blacklist" binding-path="_blacklist" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

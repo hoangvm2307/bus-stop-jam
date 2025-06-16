@@ -1,0 +1,38 @@
+ListView,
+ScrollView {
+    height: var(--length-512);
+    max-height: var(--length-512);
+    width: var(--length-320);
+    max-width: var(--length-320);
+}
+
+.scroll_entry_container {
+    flex-direction:row;
+}
+
+.square_item {
+    height: 144px;
+    width: 144px;
+    min-height: 144px;
+    min-width: 144px;
+    border-width: 8px;
+    border-radius: 12px;
+    border-color:var(--color-amber-400);
+    background-color: var(--color-slate-800-half);
+    margin:8px;
+    align-items:center;
+    justify-content: center;
+}
+
+.line_item_container {
+    margin: 4px;
+}
+
+.line_item {
+    background-color: rgba(0,0,0,0.3);
+    margin:4px;
+    padding: 12px;
+    height:100%;
+    width:100%;
+    border-radius: 4px;
+    }

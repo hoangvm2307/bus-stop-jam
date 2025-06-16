@@ -1,0 +1,26 @@
+.base_background {
+    left: 0;
+    background-image: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Background/Diagonals/VerticalDiamondPattern1.png");
+    -unity-background-image-tint-color: var(--color-base-600);
+}
+
+.base_gradient_bg {
+    background-image: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Background/Diagonals/Vertical2.png");
+    -unity-background-image-tint-color: var(--color-base-400-half);
+}
+
+.base_gradient_container {
+    background-image: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Background/Diagonals/Vertical2.png");
+    -unity-background-image-tint-color: var(--color-base-800-half);
+}
+
+.base_mid_right_container {
+border-right-width : 0;
+}
+
+.radial-progress {
+  --radial-progress-bg-color: var(--color-base-800);
+  --radial-progress-progress-color: var(--color-primary-600);
+  --radial-progress-indicator-positive-color: var(--color-lime-600);
+  --radial-progress-indicator-negative-color: var(--color-red-600);
+}

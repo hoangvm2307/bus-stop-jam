@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="ChoicePopup.uss" />
+    <ui:VisualElement name="ChoicePopup" class="modal_container" style="display: none;">
+        <ui:VisualElement class="modal">
+            <ui:VisualElement name="top" class="modal_top">
+                <ui:Label text="Question?" display-tooltip-when-elided="true" name="Header" />
+            </ui:VisualElement>
+            <ui:VisualElement name="middle" class="modal_middle">
+                <ui:Label text="Explanation." display-tooltip-when-elided="true" name="Body" />
+            </ui:VisualElement>
+            <ui:VisualElement name="bottom" class="modal_bottom">
+                <ui:Button name="Decline" text="Decline" display-tooltip-when-elided="true" class="btn btn-lg secondary" />
+                <ui:Button name="Accept" text="Accept" display-tooltip-when-elided="true" class="btn btn-lg primary" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

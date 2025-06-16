@@ -1,0 +1,217 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="ChoicePopup" src="Components/ChoicePopup.uxml" />
+    <Style src="Settings.uss" />
+    <ui:VisualElement class="settings_container" style="flex-grow: 1;">
+        <CupkekGames.Luna.TabView horizontal="true" active-tab="0" button-color-selected="SECONDARY" style="flex-grow: 1;">
+            <ui:Tab label="Game" icon-image="project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/play.png">
+                <ui:Label text="Gameplay" display-tooltip-when-elided="true" name="Title" class="settings_title">
+                    <Bindings>
+                        <UnityEngine.Localization.LocalizedString property="text" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860127)" />
+                    </Bindings>
+                </ui:Label>
+                <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="PanelGameplay" class="settings_tab" style="display: flex;">
+                    <ui:VisualElement name="line" class="settings_line">
+                        <ui:Label text="LANGUAGE" display-tooltip-when-elided="true" class="settings_line_left">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860042)" />
+                            </Bindings>
+                        </ui:Label>
+                        <ui:VisualElement name="line_right" class="settings_line_right" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                            <ui:DropdownField index="-1" choices="System.Collections.Generic.List`1[System.String]" name="DropdownLanguage" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:ScrollView>
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="label" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860127)" />
+                </Bindings>
+            </ui:Tab>
+            <ui:Tab label="Video" icon-image="project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/camera.png">
+                <ui:Label text="Video" display-tooltip-when-elided="true" name="Title" class="settings_title">
+                    <Bindings>
+                        <UnityEngine.Localization.LocalizedString property="text" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860081)" />
+                    </Bindings>
+                </ui:Label>
+                <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="PanelVideo" class="settings_tab" style="display: flex;">
+                    <ui:VisualElement name="line" class="settings_line">
+                        <ui:Label text="RESOLUTION" display-tooltip-when-elided="true" class="settings_line_left">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860133)" />
+                            </Bindings>
+                        </ui:Label>
+                        <ui:VisualElement name="line_right" class="settings_line_right" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                            <ui:DropdownField index="-1" choices="System.Collections.Generic.List`1[System.String]" name="DropdownResolution" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="line" class="settings_line">
+                        <ui:Label text="WINDOW MODE" display-tooltip-when-elided="true" class="settings_line_left">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860137)" />
+                            </Bindings>
+                        </ui:Label>
+                        <ui:VisualElement name="line_right" class="settings_line_right" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                            <ui:RadioButtonGroup value="-1" choices="WINDOWED,FULLSCREEN" name="RadioGroupWindowMode" class="radio-row radio-horizontal" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="line" class="settings_line">
+                        <ui:Label text="VSYNC" display-tooltip-when-elided="true" class="settings_line_left" />
+                        <ui:VisualElement name="line_right" class="settings_line_right" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                            <ui:Toggle name="ToggleVSync" value="true" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="line" class="settings_line">
+                        <ui:Label text="MAX FPS" display-tooltip-when-elided="true" class="settings_line_left">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860037)" />
+                            </Bindings>
+                        </ui:Label>
+                        <ui:VisualElement name="line_right" class="settings_line_right" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                            <ui:RadioButtonGroup value="-1" choices="30,60,120,144,UNLIMITED" name="RadioGroupFpsLimit" class="radio-row radio-horizontal" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="line" class="settings_line">
+                        <ui:Label text="ANTI-ALIASING" display-tooltip-when-elided="true" class="settings_line_left" />
+                        <ui:VisualElement name="line_right" class="settings_line_right" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                            <ui:RadioButtonGroup value="-1" choices="LOW,MEDIUM,HIGH,EPIC" name="AntiAliasing" class="radio-row radio-horizontal" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="line" class="settings_line">
+                        <ui:Label text="POST-PROCESSING" display-tooltip-when-elided="true" class="settings_line_left" />
+                        <ui:VisualElement name="line_right" class="settings_line_right" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                            <ui:RadioButtonGroup value="-1" choices="LOW,MEDIUM,HIGH,EPIC" name="PostProcessing" class="radio-row radio-horizontal" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="line" class="settings_line">
+                        <ui:Label text="SHADOWS" display-tooltip-when-elided="true" class="settings_line_left">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860135)" />
+                            </Bindings>
+                        </ui:Label>
+                        <ui:VisualElement name="line_right" class="settings_line_right" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                            <ui:RadioButtonGroup value="-1" choices="LOW,MEDIUM,HIGH,EPIC" name="Shadows" class="radio-row radio-horizontal" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="line" class="settings_line">
+                        <ui:Label text="TEXTURES" display-tooltip-when-elided="true" class="settings_line_left">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860148)" />
+                            </Bindings>
+                        </ui:Label>
+                        <ui:VisualElement name="line_right" class="settings_line_right" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                            <ui:RadioButtonGroup value="-1" choices="LOW,MEDIUM,HIGH,EPIC" name="TextureQuality" class="radio-row radio-horizontal" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="line" class="settings_line">
+                        <ui:Label text="EFFECTS" display-tooltip-when-elided="true" class="settings_line_left">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860152)" />
+                            </Bindings>
+                        </ui:Label>
+                        <ui:VisualElement name="line_right" class="settings_line_right" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                            <ui:RadioButtonGroup value="-1" choices="LOW,MEDIUM,HIGH,EPIC" name="EffectsQuality" class="radio-row radio-horizontal" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:ScrollView>
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="label" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860081)" />
+                </Bindings>
+            </ui:Tab>
+            <ui:Tab label="Audio" icon-image="project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/volume-notice.png">
+                <ui:Label text="Audio" display-tooltip-when-elided="true" name="Title" class="settings_title">
+                    <Bindings>
+                        <UnityEngine.Localization.LocalizedString property="text" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860138)" />
+                    </Bindings>
+                </ui:Label>
+                <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="PanelAudio" class="settings_tab">
+                    <ui:VisualElement name="line" class="settings_line">
+                        <ui:Label text="MASTER" display-tooltip-when-elided="true" name="Label" class="settings_line_left">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860139)" />
+                            </Bindings>
+                        </ui:Label>
+                        <ui:VisualElement name="line_right" class="settings_line_right" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                            <ui:VisualElement name="AudioMaster" class="settings_line_right_container">
+                                <ui:SliderInt picking-mode="Ignore" value="42" high-value="100" show-input-field="true" fill="true" page-size="5" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="line" class="settings_line">
+                        <ui:Label text="MUSIC" display-tooltip-when-elided="true" name="Label" class="settings_line_left">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860130)" />
+                            </Bindings>
+                        </ui:Label>
+                        <ui:VisualElement name="line_right" class="settings_line_right" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                            <ui:VisualElement name="AudioMusic" class="settings_line_right_container">
+                                <ui:SliderInt picking-mode="Ignore" value="100" high-value="100" show-input-field="true" fill="true" page-size="5" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="line" class="settings_line">
+                        <ui:Label display-tooltip-when-elided="true" name="Label" text="Ambient" class="settings_line_left" />
+                        <ui:VisualElement name="line_right" class="settings_line_right" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                            <ui:VisualElement name="AudioAmbient" class="settings_line_right_container">
+                                <ui:SliderInt picking-mode="Ignore" value="100" high-value="100" show-input-field="true" fill="true" page-size="5" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="line" class="settings_line">
+                        <ui:Label text="SOUND EFFECTS" display-tooltip-when-elided="true" name="Label" class="settings_line_left">
+                            <Bindings>
+                                <UnityEngine.Localization.LocalizedString property="text" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860134)" />
+                            </Bindings>
+                        </ui:Label>
+                        <ui:VisualElement name="line_right" class="settings_line_right" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                            <ui:VisualElement name="AudioSFX" class="settings_line_right_container">
+                                <ui:SliderInt picking-mode="Ignore" value="100" high-value="100" show-input-field="true" fill="true" page-size="5" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:ScrollView>
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="label" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860078)" />
+                </Bindings>
+            </ui:Tab>
+            <ui:Tab label="Controls" icon-image="project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/game-handle.png">
+                <ui:Label text="Controls" display-tooltip-when-elided="true" name="Title" class="settings_title">
+                    <Bindings>
+                        <UnityEngine.Localization.LocalizedString property="text" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860121)" />
+                    </Bindings>
+                </ui:Label>
+                <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="PanelControls" class="settings_tab">
+                    <ui:VisualElement name="RebindContainer" />
+                </ui:ScrollView>
+                <Bindings>
+                    <UnityEngine.Localization.LocalizedString property="label" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860121)" />
+                </Bindings>
+            </ui:Tab>
+        </CupkekGames.Luna.TabView>
+    </ui:VisualElement>
+    <ui:VisualElement class="settings_controls">
+        <ui:VisualElement style="flex-direction: row; justify-content: space-between; flex-grow: 1;">
+            <ui:VisualElement>
+                <CupkekGames.Luna.InputPrompt enabled="false" label-text="Return" hide-if-keyboard="true" name="ReturnButton" input-action-name="UI/Cancel">
+                    <Bindings>
+                        <UnityEngine.Localization.LocalizedString property="LabelText" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860073)" />
+                    </Bindings>
+                </CupkekGames.Luna.InputPrompt>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 0; flex-direction: row;">
+                <CupkekGames.Luna.InputPrompt enabled="false" label-text="Select" hide-if-keyboard="true" hide-if="KeyboardMouse">
+                    <Bindings>
+                        <UnityEngine.Localization.LocalizedString property="LabelText" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860055)" />
+                    </Bindings>
+                </CupkekGames.Luna.InputPrompt>
+                <CupkekGames.Luna.InputPrompt enabled="false" label-text="Revert" name="Revert" input-action-name="UI/InteractHold" override-icon-text="Q" override-icon-sprite="project://database/Packages/com.cupkekgames.luna/CupkekGamesCore/Runtime/Input/InputIcons/Sprites/KeyboardMouse/keyboard_blank_outline.png?fileID=21300000&amp;guid=c847211b023bbf94296ec4b41569fe65&amp;type=3#keyboard_blank_outline">
+                    <Bindings>
+                        <UnityEngine.Localization.LocalizedString property="LabelText" table="GUID:542375a085a933644a6cf67688a114da" entry="Id(2296101967860023)" />
+                    </Bindings>
+                </CupkekGames.Luna.InputPrompt>
+                <CupkekGames.Luna.InputPrompt enabled="false" label-text="Restore Default Settings" name="Default" input-action-name="UI/ActionHold" override-icon-text="Q" override-icon-sprite="project://database/Packages/com.cupkekgames.luna/CupkekGamesCore/Runtime/Input/InputIcons/Sprites/KeyboardMouse/keyboard_blank_outline.png?fileID=21300000&amp;guid=c847211b023bbf94296ec4b41569fe65&amp;type=3#keyboard_blank_outline" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Instance template="ChoicePopup" picking-mode="Ignore" class="size-full absolute" />
+    <ui:VisualElement name="RebindOverlay" class="absolute size-full justify-center items-center" style="flex-grow: 1; display: none; background-color: rgba(0, 0, 0, 0.9);">
+        <ui:Label text="Label" name="RebindOverlayLabel" style="font-size: 32px;" />
+    </ui:VisualElement>
+</ui:UXML>

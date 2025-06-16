@@ -1,0 +1,51 @@
+.text-xs {
+	font-size: var(--length-12); 
+}
+
+.text-s {
+	font-size: var(--length-14); 
+}
+
+.text-md {
+	font-size: var(--length-16); 
+}
+
+.text-lg {
+	font-size: var(--length-18); 
+}
+
+.text-xl {
+	font-size: var(--length-20);
+}
+
+.text-2xl {
+	font-size: var(--length-24);
+}
+
+.text-3xl {
+	font-size: var(--length-30);
+}
+
+.text-4xl {
+	font-size: var(--length-36);
+}
+
+.text-5xl {
+	font-size: var(--length-48);
+}
+
+.text-6xl {
+	font-size: var(--length-64);
+}
+
+.text-7xl {
+	font-size: var(--length-72);
+}
+
+.text-8xl {
+	font-size: var(--length-96);
+}
+
+.text-9xl {
+	font-size: var(--length-128);
+}

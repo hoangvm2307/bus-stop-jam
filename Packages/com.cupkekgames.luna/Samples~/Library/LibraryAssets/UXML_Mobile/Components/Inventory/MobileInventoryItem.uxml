@@ -1,0 +1,12 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="MobileInventoryItem.uss" />
+    <CupkekGames.Luna.AspectRatioElement name="InventoryItem" class="inventory-item" >
+        <engine:Button name="Background" class="btn size-full size-min-128 p-0 flex-col" style="align-items: center; justify-content: center;">
+            <engine:VisualElement name="StarContainer" picking-mode="Ignore" class="star-container">
+                <CupkekGames.Luna.AspectRatioElement name="Star" picking-mode="Ignore"/>
+                <CupkekGames.Luna.AspectRatioElement name="Star" picking-mode="Ignore"/>
+                <CupkekGames.Luna.AspectRatioElement name="Star" picking-mode="Ignore"/>
+            </engine:VisualElement>
+        </engine:Button>
+    </CupkekGames.Luna.AspectRatioElement>
+</engine:UXML>

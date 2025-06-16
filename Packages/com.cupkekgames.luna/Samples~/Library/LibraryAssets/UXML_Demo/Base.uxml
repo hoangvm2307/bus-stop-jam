@@ -1,0 +1,105 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="NotificationView" src="../UXML/Components/Notification/NotificationView.uxml" />
+    <Style src="../UXML_Demo/Base.uss" />
+    <engine:VisualElement name="Background" picking-mode="Ignore" class="base_background size-full absolute" />
+    <engine:VisualElement name="Top" class="base_container_small flex-row justify-between base_gradient_bg pt-10 shrink-0 h-20p bg-base-900">
+        <engine:VisualElement name="PlayerInfo" class="flex-row m-6 ml-16 self-center w-25p ml-48">
+            <engine:VisualElement name="Avatar" class="m-6 border-4 rounded-lg mb-12" style="align-items: center; justify-content: center; flex-grow: 1;">
+                <CupkekGames.Luna.RadialProgressBar target-indicator="0.6" target-value="0.4" instant="false" thickness="16" class="absolute size-128" />
+                <engine:VisualElement class="absolute size-96 rounded-full bg-base-800" style="flex-grow: 1; background-image: url(&quot;../Sprites/portrait.png?fileID=21300000&amp;guid=9ec3e8a441a147048bfa2ee0abcf5dd4&amp;type=3#portrait&quot;);" />
+            </engine:VisualElement>
+            <engine:VisualElement class="m-6 grow-1 justify-end mb-16">
+                <engine:Label text="Label" name="PlayerName" class="font-bold text-2xl h-33p">
+                    <Bindings>
+                        <engine:DataBinding property="text" data-source-path="PlayerName" data-source-type="CupkekGames.Luna.Library.GameSaveDataExample, CupkekGames.Luna.Library" binding-mode="ToTarget" />
+                    </Bindings>
+                </engine:Label>
+                <engine:VisualElement name="LvlContainer" class="flex-row h-33p">
+                    <engine:Label text="Lvl." />
+                    <engine:Label text="Label" class="font-bold">
+                        <Bindings>
+                            <engine:DataBinding property="text" data-source-path="Lvl" data-source-type="CupkekGames.Luna.Library.GameSaveDataExample, CupkekGames.Luna.Library" binding-mode="ToTarget" />
+                        </Bindings>
+                    </engine:Label>
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="CurrencyContainer" class="flex-row m-6 grow-0 w-25p self-center p-12">
+            <engine:VisualElement name="GoldContainer" class="flex-row grow-1 m-6 items-center rounded-lg mr-12 p-6 bg-primary-600">
+                <engine:VisualElement name="VisualElement" class="m-4 size-44 ml-10" style="background-image: url(&quot;../Sprites/items/Coin.png?fileID=21300000&amp;guid=65f78abdd4b5bbe4085df4bb53ebdad1&amp;type=3#Coin&quot;); -unity-slice-bottom: 1; -unity-background-scale-mode: scale-to-fit; -unity-slice-scale: -32px; -unity-slice-right: 1; -unity-slice-top: 1; -unity-slice-left: 1;" />
+                <engine:Label text="Label" class="m-4">
+                    <Bindings>
+                        <engine:DataBinding property="text" data-source-path="Gold" data-source-type="CupkekGames.Luna.Library.GameSaveDataExample, CupkekGames.Luna.Library" binding-mode="ToTarget" />
+                    </Bindings>
+                </engine:Label>
+            </engine:VisualElement>
+            <engine:VisualElement name="DiamondContainer" class="flex-row grow-1 m-6 items-center rounded-lg mr-12 p-6 bg-primary-600">
+                <engine:VisualElement name="VisualElement" class="icon-vip-one m-4 size-44 ml-10" style="background-image: url(&quot;../Sprites/items/GemBlue.png?fileID=21300000&amp;guid=2ff9dd7db46ca1c44aaa0f383f40620c&amp;type=3#GemBlue&quot;); -unity-slice-left: 1; -unity-slice-top: 1; -unity-slice-right: 1; -unity-slice-bottom: 1; -unity-slice-scale: -32px;" />
+                <engine:Label text="Label" class="m-4">
+                    <Bindings>
+                        <engine:DataBinding property="text" data-source-path="Diamond" data-source-type="CupkekGames.Luna.Library.GameSaveDataExample, CupkekGames.Luna.Library" binding-mode="ToTarget" />
+                    </Bindings>
+                </engine:Label>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+    <engine:VisualElement name="Middle" class="base_mid_container flex-row base_gradient_bg shrink-0 grow-1 justify-between" style="align-items: center;">
+        <engine:VisualElement class="base_gradient_container rounded-lg h-75p pl-16 pr-16" style="flex-direction: column; justify-content: center;">
+            <engine:Button text="Autosave" name="Autosave" class="btn primary mb-32" />
+            <engine:VisualElement>
+                <engine:Label text="Dialogue Demos" style="-unity-text-align: upper-center;" />
+                <engine:Button name="TutorialModalButton" text="Tutorial Modal" class="primary btn mb-32" />
+                <engine:Button name="VisualNovelButton" text="Visual Novel" class="primary btn mb-32" />
+                <engine:Button name="SpeechBubbleButton" text="SpeechBubble" class="primary btn" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="MidFirst" class="base_mid_container_inner grow-0 justify-center h-75p base_gradient_container border-base-400 rounded-lg grow-1 ml-32 mr-32">
+            <engine:VisualElement class="flex-row m-20 justify-center grow-1">
+                <engine:VisualElement class="mr-6 justify-center w-25p">
+                    <engine:Button name="CharacterButton" enabled="false" class="self-center rounded-2xl justify-center size-66p primary btn size-160 w-max-160 h-max-160 flex-col">
+                        <engine:VisualElement picking-mode="Ignore" class="self-center icon-toolkit size-64" />
+                        <engine:Label text="Character" picking-mode="Ignore" class="m-8" />
+                    </engine:Button>
+                </engine:VisualElement>
+                <engine:VisualElement class="mr-6 justify-center w-25p">
+                    <engine:Button name="InventoryButton" class="self-center rounded-2xl justify-center size-66p primary btn size-160 w-max-160 h-max-160 flex-col">
+                        <engine:VisualElement picking-mode="Ignore" class="self-center icon-toolkit size-64" />
+                        <engine:Label text="Inventory" picking-mode="Ignore" class="m-8" />
+                    </engine:Button>
+                </engine:VisualElement>
+                <engine:VisualElement class="mr-6 justify-center w-25p">
+                    <engine:Button name="CraftingButton" enabled="false" class="self-center rounded-2xl justify-center size-66p primary btn size-160 w-max-160 h-max-160 flex-col">
+                        <engine:VisualElement picking-mode="Ignore" class="self-center icon-hammer-and-anvil size-64" />
+                        <engine:Label text="Crafting" picking-mode="Ignore" class="m-8" />
+                    </engine:Button>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement class="flex-row m-20 justify-center grow-1">
+                <engine:VisualElement class="mr-6 justify-center w-25p">
+                    <engine:Button name="RankingButton" enabled="false" class="self-center rounded-2xl justify-center size-66p primary btn size-160 w-max-160 h-max-160 flex-col">
+                        <engine:VisualElement picking-mode="Ignore" class="self-center icon-ranking size-64" />
+                        <engine:Label text="Rankings" picking-mode="Ignore" class="m-8" />
+                    </engine:Button>
+                </engine:VisualElement>
+                <engine:VisualElement class="mr-6 justify-center w-25p">
+                    <engine:Button name="QuestButton" enabled="false" class="self-center rounded-2xl justify-center size-66p primary btn size-160 w-max-160 h-max-160 flex-col">
+                        <engine:VisualElement picking-mode="Ignore" class="self-center icon-list-checkbox size-64" />
+                        <engine:Label text="Quests" picking-mode="Ignore" class="m-8" />
+                    </engine:Button>
+                </engine:VisualElement>
+                <engine:VisualElement class="mr-6 justify-center w-25p">
+                    <engine:Button name="ShopButton" enabled="false" class="self-center rounded-2xl justify-center size-66p primary btn size-160 w-max-160 h-max-160 flex-col">
+                        <engine:VisualElement picking-mode="Ignore" class="self-center icon-shopping-bag-one size-64" />
+                        <engine:Label text="Shop" picking-mode="Ignore" class="m-8" />
+                    </engine:Button>
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="MidLast" class="items-end grow-0 base_mid_right_container base_gradient_container w-20p h-75p rounded-lg">
+            <engine:VisualElement class="items-end m-24 w-full pl-64" style="flex-grow: 1;">
+                <engine:Button text="Send Notification" name="SendNotification" class="btn grow-1 primary w-full" />
+                <engine:Instance template="NotificationView" picking-mode="Ignore" class="grow-1 w-full" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

@@ -1,0 +1,7 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="AutoSave.uss" />
+    <engine:VisualElement class="autosave" name="AutoSave">
+        <CupkekGames.Luna.RadialLoading arc-size="0.2" progress="0.53" update-frequency="10" step="0.015" line-width="8" class="size-40" />
+        <engine:Label text="Saving..." />
+    </engine:VisualElement>
+</engine:UXML>

@@ -1,0 +1,63 @@
+{
+  "name": "com.cupkekgames.luna",
+  "displayName": "LunaUI",
+  "version": "1.2.0",
+  "author": {
+    "name": "CupkekGames",
+    "url": "https://www.docs.cupkek.games"
+  },
+  "unity": "6000.1",
+  "documentationUrl": "https://docs.cupkek.games/",
+  "license": "Refer to Third-Party Notices.md",
+  "samples": [
+    {
+      "displayName": "Library",
+      "description": "Start by importing this. Dependencies for other samples.",
+      "path": "Samples~/Library"
+    },
+    {
+      "displayName": "Components",
+      "description": "Scenes showcasing each component in its own separate scene.",
+      "path": "Samples~/Components"
+    },
+    {
+      "displayName": "Game",
+      "description": "Complete game demo with standart single scene workflow.",
+      "path": "Samples~/Game"
+    },
+    {
+      "displayName": "Game Addressables",
+      "description": "Complete game demo, using addressables for multi-scene workflow.",
+      "path": "Samples~/GameAddressables"
+    },
+    {
+      "displayName": "Localization",
+      "description": "Simple localization demo. Requires Unity's Localization package.",
+      "path": "Samples~/Localization"
+    },
+    {
+      "displayName": "Ink",
+      "description": "VisualNovel integration example for Ink. Requires ink-unity-integration package.",
+      "path": "Samples~/Ink"
+    },
+    {
+      "displayName": "Newtonsoft",
+      "description": "Actual implementation of save/load system using Newtonsoft-Json.",
+      "path": "Samples~/Newtonsoft"
+    },
+    {
+      "displayName": "Mobile",
+      "description": "Complete game demo designed for mobile devices.",
+      "path": "Samples~/Mobile"
+    }
+  ],
+  "hideInEditor": false,
+  "description": "Luna UI is built on top of Unity's UI Toolkit, offering simple solutions for common UI challenges without imposing any limitations on the UI Toolkit.",
+  "keywords": [
+    "UI",
+    "UI Toolkit",
+    "User Interface",
+    "UI Components",
+    "UI Framework"
+  ]
+}

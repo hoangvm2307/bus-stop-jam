@@ -1,0 +1,72 @@
+:root {
+    --cursor-default: url("/Packages/com.cupkekgames.luna/Runtime/Images/Cursor/Double/pointer_a.png");
+    --cursor-pointer: url("/Packages/com.cupkekgames.luna/Runtime/Images/Cursor/Double/hand_small_point.png");
+    --cursor-wait: url("/Packages/com.cupkekgames.luna/Runtime/Images/Cursor/Double/cursor_busy.png");
+    --cursor-text: url("/Packages/com.cupkekgames.luna/Runtime/Images/Cursor/Double/bracket_a_vertical.png");
+    --cursor-move: url("/Packages/com.cupkekgames.luna/Runtime/Images/Cursor/Double/resize_a_cross.png");
+    --cursor-help: url("/Packages/com.cupkekgames.luna/Runtime/Images/Cursor/Double/cursor_help.png");
+    --cursor-not-allowed: url("/Packages/com.cupkekgames.luna/Runtime/Images/Cursor/Double/cursor_disabled.png");
+    --cursor-context-menu: url("/Packages/com.cupkekgames.luna/Runtime/Images/Cursor/Double/cursor_menu.png");
+    --cursor-cell: url("/Packages/com.cupkekgames.luna/Runtime/Images/Cursor/Double/line_cross.png");
+    --cursor-copy: url("/Packages/com.cupkekgames.luna/Runtime/Images/Cursor/Double/cursor_copy.png");
+    --cursor-grab: url("/Packages/com.cupkekgames.luna/Runtime/Images/Cursor/Double/hand_small_open.png");
+    --cursor-grabbing: url("/Packages/com.cupkekgames.luna/Runtime/Images/Cursor/Double/hand_small_closed.png");
+    --cursor-zoom-in: url("/Packages/com.cupkekgames.luna/Runtime/Images/Cursor/Double/zoom_in.png");
+    --cursor-zoom-out: url("/Packages/com.cupkekgames.luna/Runtime/Images/Cursor/Double/zoom_out.png");
+    --cursor-cross: url("/Packages/com.cupkekgames.luna/Runtime/Images/Cursor/Double/cross_large.png");
+    --cursor-cross-small: url("/Packages/com.cupkekgames.luna/Runtime/Images/Cursor/Double/cross_small.png");
+}
+
+* {
+    cursor: var(--cursor-default);
+}
+
+.cursor-default: {
+cursor: var(--cursor-default);
+}
+.cursor-pointer: {
+cursor: var(--cursor-pointer);
+}
+.cursor-wait: {
+cursor: var(--cursor-wait);
+}
+.cursor-text: {
+cursor: var(--cursor-text);
+}
+.cursor-move: {
+cursor: var(--cursor-move);
+}
+.cursor-help: {
+cursor: var(--cursor-help);
+}
+.cursor-not-allowed: {
+cursor: var(--cursor-not-allowed);
+}
+.cursor-context-menu: {
+cursor: var(--cursor-context-menu);
+}
+.cursor-cell: {
+cursor: var(--cursor-cell);
+}
+.cursor-copy: {
+cursor: var(--cursor-copy);
+}
+.cursor-grab: {
+cursor: var(--cursor-grab);
+}
+.cursor-grabbing: {
+cursor: var(--cursor-grabbing);
+}
+.cursor-zoom-in: {
+cursor: var(--cursor-zoom-in);
+}
+.cursor-zoom-out: {
+cursor: var(--cursor-zoom-out);
+}
+.cursor-cross: {
+cursor: var(--cursor-cross);
+}
+.cursor-cross-small: {
+cursor: var(--cursor-cross-small);
+}
+

@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="NotificationModal.uss" />
+    <ui:VisualElement name="Background" class="modal_background" />
+    <ui:VisualElement class="modal_container" style="flex-grow: 1;">
+        <ui:VisualElement name="Modal" class="modal">
+            <ui:VisualElement name="TitleContainer" class="modal_title_container">
+                <ui:Label text="Notification History" display-tooltip-when-elided="true" name="Title" />
+                <ui:Button display-tooltip-when-elided="true" name="ReturnButton" class="btn primary">
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                <ui:ListView name="NotificationList" fixed-item-height="128" selection-type="None" class="base" style="flex-grow: 1;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

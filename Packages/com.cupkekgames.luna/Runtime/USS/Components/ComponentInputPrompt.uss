@@ -1,0 +1,73 @@
+.InputPrompt.btn {
+    background-color: rgba(0,0,0,0.5);
+    padding: 0;
+    overflow: visible;
+    margin-left: var(--length-12);
+    margin-right: var(--length-12);
+    margin-top: var(--length-16);
+    margin-bottom: var(--length-16);
+}
+
+.InputPrompt__icon_container {
+  height: 100%;
+}
+
+.InputPrompt__icon_sprite {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.96);
+  border-radius: var(--length-8);
+}
+
+.InputPrompt__icon_sprite.circle {
+    border-radius: 50%;
+}
+
+.InputPrompt__icon_slice {
+  background-image: url("/Packages/com.cupkekgames.luna/CupkekGamesCore/Runtime/Input/InputIcons/Sprites/KeyboardMouse/keyboard_blank_outline.png");
+  -unity-slice-left: 48;
+  -unity-slice-top: 48;
+  -unity-slice-right: 48;
+  -unity-slice-bottom: 48;
+}
+
+.InputPrompt__icon_label {
+    padding: 0;
+    margin: 0;
+    margin-left: var(--length-16);
+    margin-right: var(--length-16);
+    flex: 1;
+    -unity-text-align: middle-center;
+    font-size: var(--length-24);
+}
+
+.InputPrompt__icon_label.long {
+    margin-left: var(--length-28);
+    margin-right: var(--length-28);
+}
+
+.InputPrompt .InputPrompt__label {
+    margin-left: var(--length-4);
+    font-size: var(--length-24);
+}
+.InputPrompt.hold .InputPrompt__label {
+    margin-left: var(--length-8);
+}
+
+.InputPrompt.btn.ghost:disabled,
+.InputPrompt.btn.ghost:disabled:hover,
+.InputPrompt.btn.ghost:disabled > *,
+.InputPrompt.btn.ghost:disabled:hover > * {
+  color: white;
+  -unity-background-image-tint-color: white;
+}
+
+.InputPrompt__hold {
+  position: absolute;
+  height: 100%;
+  --radial-progress-bg-color: var(--color-neutral-50);
+  --radial-progress-progress-color: var(--color-primary-600);
+  --radial-progress-indicator-positive-color: var(--color-neutral-900);
+  --radial-progress-indicator-negative-color: var(--color-neutral-900);
+}

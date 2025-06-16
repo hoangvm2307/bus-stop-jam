@@ -1,0 +1,8 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="Credits.uss" />
+    <engine:Template name="ReturnButton" src="../Components/ReturnButton.uxml" />
+    <engine:VisualElement picking-mode="Ignore" class="cr_background tint-secondary-100 size-full left-0 absolute" style="flex-grow: 1;" />
+    <engine:VisualElement picking-mode="Ignore" class="cr_bg_decoration h-full absolute w-75p self-center border-base-400" style="flex-grow: 1;" />
+    <engine:ScrollView name="ScrollView" picking-mode="Ignore" mouse-wheel-scroll-size="0" class="j-content-center self-center size-full" />
+    <engine:Instance template="ReturnButton" name="ReturnButton" picking-mode="Ignore" />
+</engine:UXML>

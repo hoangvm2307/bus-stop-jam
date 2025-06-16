@@ -1,0 +1,36 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement style="flex-grow: 1; align-items: center; justify-content: space-evenly;">
+        <CupkekGames.Luna.TabView show-input-prompts="false" active-tab="4" class="m-12 rounded bg-slate-400 border-8 header_slate border-slate-800 h-50p primary" style="width: 50%; flex-grow: 1; display: flex;">
+            <engine:Tab label="Tab1">
+                <engine:Label text="View of Tab 1" class="rounded p-12 m-12 bg-zinc-700" style="flex-grow: 1;" />
+                <engine:VisualElement style="flex-grow: 1;" />
+            </engine:Tab>
+            <engine:Tab label="Tab2">
+                <engine:Label text="View of Tab 2" class="rounded p-12 m-12 bg-zinc-700" style="flex-grow: 1;" />
+            </engine:Tab>
+            <engine:Tab label="Tab3">
+                <engine:Label text="View of Tab 3" class="rounded p-12 m-12 bg-zinc-700" style="flex-grow: 1;" />
+            </engine:Tab>
+            <engine:Tab label="Tab4">
+                <engine:Label text="View of Tab 4" class="rounded p-12 m-12 bg-zinc-700" style="flex-grow: 1;" />
+            </engine:Tab>
+            <CupkekGames.Luna.Tab tab-button-content="CustomTabButtonContent.uxml?fileID=9197481963319205126&amp;guid=97de22ad583579649a656f5640d377eb&amp;type=3#CustomTabButtonContent" label="Custom" header-min-size="24,0" content-size-percent="120,140" overflow="true" class="grow-1">
+                <engine:Label text="View of Tab 5&#10;This is a custom tab that allows you to&#10;add custom elements to&#10;Tab button above" class="rounded p-12 m-12 bg-zinc-700" style="flex-grow: 1;" />
+            </CupkekGames.Luna.Tab>
+        </CupkekGames.Luna.TabView>
+        <CupkekGames.Luna.TabView horizontal="false" show-input-prompts="false" class="tab-view-vertical yellow border-8 rounded m-12 border-yellow-600 bg-zinc-900 h-50p unchecked_yellow" style="width: 50%; flex-grow: 1;">
+            <engine:Tab label="Tab1">
+                <engine:Label text="View of Tab 1" class="rounded p-12 m-12 bg-zinc-700" style="flex-grow: 1;" />
+            </engine:Tab>
+            <engine:Tab label="Tab2">
+                <engine:Label text="View of Tab 2" class="rounded p-12 m-12 bg-zinc-700" style="flex-grow: 1;" />
+            </engine:Tab>
+            <engine:Tab label="Tab3">
+                <engine:Label text="View of Tab 3" class="rounded p-12 m-12 bg-zinc-700" style="flex-grow: 1;" />
+            </engine:Tab>
+            <engine:Tab label="Tab4">
+                <engine:Label text="View of Tab 4" class="rounded p-12 m-12 bg-zinc-700" style="flex-grow: 1;" />
+            </engine:Tab>
+        </CupkekGames.Luna.TabView>
+    </engine:VisualElement>
+</engine:UXML>

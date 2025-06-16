@@ -1,0 +1,45 @@
+.modal_container {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal {
+  width: 48%;
+  height: 32%;
+  background-color: var(--color-slate-800);
+  border-width: var(--length-8);
+  border-color: var(--color-slate-100);
+  border-radius: var(--length-32);
+}
+
+.modal_top {
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+}
+
+.modal_middle {
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.modal_bottom {
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex: 2;
+}
+
+.modal_top Label {
+  -unity-font-definition: var(--font-bold);
+  font-size: var(--length-36);
+}
+
+.modal_middle Label {
+  font-size: var(--length-28);
+}

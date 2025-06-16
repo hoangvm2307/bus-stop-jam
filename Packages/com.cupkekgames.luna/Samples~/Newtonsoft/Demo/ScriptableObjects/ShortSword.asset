@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91cf42e0860cc69478c4e4b0a8a534b3, type: 3}
+  m_Name: ShortSword
+  m_EditorClassIdentifier: 
+  ItemDefinition:
+    Name: ShortSword
+    Description: 
+    Icon: {fileID: 21300000, guid: 3662a064aa8b15a408887f578d788ea4, type: 3}
+    EquipmentType: 0
+    AttributeData:
+      _values:
+      - 10
+      - 20

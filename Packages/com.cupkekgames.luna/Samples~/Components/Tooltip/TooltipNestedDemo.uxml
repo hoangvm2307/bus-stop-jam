@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); align-items: center; justify-content: center;">
+        <ui:VisualElement name="DemoContainer" style="flex-grow: 0; background-color: rgba(255, 255, 255, 0.05); width: 80%; height: 80%; padding: 20px; border-radius: 10px;">
+            <ui:Label text="Nested Tooltips Demo" display-tooltip-when-elided="true" style="font-size: 24px; -unity-font-style: bold; color: rgb(255, 255, 255); margin-bottom: 20px;" />
+            <ui:ScrollView>
+                <ui:VisualElement name="BasicExample" class="demo-section">
+                    <ui:Label text="Basic Nested Tooltip" display-tooltip-when-elided="true" class="section-title" />
+                    <ui:Label text="Hover over the button to show a tooltip with another interactive element inside." display-tooltip-when-elided="true" class="section-description" />
+                    <ui:Button text="Hover Me For Basic Nested Tooltip" display-tooltip-when-elided="true" name="NestedTooltipButton" class="demo-button" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Instructions" class="demo-section" style="margin-top: 40px;">
+                    <ui:Label text="Instructions" />
+                    <ui:Label text="Hover over buttons to display tooltips." />
+                    <ui:Label text="Press T to lock an active tooltip." />
+                    <ui:Label text="Hover over elements within tooltips to reveal nested tooltips." />
+                    <ui:Label text="Multiple tooltips can be displayed concurrently, each operating independently." />
+                    <ui:Label text="Press T when the last tooltip is locked to unlock all tooltips." />
+                    <ui:Label text="Press ESC or click the backdrop to unlock all tooltips." />
+                </ui:VisualElement>
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,65 @@
+////////////////////////////////////////////////////////////
+// Licenses //
+////////////////////////////////////////////////////////////
+
+Luna UI is governed by the Unity Asset Store EULA.  
+(https://unity3d.com/legal/as_terms)
+
+Additionally, some assets are freely available under public licenses. Details are provided below.
+
+////////////////////////////////////////////////////////////
+// Kenney.nl //
+////////////////////////////////////////////////////////////
+
+**In the Tool:**
+
+- Icons, cursors, and input prompt sprites.
+
+**In the Samples:**
+
+- Sound effects, such as button clicks.
+
+**Credits:** [Kenney.nl](https://www.kenney.nl)  
+**License:** [Creative Commons Zero (CC0 1.0)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+////////////////////////////////////////////////////////////
+// Ravenmore //
+////////////////////////////////////////////////////////////
+
+**In the Tool:**
+
+- None
+
+**In the Samples:**
+
+- Item icons
+
+**Credits:** [Ravenmore](https://ravenmore.itch.io/fantasy-icon-pack)
+
+////////////////////////////////////////////////////////////
+// Kaylousberg //
+////////////////////////////////////////////////////////////
+
+**In the Tool:**
+
+- None
+
+**In the Samples:**
+
+- Avatar sprites
+
+**Credits:** [Kaylousberg](https://kaylousberg.itch.io/kaykit-adventurers)
+
+////////////////////////////////////////////////////////////
+// Gvesster //
+////////////////////////////////////////////////////////////
+
+**In the Tool:**
+
+- None
+
+**In the Samples:**
+
+- Mobile Icons
+
+**Credits** [Gvesster](https://gvesster.itch.io/free-icon-pack)

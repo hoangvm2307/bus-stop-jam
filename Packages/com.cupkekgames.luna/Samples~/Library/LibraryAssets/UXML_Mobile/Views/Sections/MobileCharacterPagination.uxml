@@ -1,0 +1,53 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="InventoryItem" src="../../Components/Inventory/MobileInventoryItem.uxml" />
+    <Style src="MobileCharacter.uss" />
+    <engine:VisualElement picking-mode="Ignore"  style="flex-grow: 1;">
+        <engine:VisualElement picking-mode="Ignore"  class="character-container">
+            <engine:VisualElement picking-mode="Ignore"  class="character-top-container" >
+                <engine:VisualElement picking-mode="Ignore"  class="equipment-slot-container" style="flex-grow: 1;">
+                    <engine:VisualElement picking-mode="Ignore"  class="equipment-slot-line">
+                        <engine:Instance template="InventoryItem" name="EquipmentHand" />
+                        <engine:Instance template="InventoryItem" name="EquipmentShield" />
+                        <engine:Instance template="InventoryItem" name="EquipmentAmulet" />
+                    </engine:VisualElement>
+                    <engine:VisualElement picking-mode="Ignore"  class="equipment-slot-middle" />
+                    <engine:VisualElement picking-mode="Ignore"  class="equipment-slot-line">
+                        <engine:Instance template="InventoryItem" name="EquipmentArmor" />
+                        <engine:Instance template="InventoryItem" name="EquipmentPants" />
+                        <engine:Instance template="InventoryItem" name="EquipmentBoots" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement picking-mode="Ignore"  class="character-info-container" >
+                    <engine:VisualElement picking-mode="Ignore"  class="combat-proficiency" >
+                        <engine:VisualElement picking-mode="Ignore" class="label-container" >
+                            <engine:Label text="Combat Proficiency" />
+                            <engine:VisualElement name="CombatProficiency"/>
+                        </engine:VisualElement>
+                        <CupkekGames.Luna.AspectRatioElement picking-mode="Ignore"  class="icon" >
+                            <engine:VisualElement picking-mode="Ignore" />
+                        </CupkekGames.Luna.AspectRatioElement>
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+            
+            <engine:VisualElement picking-mode="Ignore"  name="CharacterBottomContainer" class="character-bottom-container" >
+                
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement picking-mode="Ignore"  name="Inventory" class="inventory-container">
+            <engine:VisualElement picking-mode="Ignore"  name="InventoryHeader" class="inventory-header">
+                <engine:VisualElement picking-mode="Ignore"  class="inventory-filter-container">
+                    <engine:Button name="InventoryFilterAll" class="btn all selected" />
+                    <engine:Button name="InventoryFilterHand" class="btn hand" />
+                    <engine:Button name="InventoryFilterShield" class="btn shield" />
+                    <engine:Button name="InventoryFilterAmulet" class="btn amulet" />
+                    <engine:Button name="InventoryFilterArmor" class="btn chest" />
+                    <engine:Button name="InventoryFilterPants" class="btn pants" />
+                    <engine:Button name="InventoryFilterBoots" class="btn boots" />
+                </engine:VisualElement>
+                <engine:Button name="InventoryCraftButton" text="Craft" class="btn yellow inventory-craft-button" />
+            </engine:VisualElement>
+            <engine:VisualElement name="InventorySlotContainer" class="inventory-pagination mt-16" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

@@ -1,0 +1,59 @@
+.cr_background {
+    background-image: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Background/Diagonals/DiagonalDiamondPattern2.png?fileID=2800000&guid=77abf2f9ae34eb34fa4c58ad132735e4&type=3#DiagonalDiamondPattern2");
+    -unity-background-image-tint-color: var(--color-base-600);
+}
+
+.cr_bg_decoration {
+    background-image: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Background/Diagonals/Vertical2.png");
+    -unity-background-image-tint-color: rgba(0, 0, 0, 0.95);
+    border-right-width: var(--length-12);
+    border-left-width: var(--length-12);
+}
+
+.game_title {
+    padding-top: 45%;
+    margin-bottom: var(--length-24);
+    -unity-font-style: bold;
+    font-size: var(--length-96);
+    -unity-text-align: middle-center;
+}
+
+.section_title {
+    margin-top: var(--length-36);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+     font-size: var(--length-32);
+}
+
+.credit_line_container {
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-between;
+}
+
+
+.credited_position {
+    width: 50%;
+    -unity-font-style: bold;
+     -unity-text-align: middle-right;
+     margin-right: var(--length-16);
+}
+
+
+.credited_person {
+    width: 50%;
+     -unity-text-align: middle-left;
+}
+
+
+.credit_line {
+    width: 100%;
+     -unity-text-align: middle-center;
+}
+
+.end_message { 
+    margin-top: var(--length-32);
+    padding-bottom: 25%;
+    font-size: var(--length-80);
+    -unity-text-align: middle-center;
+}

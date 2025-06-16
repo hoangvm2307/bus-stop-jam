@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="DefaultTooltip.uss?fileID=7433441132597879392&amp;guid=561b821f214ed2a488cd31e436b9cb95&amp;type=3#DefaultTooltip" />
+    <CupkekGames.Luna.Tooltip name="DefaultTooltip" picking-mode="Ignore" delay="50" fade-time="15" follow-mouse="true" />
+</ui:UXML>

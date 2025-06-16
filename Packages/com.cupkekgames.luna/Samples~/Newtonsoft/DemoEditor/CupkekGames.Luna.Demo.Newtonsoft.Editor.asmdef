@@ -1,0 +1,20 @@
+{
+    "name": "CupkekGames.Luna.Demo.Newtonsoft.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ab7612e7fe1d7e64ab54a584495caa06",
+        "GUID:5c28ece2cfc331d45b93b74343fc8f80",
+        "GUID:449b8f48b5bc7784aa96a60444e1d8cd"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

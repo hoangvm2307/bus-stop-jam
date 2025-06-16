@@ -1,0 +1,146 @@
+.navbar {
+    background-color: var(--color-slate-900);
+    border-color: var(--color-slate-900);
+    padding: 0;
+    height: 8%;
+}
+
+.navbar > * {
+    flex: 10;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition-timing-function: ease-out-back;
+    transition-duration: 0.4s;
+    transition-property: flex;
+}
+
+.navbar .nav-bar-button {
+    flex: 1;
+    border-top-width: var(--length-4);
+    border-bottom-width: var(--length-0);
+    border-left-width: var(--length-4);
+    border-right-width: var(--length-4);
+    border-color: var(--color-slate-900);
+    margin: 0;
+    border-radius: 0;
+    max-height: 95%;
+    background-color: var(--color-slate-600);
+    padding: 0;
+    overflow: visible;
+}
+
+.navbar .active .nav-bar-button {
+    border-top-width: var(--length-8);
+    border-bottom-width: var(--length-4);
+    border-left-width: var(--length-8);
+    border-right-width: var(--length-8);
+    max-height: 100%;
+}
+
+.navbar .nav-bar-button.first {
+    border-left-width: 0;
+}
+
+.navbar .nav-bar-button.last {
+    border-right-width: 0;
+}
+
+.navbar > .active {
+    flex: 12;
+}
+
+.navbar .active .nav-bar-button {
+    background-color: var(--color-purple-400);
+    border-color: var(--color-base-50);
+    border-top-right-radius: var(--length-16);
+    border-top-left-radius: var(--length-16);
+}
+
+.navbar .nav-bar-button:hover {
+    background-color: var(--color-purple-400);
+}
+
+.navbar .nav-bar-button:focus {
+    background-color: var(--color-purple-400);
+}
+
+.navbar .nav-bar-button:hover:enabled {
+    background-color: var(--color-purple-400);
+}
+
+.navbar .nav-bar-button:focus:enabled {
+    background-color: var(--color-purple-400);
+}
+
+.navbar .nav-bar-button:disabled {
+    border-color: var(--color-slate-800);
+    background-color: var(--color-slate-800);
+    color: var(--color-slate-500);
+}
+
+.navbar .nav-bar-button:disabled:hover {
+    border-color: var(--color-slate-800);
+    background-color: var(--color-slate-800);
+    color: var(--color-slate-500);
+}
+
+.navbar .nav-bar-button:focus {
+    border-color: var(--color-slate-200);
+}
+
+.navbar .nav-bar-button:focus:enabled {
+    border-color: var(--color-slate-200);
+}
+
+.navbar .nav-bar-button .icon {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    -unity-background-scale-mode: scale-to-fit;
+    scale: 1.2;
+    translate: 0 -8%;
+    transition-timing-function: ease-out-back;
+    transition-duration: 0.4s;
+    transition-property: scale, translate;
+}
+
+.navbar .active .nav-bar-button .icon {
+    scale: 1.6;
+    translate: 0 -20%;
+}
+
+.navbar .nav-bar-button .title {
+  color: var(--color-slate-300);
+  font-size: var(--length-32);
+  -unity-font-definition: var(--font-medium);
+    transition-timing-function: ease-out-back;
+    transition-duration: 0.4s;
+    transition-property: font-size;
+}
+
+.navbar .active .nav-bar-button .title {
+  color: var(--color-slate-50);
+  font-size: var(--length-36);
+  -unity-font-definition: var(--font-bold);
+}
+
+.shop .nav-bar-button .icon {
+    background-image: url("../../Sprites/mobile/navbar/shop.png?fileID=21300000&guid=f6946f1fa9e9bab4fa0d6afd7a2f322a&type=3#shop");
+}
+
+.weapon .nav-bar-button .icon {
+    background-image: url("../../Sprites/mobile/navbar/weapon.png?fileID=21300000&guid=1fe3f50ee7b55374ca81cc873db57d8a&type=3#weapon");
+}
+
+.battle .nav-bar-button .icon {
+    background-image: url("../../Sprites/mobile/navbar/battle.png?fileID=21300000&guid=0f2a7374429b78945ace7bc5ef9a2d37&type=3#battle");
+}
+
+.character .nav-bar-button .icon {
+    background-image: url("../../Sprites/mobile/navbar/character.png?fileID=21300000&guid=902d94ac307787f4f8949ce4ac8ccbd8&type=3#character");
+}
+
+.base .nav-bar-button .icon {
+    background-image: url("../../Sprites/mobile/navbar/base.png?fileID=21300000&guid=95832ca69d9cd97448da0fc58d7dc53b&type=3#base");
+}

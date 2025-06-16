@@ -1,0 +1,117 @@
+:root {
+  --icon-arrow-circle-down: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/arrow-circle-down.png");
+  --icon-arrow-circle-left: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/arrow-circle-left.png");
+  --icon-arrow-circle-right: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/arrow-circle-right.png");
+  --icon-arrow-circle-up: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/arrow-circle-up.png");
+  --icon-arrow-down: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/arrow-down.png");
+  --icon-arrow-left: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/arrow-left.png");
+  --icon-arrow-right: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/arrow-right.png");
+  --icon-arrow-up: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/arrow-up.png");
+  --icon-delete: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/delete.png");
+  --icon-download: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/download.png");
+  --icon-play: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/play.png");
+  --icon-power: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/power.png");
+  --icon-save: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/save.png");
+  --icon-setting: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/setting.png");
+  --icon-plus: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/plus.png");
+  --icon-like: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/like.png");
+  --icon-camera: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/camera.png");
+  --icon-pause: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/pause.png");
+  --icon-play-cycle: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/play-cycle.png");
+  --icon-arrow-right-curve: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/arrow-right-curve.png");
+  --icon-double-right: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/double-right.png");
+  --icon-remind: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/remind.png");
+  --icon-check: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/check.png");
+}
+
+.icon-arrow-circle-down {
+  background-image: var(--icon-arrow-circle-down);
+}
+
+.icon-arrow-circle-left {
+  background-image: var(--icon-arrow-circle-left);
+}
+
+.icon-arrow-circle-right {
+  background-image: var(--icon-arrow-circle-right);
+}
+
+.icon-arrow-circle-up {
+  background-image: var(--icon-arrow-circle-up);
+}
+
+.icon-arrow-down {
+  background-image: var(--icon-arrow-down);
+}
+
+.icon-arrow-left {
+  background-image: var(--icon-arrow-left);
+}
+
+.icon-arrow-right {
+  background-image: var(--icon-arrow-right);
+}
+
+.icon-arrow-up {
+  background-image: var(--icon-arrow-up);
+}
+
+.icon-delete {
+  background-image: var(--icon-delete);
+}
+
+.icon-download {
+  background-image: var(--icon-download);
+}
+
+.icon-play {
+  background-image: var(--icon-play);
+}
+
+.icon-power {
+  background-image: var(--icon-power);
+}
+
+.icon-save {
+  background-image: var(--icon-save);
+}
+
+.icon-setting {
+  background-image: var(--icon-setting);
+}
+
+.icon-plus {
+  background-image: var(--icon-plus);
+}
+
+.icon-like {
+  background-image: var(--icon-like);
+}
+
+.icon-camera {
+  background-image: var(--icon-camera);
+}
+
+.icon-pause {
+  background-image: var(--icon-pause);
+}
+
+.icon-play-cycle {
+  background-image: var(--icon-play-cycle);
+}
+
+.icon-arrow-right-curve {
+  background-image: var(--icon-arrow-right-curve);
+}
+
+.icon-double-right {
+  background-image: var(--icon-double-right);
+}
+
+.icon-remind {
+  background-image: var(--icon-remind);
+}
+
+.icon-check {
+  background-image: var(--icon-check);
+}

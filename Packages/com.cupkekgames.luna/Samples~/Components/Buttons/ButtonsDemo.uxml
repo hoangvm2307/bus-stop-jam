@@ -1,0 +1,132 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="ButtonsDemo.uss" />
+    <engine:VisualElement class="absolute size-full bg-zinc-900" style="flex-grow: 1;" />
+    <engine:VisualElement style="flex-grow: 1; align-items: center; justify-content: space-evenly;">
+        <engine:Label text="Sizes" style="flex-grow: 1; -unity-text-align: middle-center;" />
+        <engine:VisualElement style="width: 100%; justify-content: space-evenly; flex-direction: row; flex-grow: 1; align-items: center;">
+            <engine:Button text="Unity" style="max-height: 48px;" />
+            <engine:Button text="Small" class="btn btn-sm" />
+            <engine:Button text="Default" class="btn" />
+            <engine:Button text="Large" class="btn btn-lg" />
+            <engine:Button text="XLarge" class="btn btn-xl" />
+            <engine:Button text="Disabled" enabled="false" class="btn" />
+        </engine:VisualElement>
+        <engine:Label text="Colors" style="flex-grow: 1; -unity-text-align: middle-center;" />
+        <engine:VisualElement class="colors_container" style="width: 100%; flex-grow: 5; justify-content: space-between; align-items: stretch;">
+            <engine:VisualElement style="flex-grow: 1; flex-direction: row; align-items: center; justify-content: space-evenly;">
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement style="flex-grow: 1; flex-direction: row; align-items: center; justify-content: space-evenly;">
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement style="flex-grow: 1; flex-direction: row; align-items: center; justify-content: space-evenly;">
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement style="flex-grow: 1; flex-direction: row; align-items: center; justify-content: space-evenly;">
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+                <engine:VisualElement name="ButtonPair" style="width: 100%; justify-content: space-evenly; flex-direction: row;">
+                    <engine:Button text="Default" class="btn" />
+                    <engine:Button text="Default" enabled="false" class="btn" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement style="flex-grow: 1; flex-direction: row; align-items: center; justify-content: space-evenly;">
+            <engine:Button text="Ghost Primary" class="btn primary ghost" />
+            <engine:Button text="Ghost Secondary" class="btn secondary ghost" />
+            <engine:Button text="Ghost Lime" class="btn ghost lime" />
+            <engine:Button text="Ghost Red" class="btn red ghost" />
+            <engine:Button text="Masked Primary" class="btn primary masked" />
+            <engine:Button text="Masked Secondary" class="btn secondary masked" />
+            <engine:Button text="Masked Lime" class="btn masked lime" />
+            <engine:Button text="Masked Red" class="btn masked red" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

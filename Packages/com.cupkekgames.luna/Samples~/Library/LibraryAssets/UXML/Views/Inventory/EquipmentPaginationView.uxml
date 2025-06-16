@@ -1,0 +1,33 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="InventoryItem" src="InventoryItem.uxml" />
+    <engine:Template name="Inventory" src="InventoryPagination.uxml" />
+    <engine:VisualElement name="Background" class="modal_background" style="flex-direction: column-reverse;">
+        <CupkekGames.Luna.InputPrompt enabled="false" label-text="Return" name="ReturnButton" input-action-name="UI/Cancel" style="position: absolute;" />
+        <CupkekGames.Luna.InputPrompt enabled="false" hide-if="KeyboardMouse" label-text="Equip/Unequip" class="absolute" style="right: 0;" />
+    </engine:VisualElement>
+    <engine:VisualElement name="ModalContainer" picking-mode="Ignore" class="modal_container" style="flex-direction: row; align-items: center; justify-content: space-evenly;">
+        <engine:VisualElement name="EquipmentModal" class="modal m-32" style="flex-grow: 1; width: auto; height: 80%;">
+            <engine:VisualElement name="TitleContainer" class="modal_title_container">
+                <engine:Label text="Equipments" display-tooltip-when-elided="true" name="Title" />
+            </engine:VisualElement>
+            <engine:VisualElement style="flex-direction: row; justify-content: space-evenly; flex: 1; padding-left: 32px; padding-right: 32px;">
+                <engine:VisualElement style="justify-content: space-evenly;">
+                    <engine:Instance template="InventoryItem" name="SlotChest" />
+                    <engine:Instance template="InventoryItem" name="SlotLeggings" />
+                    <engine:Instance template="InventoryItem" name="SlotBoots" />
+                </engine:VisualElement>
+                <engine:VisualElement style="flex-grow: 1; align-items: center; justify-content: center;">
+                    <engine:VisualElement style="background-image: url(../../../Sprites/body.png); width: 450px; height: 560px;" />
+                </engine:VisualElement>
+                <engine:VisualElement style="justify-content: space-evenly;">
+                    <engine:Instance template="InventoryItem" name="SlotAmulet" />
+                    <engine:Instance template="InventoryItem" name="SlotHand" />
+                    <engine:Instance template="InventoryItem" name="SlotShield" />
+                    <engine:Instance template="InventoryItem" name="SlotPotion" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="StatsContainer" style="margin-bottom: 16px; padding-left: 32px; padding-right: 32px;" />
+        </engine:VisualElement>
+        <engine:Instance template="Inventory" name="Inventory" class="modal m-32 h-70p" style="flex: 8; flex-shrink: 1; width: auto;"/>
+    </engine:VisualElement>
+</engine:UXML>

@@ -1,0 +1,101 @@
+.loading-container {
+    flex-direction: row;
+    align-items: center;
+    opacity: 1;
+    margin-right: var(--length-32);
+    margin-bottom: var(--length-24);
+}
+
+.loading-container Label {
+    font-size: var(--length-48);
+    margin-left: var(--length-16);
+}
+
+.radial-loading {
+    --radial-loading-track-color: rgb(255, 255, 255);
+    --radial-loading-line-color: var(--color-primary-800);
+}
+
+.continue {
+    margin-right: var(--length-16);
+    margin-bottom: var(--length-16);
+    opacity: 0;
+}
+
+.continue Label {
+    font-size: var(--length-48);
+}
+
+.continue InputPrompt {
+    margin-left: 0;
+    margin-right: var(--length-12);
+    margin-bottom: var(--length-12);
+}
+
+.continue > Label {
+    margin-right: 0;
+}
+
+.loading-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/GradientPack/Gradient_Ellipse.png?fileID=2800000&guid=e729abbce858efb4ba307c63560db5b5&type=3#Gradient_Ellipse");
+}
+
+.loading-page {
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.loading-page.with-transition > * {
+    transition-timing-function: ease-in;
+    transition-duration: 1.2s;
+    transition-property: opacity;
+}
+
+.loading-page.show-input .continue {
+    opacity: 1;
+}
+
+.loading-page.show-input .loading-container {
+    opacity: 0;
+}
+
+.next-tip {
+  position: absolute;
+  right: 0;
+  top: -80px;
+}
+
+.vn_container {
+  width: 70%;
+  margin: var(--length-16);
+  transition-timing-function: ease-in;
+  transition-duration: 0.1s;
+  transition-property: scale;
+  scale: 1 1;
+}
+
+.vn_body {
+  min-height: var(--length-160);
+  flex-direction: row;
+  width: 100%;
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: var(--length-16);
+}
+
+.vn_body > Label {
+  white-space: normal;
+  margin-top: var(--length-8);
+  margin-left: var(--length-48);
+  margin-right: var(--length-48);
+  font-size: var(--length-32);
+  -unity-font-definition: var(--font-medium);
+}
+
+

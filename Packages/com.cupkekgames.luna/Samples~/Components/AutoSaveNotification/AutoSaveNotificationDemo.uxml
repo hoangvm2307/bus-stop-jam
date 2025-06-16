@@ -1,0 +1,3 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Label text="Ignore other stuff, click on Autosave button below" class="text-red-400 bg-slate-50 text-4xl p-96" style="-unity-font-style: bold;" />
+</engine:UXML>

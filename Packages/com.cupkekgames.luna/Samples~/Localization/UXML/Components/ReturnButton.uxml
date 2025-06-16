@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement picking-mode="Ignore" style="position: absolute; top: 0; left: 0; bottom: 0; right: 0;">
+        <CupkekGames.Luna.InputPrompt enabled="false" input-action-name="UI/Cancel" label-text="Return" name="ReturnButton" style="position: absolute; left: 0; bottom: 0;" />
+    </ui:VisualElement>
+</ui:UXML>

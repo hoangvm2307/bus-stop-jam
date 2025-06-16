@@ -1,0 +1,28 @@
+.background {
+    background-color: var(--color-neutral-950);
+}
+
+.main_background {
+    background-image: url("project://database/Packages/com.cupkekgames.luna/Runtime/Images/Background/Diagonals/DiagonalDiamondPattern2.png?fileID=2800000&guid=77abf2f9ae34eb34fa4c58ad132735e4&type=3#DiagonalDiamondPattern2");
+    -unity-background-image-tint-color: var(--color-base-100);
+}
+
+.main-content {
+    flex: 1;
+}
+
+.main-content > * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.section-title {
+    font-size: var(--length-64);
+    -unity-font-definition: var(--font-bold);
+    flex: 1;
+    -unity-text-align: middle-center;
+}
+
+
+

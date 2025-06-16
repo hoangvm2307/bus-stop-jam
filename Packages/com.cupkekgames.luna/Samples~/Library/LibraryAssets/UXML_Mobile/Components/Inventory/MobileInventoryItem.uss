@@ -1,0 +1,81 @@
+.inventory-item {
+
+}
+
+.inventory-item > .btn {
+    max-height: 100%;
+    height: 100%;
+    max-width: 100%;
+    width: 100%;
+    background-color: var(--color-slate-600);
+    border-width: var(--length-4);
+    border-color: var(--color-slate-50);
+    overflow: visible;
+}
+
+.equipment-slot-container > .inventory-item > .btn {
+    border-width: var(--length-12);
+}
+
+.inventory-item > .btn.Common {
+    background-color: var(--color-lime-600);
+    border-color: var(--color-lime-100);
+}
+
+.inventory-item > .btn.Rare {
+    background-color: var(--color-blue-600);
+    border-color: var(--color-blue-100);
+}
+
+.inventory-item > .btn.Epic {
+    background-color: var(--color-purple-600);
+    border-color: var(--color-purple-100);
+}
+
+.inventory-item > .btn.Legendary {
+    background-color: var(--color-yellow-600);
+    border-color: var(--color-yellow-100);
+}
+
+.inventory-item .star-container {
+    position: absolute;
+    height: 24%;
+    width: 100%;
+    bottom: -12%;
+    left: 0;
+    right: 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.inventory-item .star-container > * {
+    background-image: url("../../../Sprites/mobile/inventory/item_level.png");
+}
+
+.inventory-item > .btn.Common .star-container > * {
+-unity-background-image-tint-color: var(--color-lime-300);
+}
+
+.inventory-item > .btn.Rare .star-container > * {
+-unity-background-image-tint-color: var(--color-blue-300);
+}
+
+.inventory-item > .btn.Epic .star-container > * {
+-unity-background-image-tint-color: var(--color-purple-300);
+}
+
+.inventory-item > .btn.Legendary .star-container > * {
+-unity-background-image-tint-color: var(--color-yellow-300);
+}
+
+.highlight .btn.Common,
+.highlight .btn.Rare,
+.highlight .btn.Epic,
+.highlight .btn.Legendary,
+.highlight .btn {
+    background-color: var(--color-fuchsia-800);
+    border-color: var(--color-fuchsia-200);
+}

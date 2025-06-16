@@ -1,0 +1,9 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="Background" class="bg-slate-900 absolute size-full justify-center items-center" style="justify-content: space-evenly;">
+        <engine:Label text="InputPrompt components depends on LunaUIManager, which takes time to initialize.&#10;If all are in the same scene, InputPrompt components might not work properly." class="text-4xl" style="-unity-text-align: upper-center; white-space: normal;" />
+        <CupkekGames.Luna.InputPrompt enabled="false" label-text="Submit" />
+        <CupkekGames.Luna.InputPrompt enabled="false" input-action-name="UI/InteractHold" label-text="Hold To Interact" />
+        <engine:Label text="Button below initializes a new prefab with InputPrompt components.&#10;Which is guaranteed to work because LunaUIManager completes initialization." class="text-4xl" style="-unity-text-align: upper-center; white-space: normal;" />
+        <engine:Button text="Open Modal" name="OpenModal" class="btn" />
+    </engine:VisualElement>
+</engine:UXML>

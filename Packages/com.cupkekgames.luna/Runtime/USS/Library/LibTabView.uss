@@ -1,0 +1,53 @@
+.TabView {
+
+}
+
+.TabView .horizontal {
+
+}
+
+.TabView.vertical {
+  flex-direction: row;
+}
+
+.TabView__header-container,
+.TabView__header-tab-container
+{
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.TabView__tab-container
+{
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.TabView__header-tab-container {
+  width: 80%;
+  margin: var(--length-8);
+}
+
+.TabView.vertical .TabView__header-tab-container > * {
+  width: 100%;
+  margin-top: var(--length-4);
+  margin-bottom: var(--length-4);
+}
+
+.TabView.vertical .TabView__header-container,
+.TabView.vertical .TabView__header-tab-container
+{
+  flex-direction: column;
+}
+
+.TabView.vertical .TabView__tab-container
+{
+  flex-direction: column;
+  width: 100%;
+}
+
+.TabView .unity-tab .unity-tab__header {
+  display: none;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "com.cupkekgames.core",
+  "displayName": "CupkekGames Core",
+  "version": "1.0.0",
+  "unity": "2022.3",
+  "author": {
+    "name": "CupkekGames"
+  },
+  "samples": [
+    {
+      "displayName": "Core Examples",
+      "description": "Sample scenes which demonstrate how to use CupkekGames Core Library.",
+      "path": "Samples~"
+    }
+  ],
+  "hideInEditor": false,
+  "description": "The Core Library provides essential utilities, data structures, and base functionality to support scalable and efficient game development. It is used by other tools such as CupkekGames UI Framework.",
+  "keywords": [
+    "Tool",
+    "Core"
+  ],
+  "documentationUrl": "https://docs.cupkek.games/"
+}

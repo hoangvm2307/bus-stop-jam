@@ -1,0 +1,39 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="ChoicePopup" src="../ChoicePopup.uxml" />
+    <Style src="SaveLoadView.uss?fileID=7433441132597879392&amp;guid=72ce4145fd58e194697d26f2fed95d14&amp;type=3#SaveLoadView" />
+    <ui:VisualElement name="Background" class="modal_background" />
+    <ui:VisualElement class="modal_container" style="flex-grow: 1;">
+        <ui:VisualElement name="Modal" class="modal">
+            <ui:VisualElement name="TitleContainer" class="modal_title_container">
+                <ui:Label text="Save / Load" display-tooltip-when-elided="true" name="Title" />
+                <ui:Button display-tooltip-when-elided="true" name="ReturnButton" class="btn primary">
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement class="mt-8" style="flex-grow: 1;">
+                <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                    <ui:VisualElement name="LoadContainer" style="flex-grow: 1;">
+                        <ui:Button text="Create New Save" name="NewSave" class="btn" />
+                        <ui:ListView name="LoadList" fixed-item-height="160" class="base ghost" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="w-max-50p">
+                        <ui:VisualElement name="Sidebar" class="m-8">
+                            <ui:Toggle label="Show Auto" value="true" name="ShowAuto" class="primary" />
+                            <ui:Toggle label="Show Manual" value="true" name="ShowManual" class="primary" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="Sidebar" class="m-8">
+                            <CupkekGames.Luna.InputPrompt enabled="false" label-text="Load" name="Load" input-action-name="UI/Interact" />
+                            <CupkekGames.Luna.InputPrompt enabled="false" label-text="Overwrite" name="Overwrite" input-action-name="UI/Overwrite" />
+                            <CupkekGames.Luna.InputPrompt enabled="false" label-text="Delete" name="Delete" input-action-name="UI/Delete" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement picking-mode="Ignore" class="size-full" style="flex-grow: 1; position: absolute; flex-direction: row-reverse; align-items: flex-end;">
+                    <CupkekGames.Luna.InputPrompt enabled="false" label-text="Back" input-action-name="UI/Cancel" button-if="" />
+                    <CupkekGames.Luna.InputPrompt enabled="false" label-text="Select" input-action-name="UI/Submit" button-if="" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Instance template="ChoicePopup" picking-mode="Ignore" class="size-full absolute" />
+</ui:UXML>

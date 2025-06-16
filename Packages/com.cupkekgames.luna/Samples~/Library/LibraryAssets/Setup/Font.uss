@@ -1,0 +1,50 @@
+:root {
+  --font-black: url("/Packages/com.cupkekgames.luna/Runtime/Fonts/rubik/Rubik-BlackSDF.asset");
+  --font-black-italic: url("/Packages/com.cupkekgames.luna/Runtime/Fonts/rubik/Rubik-BlackItalicSDF.asset");
+  --font-bold: url("/Packages/com.cupkekgames.luna/Runtime/Fonts/rubik/Rubik-BoldSDF.asset");
+  --font-bold-italic: url("/Packages/com.cupkekgames.luna/Runtime/Fonts/rubik/Rubik-BoldItalicSDF.asset");
+  --font-light: url("/Packages/com.cupkekgames.luna/Runtime/Fonts/rubik/Rubik-LightSDF.asset");
+  --font-light-italic: url("/Packages/com.cupkekgames.luna/Runtime/Fonts/rubik/Rubik-LightItalicSDF.asset");
+  --font-medium: url("/Packages/com.cupkekgames.luna/Runtime/Fonts/rubik/Rubik-MediumSDF.asset");
+  --font-medium-italic: url("/Packages/com.cupkekgames.luna/Runtime/Fonts/rubik/Rubik-MediumItalicSDF.asset");
+}
+
+:root,
+Label {
+  -unity-font-definition: var(--font-medium);
+  -unity-font-style: normal;
+  color: var(--color-neutral-50);
+  font-size: var(--length-24);
+}
+
+.font-light {
+  -unity-font-definition: var(--font-light);
+}
+
+.font-light-italic {
+  -unity-font-definition: var(--font-light-italic);
+}
+
+.font-medium {
+  -unity-font-definition: var(--font-medium);
+}
+
+.font-medium-italic {
+  -unity-font-definition: var(--font-medium-italic);
+}
+
+.font-bold {
+  -unity-font-definition: var(--font-bold);
+}
+
+.font-bold-italic {
+  -unity-font-definition: var(--font-bold-italic);
+}
+
+.font-black {
+  -unity-font-definition: var(--font-black);
+}
+
+.font-black-italic {
+  -unity-font-definition: var(--font-black-italic);
+}

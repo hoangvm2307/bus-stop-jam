@@ -1,0 +1,7 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.cupkekgames.luna/Editor/LunaUIWindow.uss?fileID=7433441132597879392&amp;guid=8a8dc90075270f54098c9a7c9f306319&amp;type=3#LunaUIWindow" />
+    <engine:VisualElement style="flex-direction: row; align-items: center; margin-top: 4px;">
+        <engine:Label text="Imported: " style="color: rgb(255, 255, 255); -unity-font-style: normal;" />
+        <engine:VisualElement name="ImportedIcon" style="background-color: rgba(0, 0, 0, 0.32); width: 16px; height: 16px; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px;" />
+    </engine:VisualElement>
+</engine:UXML>

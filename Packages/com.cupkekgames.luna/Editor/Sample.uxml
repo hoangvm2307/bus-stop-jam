@@ -1,0 +1,23 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.cupkekgames.luna/Editor/LunaUIWindow.uss?fileID=7433441132597879392&amp;guid=8a8dc90075270f54098c9a7c9f306319&amp;type=3#LunaUIWindow" />
+    <engine:Foldout text="Foldout" name="SampleName" value="false">
+        <engine:VisualElement name="Sample" style="margin-top: 8px; margin-bottom: 8px;">
+            <engine:Label text="You must import this to get started." name="Description" style="color: rgb(255, 255, 255);" />
+            <engine:VisualElement style="flex-grow: 1; flex-direction: row; align-items: center; margin-top: 8px;">
+                <engine:Label text="Sample Imported: " style="color: rgb(255, 255, 255); -unity-font-style: bold;" />
+                <engine:VisualElement name="ImportedIcon" style="background-color: rgba(0, 0, 0, 0.32); width: 20px; height: 20px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;" />
+            </engine:VisualElement>
+            <engine:VisualElement>
+                <engine:VisualElement name="RequirementContainer" style="flex-grow: 1;">
+                    <engine:Label text="Requirements" style="-unity-font-style: bold; margin-top: 8px;" />
+                </engine:VisualElement>
+                <engine:VisualElement name="SetupContainer" style="flex-grow: 1;">
+                    <engine:Label text="Setup: No additional steps required." style="-unity-font-style: bold; margin-top: 8px;" />
+                </engine:VisualElement>
+                <engine:VisualElement name="TroubleshootContainer" style="flex-grow: 1;">
+                    <engine:Label text="Troubleshooting" style="-unity-font-style: bold; margin-top: 8px;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:Foldout>
+</engine:UXML>
