@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using Watermelon.SkinStore;
 
 namespace Watermelon.BusStop
 {
@@ -31,10 +28,9 @@ namespace Watermelon.BusStop
         private static LevelData loadedLevelData;
         public static LevelData LoadedStageData => loadedLevelData;
 
-        private static LevelSave levelSave;
 
-        public static int DisplayLevelNumber => levelSave.DisplayLevelNumber;
-        public static int RealLevelNumber => levelSave.RealLevelNumber;
+        public static int DisplayLevelNumber => GameController.LevelSave.DisplayLevelNumber;
+        public static int RealLevelNumber => GameController.LevelSave.RealLevelNumber;
 
         public static int CurrentReward => loadedLevelData != null ? loadedLevelData.CoinsReward : -1;
 
@@ -61,7 +57,7 @@ namespace Watermelon.BusStop
         {
             instance = this;
 
-            levelSave = SaveController.GetSaveObject<LevelSave>("level");
+
             levelTutorial = new LevelTutorial();
 
             levelElementsLink = new Dictionary<LevelElement.Type, LevelElement>();
@@ -142,9 +138,9 @@ namespace Watermelon.BusStop
 
         public void LoadLevel(SimpleCallback onLoaded = null)
         {
-            int levelIndex = database.GetRandomLevelIndex(levelSave.DisplayLevelNumber, levelSave.RealLevelNumber, levelSave.ReplayingLevelAgain);
+            int levelIndex = database.GetRandomLevelIndex(GameController.LevelSave.DisplayLevelNumber, GameController.LevelSave.RealLevelNumber, GameController.LevelSave.ReplayingLevelAgain);
             loadedLevelData = database.GetLevel(levelIndex);
-            levelSave.RealLevelNumber = levelIndex;
+            GameController.LevelSave.RealLevelNumber = levelIndex;
 
             if (isStageLoaded)
                 UnloadStage();
@@ -182,22 +178,20 @@ namespace Watermelon.BusStop
 
             levelTutorial.Initialise(loadedLevelData.TutorialSteps);
 
-            PUController.PowerUpsUIController.OnLevelStarted(levelSave.DisplayLevelNumber + 1);
+            PUController.PowerUpsUIController.OnLevelStarted(GameController.LevelSave.DisplayLevelNumber + 1);
 
             isStageLoaded = true;
 
             RaycastController.Enable();
 
-            SavePresets.CreateSave("Level " + (levelIndex + 1).ToString("000"), "Levels");
+            // SavePresets.CreateSave("Level " + (levelIndex + 1).ToString("000"), "Levels");
 
             onLoaded?.Invoke();
         }
 
         public void AdjustLevelNumber()
         {
-            levelSave.DisplayLevelNumber++;
-
-            SaveController.MarkAsSaveIsRequired();
+            GameController.LevelSave.DisplayLevelNumber++;
         }
 
         public static void OnMapChanged(bool firstSpawn = false)

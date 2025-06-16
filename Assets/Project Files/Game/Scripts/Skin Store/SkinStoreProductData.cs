@@ -90,7 +90,7 @@ namespace Watermelon.SkinStore
 
                 if (ES3.KeyExists(SaveKey))
                 {
-                    ES3.Load<SkinSave>(SaveKey, this);
+                    ES3.LoadInto<SkinSave>(SaveKey, this);
                 }
             }
         }

@@ -16,17 +16,16 @@ namespace Watermelon
         [SerializeField] string webGLPrefix = "gameName";
 
         public override void CreateComponent()
-        {
-#if UNITY_WEBGL && !UNITY_EDITOR
-            BaseSaveWrapper wrapper = BaseSaveWrapper.ActiveWrapper;
-            if(wrapper is WebGLSaveWrapper)
+        { 
+            if (cleanSaveStart)
             {
-                WebGLSaveWrapper webGLWrapper = (WebGLSaveWrapper)wrapper;
-                webGLWrapper.Init(webGLPrefix);
+                ES3.DeleteFile();
+                Debug.LogWarning("[SaveInitModule]: All save data has been cleared!");
             }
-#endif
-
-            SaveController.Init(autoSaveDelay, cleanSaveStart);
+ 
+            GameObject saveManagerObject = new GameObject("[SAVE MANAGER]"); 
+            saveManagerObject.AddComponent<SaveManager>();
+             
         }
     }
 }

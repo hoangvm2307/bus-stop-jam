@@ -5,17 +5,25 @@
     {
         public int Amount = -1;
         public bool IsUnlocked = false;
-        private const string SAVE_KEY = "PowerUp";
+        [System.NonSerialized]
+        private PUType powerUpType;
+        private const string SAVE_KEY_PREFIX = "PowerUp_";
+        private string SaveKey => SAVE_KEY_PREFIX + powerUpType.ToString();
+
+        public PUSave(PUType powerUpType)
+        {
+            this.powerUpType = powerUpType;
+        }
         public void Save()
         {
             Flush();
-            ES3.Save<PUSave>(SAVE_KEY, this);
+            ES3.Save<PUSave>(SaveKey, this);
         }
         public void Load()
         {
-            if (ES3.KeyExists(SAVE_KEY))
+            if (ES3.KeyExists(SaveKey))
             {
-                ES3.Load<PUSave>(SAVE_KEY, this);
+                ES3.Load<PUSave>(SaveKey, this);
             }
         }
         public void Flush()

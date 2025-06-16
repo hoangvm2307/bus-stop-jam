@@ -2,7 +2,7 @@
 
 namespace Watermelon
 {
-    [System.Serializable]
+    [Serializable]
     public class LivesSave : ISaveObject
     {
         public int LivesCount = -1;
@@ -50,7 +50,7 @@ namespace Watermelon
         {
             if (ES3.KeyExists(SAVE_KEY))
             {
-                ES3.Load<LivesSave>(SAVE_KEY, this);
+                ES3.LoadInto<LivesSave>(SAVE_KEY, this);
             }
         }
     }

@@ -30,7 +30,7 @@ namespace Watermelon.IAPStore
         {
             InitializeComponents();
 
-            save = SaveController.GetSaveObject<SimpleLongSave>($"TimerProduct_{saveID}");
+            save = new SimpleLongSave($"TimerProduct_{saveID}");
 
             timerStartTime = DateTime.FromBinary(save.Value);
 
@@ -114,7 +114,7 @@ namespace Watermelon.IAPStore
 
             ApplyRewards();
 
-            SaveController.MarkAsSaveIsRequired();
+            save.Save();
         }
     }
 }

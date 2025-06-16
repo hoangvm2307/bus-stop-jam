@@ -118,10 +118,11 @@ namespace Watermelon
             {
                 ReflectionUtils.InjectInstanceComponent<GameController>("isGameActive", false, ReflectionUtils.FLAGS_STATIC_PRIVATE);
 
-                LevelSave levelSave = SaveController.GetSaveObject<LevelSave>("level");
+                LevelSave levelSave = GameController.LevelSave;
                 levelSave.DisplayLevelNumber = Mathf.Clamp((level - 1), 0, int.MaxValue);
                 levelSave.RealLevelNumber = levelSave.DisplayLevelNumber;
 
+                levelSave.Save();
                 GameController.RefreshLevelDev();
             }
         }
@@ -130,10 +131,10 @@ namespace Watermelon
         {
             ReflectionUtils.InjectInstanceComponent<GameController>("isGameActive", false, ReflectionUtils.FLAGS_STATIC_PRIVATE);
 
-            LevelSave levelSave = SaveController.GetSaveObject<LevelSave>("level");
+            LevelSave levelSave = GameController.LevelSave;
             levelSave.DisplayLevelNumber = Mathf.Clamp(levelSave.DisplayLevelNumber - 1, 0, int.MaxValue);
             levelSave.RealLevelNumber = levelSave.DisplayLevelNumber;
-
+            levelSave.Save();
             GameController.RefreshLevelDev();
         }
 
@@ -141,10 +142,10 @@ namespace Watermelon
         {
             ReflectionUtils.InjectInstanceComponent<GameController>("isGameActive", false, ReflectionUtils.FLAGS_STATIC_PRIVATE);
 
-            LevelSave levelSave = SaveController.GetSaveObject<LevelSave>("level");
+            LevelSave levelSave = GameController.LevelSave;
             levelSave.DisplayLevelNumber = levelSave.DisplayLevelNumber + 1;
             levelSave.RealLevelNumber = levelSave.DisplayLevelNumber;
-
+            levelSave.Save();
             GameController.RefreshLevelDev();
         }
 

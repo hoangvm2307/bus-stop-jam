@@ -16,15 +16,18 @@ namespace Watermelon
 
         public virtual void Init(AbstractSkinDatabase provider)
         {
-            save = SaveController.GetSaveObject<SkinSave>(id);
-            Hash = id.GetHashCode();
+            save = new SkinSave(this.id);
+            save.Load();
+            SaveManager.Register(save);
 
+            Hash = id.GetHashCode();
             SkinsProvider = provider;
         }
 
         public void Unlock()
         {
             save.IsUnlocked = true;
+            save.Save();
         }
     }
 }
