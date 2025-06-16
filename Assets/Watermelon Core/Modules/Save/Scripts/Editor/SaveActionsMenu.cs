@@ -10,8 +10,7 @@ namespace Watermelon
         private static void RemoveSave()
         {
             PlayerPrefs.DeleteAll();
-            SaveController.DeleteSaveFile();
-
+            ES3.DeleteFile();
             Debug.Log("Save files are removed!");
         }
 

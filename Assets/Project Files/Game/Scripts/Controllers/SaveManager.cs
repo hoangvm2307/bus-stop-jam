@@ -43,7 +43,7 @@ namespace Watermelon
 
             foreach (var saveObject in instance.registeredSaveObjects)
             {
-                saveObject.Save();
+                saveObject.Save(); 
             }
             Debug.Log("All data saved with Easy Save 3.");
         }

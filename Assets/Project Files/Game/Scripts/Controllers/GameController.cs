@@ -27,7 +27,7 @@ namespace Watermelon
 
         public static event SimpleCallback OnLevelChangedEvent;
         private static LevelSave levelSave;
-
+        public static LevelSave LevelSave => levelSave;
         public static GameData Data => gameController.data;
 
         private void Awake()
@@ -36,6 +36,7 @@ namespace Watermelon
 
             levelSave = new LevelSave();
             levelSave.Load();
+            Debug.Log($"[GameController]: Loaded Level Save: RealLevelNumber: {levelSave.RealLevelNumber}, DisplayLevelNumber: {levelSave.DisplayLevelNumber}, ReplayingLevelAgain: {levelSave.ReplayingLevelAgain}");
             SaveManager.Register(levelSave);
 
             // Cache components
@@ -139,6 +140,8 @@ namespace Watermelon
 
             AudioController.PlaySound(AudioController.AudioClips.completeSound);
             Debug.Log("[GameController]: Level completed!");
+
+      
             SaveManager.SaveAll();
         }
 
@@ -148,6 +151,8 @@ namespace Watermelon
                 return;
 
             gameController.levelController.AdjustLevelNumber();
+
+            SaveManager.SaveAll();
 
             UIController.ShowPage<UIMainMenu>();
 
@@ -182,7 +187,7 @@ namespace Watermelon
         private void OnApplicationQuit()
         {
             // to make sure we will load similar level next time game launched (in case we outside level bounds)
-            levelSave.ReplayingLevelAgain = true;
+            // levelSave.ReplayingLevelAgain = true;
         }
 
         #region Extensions

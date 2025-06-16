@@ -16,7 +16,7 @@
         {
             if (ES3.KeyExists(SAVE_KEY))
             {
-                ES3.Load<LevelSave>(SAVE_KEY, this);
+                ES3.LoadInto<LevelSave>(SAVE_KEY, this);
             }
         }
 

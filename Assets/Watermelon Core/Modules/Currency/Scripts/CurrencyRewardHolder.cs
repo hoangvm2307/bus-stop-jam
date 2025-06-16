@@ -21,10 +21,11 @@ namespace Watermelon
         private void Awake()
         {
             InitializeComponents();
-
-            save = SaveController.GetSaveObject<SimpleBoolSave>($"CurrencyProduct_{rewardID}");
-
-            if(disableAfterPurchase && save.Value)
+            string saveKey = $"CurrencyProduct_{rewardID}";
+            save = new SimpleBoolSave(saveKey);
+            save.Load();
+            SaveManager.Register(save);
+            if (disableAfterPurchase && save.Value)
             {
                 // Disable offer game object
                 gameObject.SetActive(false);
@@ -54,13 +55,12 @@ namespace Watermelon
 
             save.Value = true;
 
-            if(disableAfterPurchase)
+            if (disableAfterPurchase)
             {
                 // Disable holder game object
                 gameObject.SetActive(false);
             }
-
-            SaveController.MarkAsSaveIsRequired();
+            save.Save();
         }
     }
 }

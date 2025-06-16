@@ -14,7 +14,7 @@ namespace Watermelon
     {
         private const string PRESET_FOLDER_PREFIX = "SavePresets/";
         private const string PRESETS_FOLDER_NAME = "SavePresets";
-        private const string SAVE_FILE_NAME = "save";
+        private const string SAVE_FILE_NAME = "default.es3";
         public static bool saveDataMofied = false;
         private const char SEPARATOR = '/';
         public const string DEFAULT_DIRECTORY = "Custom";
@@ -37,7 +37,7 @@ namespace Watermelon
 
             if (!File.Exists(presetPath))
             {
-                Debug.LogError(string.Format("[Save Presets]: Preset  at path {0} doesn’t  exist!", presetPath));
+                Debug.LogError(string.Format("[Save Presets]: Preset  at path {0} doesnï¿½t  exist!", presetPath));
                 return;
             }
 
@@ -58,53 +58,41 @@ namespace Watermelon
 
         private static void CreateSavePreset(string saveName, string tabName = DEFAULT_DIRECTORY)
         {
-#if UNITY_EDITOR
+#if UNITY_EDITOR 
             if (EditorApplication.isPlaying)
-                SaveController.Save(true, false);
+            {
+                // SaveManager.SaveAll();
+            }
 
             if (string.IsNullOrEmpty(saveName))
             {
                 Debug.LogError("[Save Presets]: Preset name can't be empty!");
                 return;
             }
-
-            if (!Directory.Exists(GetDirectoryPath())) //Creating SavePresets folder
+            if (!Directory.Exists(GetDirectoryPath()))
             {
                 Directory.CreateDirectory(GetDirectoryPath());
             }
-
-            if (!Directory.Exists(GetDirectoryPath(tabName))) //Creating custom folder
+            if (!Directory.Exists(GetDirectoryPath(tabName)))
             {
                 Directory.CreateDirectory(GetDirectoryPath(tabName));
             }
 
             string savePath = GetSavePath();
-
             string presetPath = GetPresetPath(saveName, tabName);
-
-            if (EditorApplication.isPlaying)
+            if (!File.Exists(savePath))
             {
-                SaveController.PresetsSave(PRESET_FOLDER_PREFIX + tabName + SEPARATOR + saveName);
+                Debug.LogError("[Save Presets]: Default save file doesn't exist! Make sure the game has been run and saved at least once.");
+                return;
             }
-            else
-            {
-                if (!File.Exists(savePath))
-                {
-                    Debug.LogError("[Save Presets]: Save file doesn’t exist!");
-
-                    return;
-                }
-
-                File.Copy(savePath, presetPath, true);
-            }
+ 
+            File.Copy(savePath, presetPath, true);
 
             File.SetCreationTime(presetPath, DateTime.Now);
-
             saveDataMofied = true;
+            AssetDatabase.Refresh();  
 #endif
         }
-
-
 
         public static void LoadSave(string saveName, string tabName = DEFAULT_DIRECTORY)
         {
@@ -147,7 +135,7 @@ namespace Watermelon
                     {
                         if (File.ReadAllText(fileEntries[j]).Equals(id))
                         {
-                            return fileEntries[j].Replace(SavePresets.META_SUFFIX,string.Empty);
+                            return fileEntries[j].Replace(SavePresets.META_SUFFIX, string.Empty);
                         }
                     }
                 }
@@ -162,7 +150,7 @@ namespace Watermelon
 
             if (presetPath.Length == 0)
             {
-                Debug.LogError(string.Format("[Save Presets]: Preset with id {0} doesn’t  exist!", id));
+                Debug.LogError(string.Format("[Save Presets]: Preset with id {0} doesnï¿½t  exist!", id));
                 return;
             }
 
@@ -199,7 +187,7 @@ namespace Watermelon
         {
             string presetPath = GetPresetPathById(id);
 
-            if(presetPath.Length == 0) // id isn`t found
+            if (presetPath.Length == 0) // id isn`t found
             {
                 return false;
             }

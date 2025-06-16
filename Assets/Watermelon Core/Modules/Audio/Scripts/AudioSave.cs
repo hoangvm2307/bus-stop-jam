@@ -26,15 +26,15 @@
         {
             if (ES3.KeyExists(SAVE_KEY))
             {
-                ES3.Load<AudioSave>(SAVE_KEY, this);
+                ES3.LoadInto<AudioSave>(SAVE_KEY, this);
 
-                if (VolumeDatas != null)
-                {
-                    foreach (var volumeData in VolumeDatas)
-                    {
-                        AudioController.SetVolume(volumeData.AudioType, volumeData.Volume);
-                    }
-                }
+                // if (VolumeDatas != null)
+                // {
+                //     foreach (var volumeData in VolumeDatas)
+                //     {
+                //         AudioController.SetVolume(volumeData.AudioType, volumeData.Volume);
+                //     }
+                // }
             }
         }
         [System.Serializable]

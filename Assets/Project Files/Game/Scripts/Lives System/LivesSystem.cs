@@ -40,8 +40,6 @@ namespace Watermelon
             save.Load();
             save.Init(Status);
             SaveManager.Register(save);
-            
-            save.Init(Status);
 
             // Prepare save
             if (save.LivesCount == -1)
@@ -154,16 +152,12 @@ namespace Watermelon
                 }
             }
 
-            SaveController.MarkAsSaveIsRequired();
-
             UpdateNewLife();
         }
 
         public static void LockLife()
         {
             save.LifeLocked = true;
-
-            SaveController.MarkAsSaveIsRequired();
         }
 
         public static void UnlockLife(bool decrease)
@@ -171,8 +165,6 @@ namespace Watermelon
             if (!save.LifeLocked) return;
 
             save.LifeLocked = false;
-
-            SaveController.MarkAsSaveIsRequired();
 
             if (decrease)
                 TakeLife();
@@ -205,8 +197,6 @@ namespace Watermelon
                 }
             }
 
-            SaveController.MarkAsSaveIsRequired();
-
             UpdateStatus();
         }
 
@@ -216,8 +206,6 @@ namespace Watermelon
 
             if (Lives < 0)
                 Lives = 0;
-
-            SaveController.MarkAsSaveIsRequired();
 
             UpdateNewLife();
         }
@@ -264,8 +252,6 @@ namespace Watermelon
 
                 UpdateStatus();
 
-                SaveController.MarkAsSaveIsRequired();
-
                 yield return wait;
             }
 
@@ -276,7 +262,6 @@ namespace Watermelon
 
             UpdateStatus();
 
-            SaveController.MarkAsSaveIsRequired();
 
             infiniteModeCoroutine = null;
         }
@@ -311,8 +296,6 @@ namespace Watermelon
 
                 UpdateStatus();
 
-                SaveController.MarkAsSaveIsRequired();
-
                 yield return wait;
             }
 
@@ -320,7 +303,6 @@ namespace Watermelon
 
             UpdateStatus();
 
-            SaveController.MarkAsSaveIsRequired();
 
             newLifeCoroutine = null;
         }

@@ -73,7 +73,7 @@ namespace Watermelon
             {
                 if (ES3.KeyExists(SaveKey))
                 {
-                    ES3.Load<CurrencySave>(SaveKey, this);
+                    ES3.LoadInto<CurrencySave>(SaveKey, this);
                 }
             }
         }

@@ -20,7 +20,9 @@ namespace Watermelon
         {
             InitializeComponents();
 
-            save = SaveController.GetSaveObject<SimpleBoolSave>($"CurrencyProduct_{rewardID}");
+            save = new SimpleBoolSave($"CurrencyProduct_{rewardID}");
+            save.Load();
+            SaveManager.Register(save);
 
             if (disableAfterPurchase && save.Value)
             {
@@ -67,7 +69,7 @@ namespace Watermelon
                         gameObject.SetActive(false);
                     }
 
-                    SaveController.MarkAsSaveIsRequired();
+                    save.Save();
                 }
             });
         }

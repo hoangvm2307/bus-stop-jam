@@ -4,17 +4,26 @@
     public class SkinSave : ISaveObject
     {
         public bool IsUnlocked = false;
-        private const string SAVE_KEY = "Skin";
+        [System.NonSerialized]
+        private string skinID;
+        private string SAVE_KEY => "Skin_" + skinID;
+        public SkinSave(string skinID)
+        {
+            this.skinID = skinID;
+        }
         public void Save()
         {
-            Flush();
-            ES3.Save<SkinSave>(SAVE_KEY, this);
+            if (!string.IsNullOrEmpty(skinID))
+            {
+                ES3.Save<SkinSave>(SAVE_KEY, this);
+            }
         }
+
         public void Load()
         {
-            if (ES3.KeyExists(SAVE_KEY))
+            if (!string.IsNullOrEmpty(skinID) && ES3.KeyExists(SAVE_KEY))
             {
-                ES3.Load<SkinSave>(SAVE_KEY, this);
+                ES3.LoadInto<SkinSave>(SAVE_KEY, this);
             }
         }
         public void Flush()

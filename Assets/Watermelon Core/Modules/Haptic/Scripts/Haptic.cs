@@ -21,7 +21,7 @@ namespace Watermelon
 
                 save.IsActive = value;
 
-                SaveController.MarkAsSaveIsRequired();
+                save.Save();
 
                 if (VerboseLogging)
                     Debug.Log(string.Format("[Haptic]: Haptic state changed: {0}", isActive ? "Active" : "Disabled"));
@@ -42,7 +42,9 @@ namespace Watermelon
         public static void Init()
         {
             // Get saved state
-            save = SaveController.GetSaveObject<HapticSave>("haptic");
+            save = new HapticSave();
+            save.Load();
+            SaveManager.Register(save);
 
             // Set saved state
             isActive = save.IsActive;

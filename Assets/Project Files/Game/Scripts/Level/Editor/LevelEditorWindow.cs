@@ -210,7 +210,7 @@ namespace Watermelon.BusStop
 
         protected override void Styles()
         {
-            if(levelsDatabase != null)
+            if (levelsDatabase != null)
             {
                 levelsHandler = new LevelsHandler(levelsDatabaseSerializedObject, levelsSerializedProperty);
             }
@@ -443,7 +443,7 @@ namespace Watermelon.BusStop
             EditorGUILayout.EndVertical();
         }
 
-        
+
 
         private void HandleTutorialSetupMode()
         {
@@ -570,13 +570,13 @@ namespace Watermelon.BusStop
 
         private void TestLevel()
         {
-            GlobalSave tempSave = SaveController.GetGlobalSave();
-            LevelSave levelSave = tempSave.GetSaveObject<LevelSave>(SAVE_NAME);
-
+            LevelSave levelSave = new LevelSave();
+            levelSave.Load();
+            
             levelSave.RealLevelNumber = levelsHandler.SelectedLevelIndex;
             levelSave.DisplayLevelNumber = levelsHandler.SelectedLevelIndex;
 
-            SaveController.SaveCustom(tempSave);
+            levelSave.Save();
             EditorApplication.isPlaying = true;
         }
 
@@ -1256,7 +1256,7 @@ namespace Watermelon.BusStop
                 }
                 else
                 {
-                    return base.GetLevelLabel(index, stringBuilder) + SEPARATOR +  noteProperty.stringValue;
+                    return base.GetLevelLabel(index, stringBuilder) + SEPARATOR + noteProperty.stringValue;
                 }
             }
 
@@ -1468,7 +1468,7 @@ namespace Watermelon.BusStop
                     }
                 }
 
-                if(heightProperty.intValue > 10)
+                if (heightProperty.intValue > 10)
                 {
                     errorLabels.Add($"Level too tall. Max allowed height is 10.");
                 }
@@ -1480,7 +1480,7 @@ namespace Watermelon.BusStop
                     {
                         errorLabels.Add($"Incorrect {cellTypes[creationModeBlockTypes[i]]} amount. Need 2 more to create a full set.");
                     }
-                    else if(counter[i] % 3 == 2)
+                    else if (counter[i] % 3 == 2)
                     {
                         errorLabels.Add($"Incorrect {cellTypes[creationModeBlockTypes[i]]} amount. Need 1 more to create a full set.");
                     }
@@ -1495,7 +1495,7 @@ namespace Watermelon.BusStop
                 }
 
 
-                if(busSpawnQueueList.Count == 0)
+                if (busSpawnQueueList.Count == 0)
                 {
                     errorLabels.Add($"BusSpawnQueue is empty.");
                 }
@@ -1538,7 +1538,7 @@ namespace Watermelon.BusStop
 
                 string note = string.Empty;
 
-                if(level.BusSpawnQueue != null)
+                if (level.BusSpawnQueue != null)
                 {
                     note += level.BusSpawnQueue.Length;
                 }

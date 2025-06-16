@@ -21,7 +21,7 @@ namespace Watermelon
         { 
             if (ES3.KeyExists(SAVE_KEY))
             {
-                ES3.Load<AdSave>(SAVE_KEY, this);
+                ES3.LoadInto<AdSave>(SAVE_KEY, this);
             } 
         }
     }

@@ -71,11 +71,11 @@ namespace Watermelon
 
         public void InitializeSave()
         {
-            save = SaveController.GetSaveObject<PUSave>(string.Format("powerUp_{0}", type));
-
-            // Set default amount if amount is equal -1
-            if (save.Amount == -1)
-                save.Amount = defaultAmount;
+            save = new PUSave(this.type);
+            save.Load();
+            SaveManager.Register(save);
+ 
+            if (save.Amount == -1) save.Amount = defaultAmount;
         }
 
         public abstract void Init();
