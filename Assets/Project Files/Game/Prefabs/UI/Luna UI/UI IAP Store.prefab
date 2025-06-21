@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3027544469571255283}
   - component: {fileID: 865605332615591820}
-  - component: {fileID: 6874888193515915142}
+  - component: {fileID: 6171217906585434273}
   m_Layer: 0
   m_Name: UI IAP Store
   m_TagString: Untagged
@@ -52,7 +52,7 @@ MonoBehaviour:
   m_WorldSpaceSizeMode: 1
   m_WorldSpaceWidth: 1920
   m_WorldSpaceHeight: 1080
---- !u!114 &6874888193515915142
+--- !u!114 &6171217906585434273
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -61,10 +61,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6764063989072528544}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65f911387e28de4499d2ac5161d2cbaa, type: 3}
+  m_Script: {fileID: 11500000, guid: 405771071ea29eb4bbbf41b81843829b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _uiDocument: {fileID: 865605332615591820}
+  _uiDocument: {fileID: 0}
   _parentName: 
   _focusName: 
   _fadeDuration: 0.5

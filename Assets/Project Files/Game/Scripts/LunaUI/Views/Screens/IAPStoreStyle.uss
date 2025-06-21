@@ -103,7 +103,7 @@
 .store__body {
     height: 100%;
     flex-grow: 1;
-    padding: 10px 20px;
+    padding: 10px 50px;
     width: 100%;
     margin: 0;
 }
@@ -157,7 +157,7 @@
 .store-panel__title {
     -unity-font-definition: url("project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&guid=10a77611699281f4ead51d19d2036adf&type=3#FredokaOne");
     flex-grow: 0;
-    font-size: 42px;
+    font-size: 48px;
     color: rgb(255, 255, 255);
     -unity-text-align: middle-center;
 }
@@ -171,9 +171,9 @@
     background-image: url("project://database/Assets/Project%20Files/Game/Images/Base/General%20UI/btn_green.png?fileID=21300000&guid=707f4a8cd16084649b85184ef96d4c21&type=3#btn_green");
     background-color: rgba(255, 255, 255, 0);
     border-width: 0;
-    padding: 12px 20px;
-    min-width: 100px;
-    min-height: 50px;
+    padding: 16px 28px;
+    min-width: 140px;
+    min-height: 65px;
     -unity-slice-left: 58;
     -unity-slice-top: 58;
     -unity-slice-right: 50;
@@ -184,13 +184,13 @@
 .store-panel__button-text {
     -unity-font-definition: url("project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&guid=10a77611699281f4ead51d19d2036adf&type=3#FredokaOne");
     color: rgb(255, 255, 255);
-    font-size: 32px;
+    font-size: 36px;
 }
 
 /* === COIN PACKS SECTION === */
 .coin-packs {
     margin: 12px 0;
-    min-height: 280px;
+    min-height: 320px;
 }
 
 .coin-packs__title {
@@ -213,8 +213,8 @@
 .coin-pack {
     width: 48%;
     margin: 1%;
-    padding: 15px;
-    min-height: 120px;
+    padding: 20px;
+    min-height: 150px;
     border-radius: 12px;
     border-width: 2px;
     border-color: rgba(255, 255, 255, 0.3);
@@ -249,20 +249,20 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .coin-pack__icon {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-image: url("project://database/Assets/Project%20Files/Game/Images/Base/Currency/coin.png?fileID=2800000&guid=66be956892120a84bbda15b783d05267&type=3#coin");
     -unity-background-scale-mode: scale-to-fit;
-    margin-right: 8px;
+    margin-right: 10px;
 }
 
 .coin-pack__amount {
     -unity-font-definition: url("project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&guid=10a77611699281f4ead51d19d2036adf&type=3#FredokaOne");
-    font-size: 24px;
+    font-size: 28px;
     color: rgb(255, 255, 255);
     -unity-text-align: middle-center;
 }
@@ -271,9 +271,9 @@
     background-image: url("project://database/Assets/Project%20Files/Game/Images/Base/General%20UI/btn_green.png?fileID=21300000&guid=707f4a8cd16084649b85184ef96d4c21&type=3#btn_green");
     background-color: rgba(255, 255, 255, 0);
     border-width: 0;
-    padding: 8px 16px;
-    min-width: 80px;
-    min-height: 35px;
+    padding: 12px 20px;
+    min-width: 100px;
+    min-height: 45px;
     -unity-slice-left: 58;
     -unity-slice-top: 58;
     -unity-slice-right: 50;
@@ -284,7 +284,7 @@
 .coin-pack__button-text {
     -unity-font-definition: url("project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&guid=10a77611699281f4ead51d19d2036adf&type=3#FredokaOne");
     color: rgb(255, 255, 255);
-    font-size: 18px;
+    font-size: 22px;
     -unity-text-align: middle-center;
 }
 
@@ -300,11 +300,11 @@
     position: absolute;
     top: -5px;
     right: 5px;
-    padding: 2px 8px;
+    padding: 4px 10px;
     background-color: rgba(231, 76, 60, 0.9);
     border-radius: 10px;
     -unity-font-definition: url("project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&guid=10a77611699281f4ead51d19d2036adf&type=3#FredokaOne");
-    font-size: 12px;
+    font-size: 14px;
     color: rgb(255, 255, 255);
     -unity-text-align: middle-center;
 }
@@ -314,10 +314,10 @@
     flex-grow: 1;
     justify-content: center;
     align-items: center;
-    min-height: 120px;
+    min-height: 160px;
     margin: 5px 0;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
 }
 
 .item-display--large {
