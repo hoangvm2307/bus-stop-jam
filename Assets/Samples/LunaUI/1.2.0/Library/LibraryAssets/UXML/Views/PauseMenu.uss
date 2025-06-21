@@ -1,0 +1,25 @@
+.main_background {
+  background-color: rgba(0,0,0,0.9);
+}
+
+.main_container_outside {
+  left:30%;
+  width:40%;
+  background-color: rgba(0,0,0,0.8);
+  border-right-width: var(--length-12);
+  border-left-width: var(--length-12);
+}
+
+.main_title {
+    margin: var(--length-64);
+}
+
+.main_title > Label {
+  -unity-font-definition: var(--font-bold);
+  -unity-text-align: upper-center;
+  font-size: var(--length-96);
+}
+
+.main_button_container > * {
+    margin-top: var(--length-32);
+}

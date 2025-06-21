@@ -1,0 +1,16 @@
+<engine:UXML xmlns:engine="UnityEngine.UIElements">
+
+    <engine:Style src="MyMainMenu.uss" />
+
+    <engine:VisualElement name="main-menu-container" class="main-menu-container">
+
+        <engine:Label text="TÊN GAME CỦA BẠN" class="title" />
+
+        <engine:VisualElement name="button-group" class="button-group">
+            <engine:Button name="start-button" text="Bắt Đầu" class="menu-button" />
+            <engine:Button name="settings-button" text="Cài Đặt" class="menu-button" />
+            <engine:Button name="quit-button" text="Thoát" class="menu-button" />
+        </engine:VisualElement>
+
+    </engine:VisualElement>
+</engine:UXML>

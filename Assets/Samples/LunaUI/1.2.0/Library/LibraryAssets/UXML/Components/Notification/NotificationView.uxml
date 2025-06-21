@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="NotificationView.uss" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:VisualElement style="align-items: flex-end;">
+            <ui:Button name="NotificationModalButton" class="btn notification_button_modal icon-remind" style="-unity-slice-scale: 4px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="NotificationContainer" style="flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>

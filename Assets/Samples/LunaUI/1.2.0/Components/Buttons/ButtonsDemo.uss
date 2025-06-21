@@ -1,0 +1,4 @@
+.colors_container .btn {
+    width: var(--length-128);
+    max-width: var(--length-128);
+}

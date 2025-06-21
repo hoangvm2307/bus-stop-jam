@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:editor="UnityEditor.UIElements" xmlns:engine="UnityEngine.UIElements" xmlns="UnityEditor.Accessibility" elementFormDefault="qualified" targetNamespace="CupkekGames.Luna" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="UnityEngine.UIElements.xsd" namespace="UnityEngine.UIElements" />
+  <xs:complexType name="AspectRatioElementType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="true" name="enabled" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:string" use="optional" />
+        <xs:attribute default="Position" name="picking-mode" type="engine:VisualElement_picking-mode_Type" use="optional" />
+        <xs:attribute default="" name="tooltip" type="xs:string" use="optional" />
+        <xs:attribute default="None" name="usage-hints" type="engine:VisualElement_usage-hints_Type" use="optional" />
+        <xs:attribute default="0" name="tabindex" type="xs:int" use="optional" />
+        <xs:attribute default="false" name="focusable" type="xs:boolean" use="optional" />
+        <xs:attribute default="Inherit" name="language-direction" type="engine:VisualElement_language-direction_Type" use="optional" />
+        <xs:attribute default="" name="data-source" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-path" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-type" type="xs:string" use="optional" />
+        <xs:attribute default="1" name="x" type="xs:int" use="optional" />
+        <xs:attribute default="1" name="y" type="xs:int" use="optional" />
+        <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
+        <xs:attribute default="" name="class" type="xs:string" use="optional" />
+        <xs:attribute default="" name="style" type="xs:string" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AspectRatioElement" substitutionGroup="engine:VisualElement" xmlns:q1="CupkekGames.Luna" type="q1:AspectRatioElementType" />
+  <xs:complexType name="InputPromptType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="true" name="enabled" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:string" use="optional" />
+        <xs:attribute default="Position" name="picking-mode" type="engine:VisualElement_picking-mode_Type" use="optional" />
+        <xs:attribute default="" name="tooltip" type="xs:string" use="optional" />
+        <xs:attribute default="None" name="usage-hints" type="engine:VisualElement_usage-hints_Type" use="optional" />
+        <xs:attribute default="0" name="tabindex" type="xs:int" use="optional" />
+        <xs:attribute default="true" name="focusable" type="xs:boolean" use="optional" />
+        <xs:attribute default="Inherit" name="language-direction" type="engine:VisualElement_language-direction_Type" use="optional" />
+        <xs:attribute default="" name="data-source" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-path" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-type" type="xs:string" use="optional" />
+        <xs:attribute default="" name="binding-path" type="xs:string" use="optional" />
+        <xs:attribute default="" name="text" type="xs:string" use="optional" />
+        <xs:attribute default="true" name="enable-rich-text" type="xs:boolean" use="optional" />
+        <xs:attribute default="true" name="emoji-fallback-support" type="xs:boolean" use="optional" />
+        <xs:attribute default="false" name="parse-escape-sequences" type="xs:boolean" use="optional" />
+        <xs:attribute default="false" name="selectable" type="xs:boolean" use="optional" />
+        <xs:attribute default="true" name="double-click-selects-word" type="xs:boolean" use="optional" />
+        <xs:attribute default="true" name="triple-click-selects-line" type="xs:boolean" use="optional" />
+        <xs:attribute default="true" name="display-tooltip-when-elided" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="icon-image" type="xs:string" use="optional" />
+        <xs:attribute default="UI/Submit" name="input-action-name" type="xs:string" use="optional" />
+        <xs:attribute default="" name="override-icon-sprite" type="xs:string" use="optional" />
+        <xs:attribute default="" name="override-icon-text" type="xs:string" use="optional" />
+        <xs:attribute default="48" name="min-size" type="xs:int" use="optional" />
+        <xs:attribute default="false" name="slice" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="label-text" type="xs:string" use="optional" />
+        <xs:attribute default="System.Collections.Generic.List`1[CupkekGames.Core.InputIconControlScheme]" name="button-if" type="xs:string" use="optional" />
+        <xs:attribute default="System.Collections.Generic.List`1[CupkekGames.Core.InputIconControlScheme]" name="hide-if" type="xs:string" use="optional" />
+        <xs:attribute default="false" name="hide" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
+        <xs:attribute default="" name="class" type="xs:string" use="optional" />
+        <xs:attribute default="" name="style" type="xs:string" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="InputPrompt" substitutionGroup="engine:VisualElement" xmlns:q2="CupkekGames.Luna" type="q2:InputPromptType" />
+  <xs:complexType name="PieChartType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="true" name="enabled" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:string" use="optional" />
+        <xs:attribute default="Position" name="picking-mode" type="engine:VisualElement_picking-mode_Type" use="optional" />
+        <xs:attribute default="" name="tooltip" type="xs:string" use="optional" />
+        <xs:attribute default="None" name="usage-hints" type="engine:VisualElement_usage-hints_Type" use="optional" />
+        <xs:attribute default="0" name="tabindex" type="xs:int" use="optional" />
+        <xs:attribute default="false" name="focusable" type="xs:boolean" use="optional" />
+        <xs:attribute default="Inherit" name="language-direction" type="engine:VisualElement_language-direction_Type" use="optional" />
+        <xs:attribute default="" name="data-source" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-path" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-type" type="xs:string" use="optional" />
+        <xs:attribute default="System.Collections.Generic.List`1[System.Single]" name="values" type="xs:string" use="optional" />
+        <xs:attribute default="System.Collections.Generic.List`1[UnityEngine.Color]" name="colors" type="xs:string" use="optional" />
+        <xs:attribute default="RGBA(1.000, 1.000, 1.000, 1.000)" name="background-color" type="xs:string" use="optional" />
+        <xs:attribute default="RGBA(1.000, 1.000, 1.000, 1.000)" name="outline-color" type="xs:string" use="optional" />
+        <xs:attribute default="10" name="outline-width" type="xs:float" use="optional" />
+        <xs:attribute default="0.1" name="gap-width" type="xs:float" use="optional" />
+        <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
+        <xs:attribute default="" name="class" type="xs:string" use="optional" />
+        <xs:attribute default="" name="style" type="xs:string" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PieChart" substitutionGroup="engine:VisualElement" xmlns:q3="CupkekGames.Luna" type="q3:PieChartType" />
+  <xs:complexType name="RadialProgressBarType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="true" name="enabled" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:string" use="optional" />
+        <xs:attribute default="Ignore" name="picking-mode" type="engine:VisualElement_picking-mode_Type" use="optional" />
+        <xs:attribute default="" name="tooltip" type="xs:string" use="optional" />
+        <xs:attribute default="None" name="usage-hints" type="engine:VisualElement_usage-hints_Type" use="optional" />
+        <xs:attribute default="0" name="tabindex" type="xs:int" use="optional" />
+        <xs:attribute default="false" name="focusable" type="xs:boolean" use="optional" />
+        <xs:attribute default="Inherit" name="language-direction" type="engine:VisualElement_language-direction_Type" use="optional" />
+        <xs:attribute default="" name="data-source" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-path" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-type" type="xs:string" use="optional" />
+        <xs:attribute default="true" name="instant" type="xs:boolean" use="optional" />
+        <xs:attribute default="10" name="update-frequency" type="xs:long" use="optional" />
+        <xs:attribute default="0.01" name="step" type="xs:float" use="optional" />
+        <xs:attribute default="0" name="first-delay" type="xs:long" use="optional" />
+        <xs:attribute default="500" name="second-delay" type="xs:long" use="optional" />
+        <xs:attribute default="16" name="thickness" type="xs:float" use="optional" />
+        <xs:attribute default="RGBA(0.500, 0.500, 0.500, 1.000)" name="background-color" type="xs:string" use="optional" />
+        <xs:attribute default="RGBA(0.000, 1.000, 0.000, 1.000)" name="indicator-positive-color" type="xs:string" use="optional" />
+        <xs:attribute default="RGBA(1.000, 0.000, 0.000, 1.000)" name="indicator-negative-color" type="xs:string" use="optional" />
+        <xs:attribute default="RGBA(0.000, 0.000, 0.000, 1.000)" name="progress-color" type="xs:string" use="optional" />
+        <xs:attribute default="0" name="target-value" type="xs:float" use="optional" />
+        <xs:attribute default="0" name="target-indicator" type="xs:float" use="optional" />
+        <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
+        <xs:attribute default="" name="class" type="xs:string" use="optional" />
+        <xs:attribute default="" name="style" type="xs:string" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RadialProgressBar" substitutionGroup="engine:VisualElement" xmlns:q4="CupkekGames.Luna" type="q4:RadialProgressBarType" />
+  <xs:simpleType name="Tooltip_fade-easing-mode_Type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Ease" />
+      <xs:enumeration value="EaseIn" />
+      <xs:enumeration value="EaseOut" />
+      <xs:enumeration value="EaseInOut" />
+      <xs:enumeration value="Linear" />
+      <xs:enumeration value="EaseInSine" />
+      <xs:enumeration value="EaseOutSine" />
+      <xs:enumeration value="EaseInOutSine" />
+      <xs:enumeration value="EaseInCubic" />
+      <xs:enumeration value="EaseOutCubic" />
+      <xs:enumeration value="EaseInOutCubic" />
+      <xs:enumeration value="EaseInCirc" />
+      <xs:enumeration value="EaseOutCirc" />
+      <xs:enumeration value="EaseInOutCirc" />
+      <xs:enumeration value="EaseInElastic" />
+      <xs:enumeration value="EaseOutElastic" />
+      <xs:enumeration value="EaseInOutElastic" />
+      <xs:enumeration value="EaseInBack" />
+      <xs:enumeration value="EaseOutBack" />
+      <xs:enumeration value="EaseInOutBack" />
+      <xs:enumeration value="EaseInBounce" />
+      <xs:enumeration value="EaseOutBounce" />
+      <xs:enumeration value="EaseInOutBounce" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="TooltipType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="true" name="enabled" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:string" use="optional" />
+        <xs:attribute default="Ignore" name="picking-mode" type="engine:VisualElement_picking-mode_Type" use="optional" />
+        <xs:attribute default="" name="tooltip" type="xs:string" use="optional" />
+        <xs:attribute default="None" name="usage-hints" type="engine:VisualElement_usage-hints_Type" use="optional" />
+        <xs:attribute default="0" name="tabindex" type="xs:int" use="optional" />
+        <xs:attribute default="false" name="focusable" type="xs:boolean" use="optional" />
+        <xs:attribute default="Inherit" name="language-direction" type="engine:VisualElement_language-direction_Type" use="optional" />
+        <xs:attribute default="" name="data-source" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-path" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-type" type="xs:string" use="optional" />
+        <xs:attribute default="0.2" name="fade-duration" type="xs:float" use="optional" />
+        <xs:attribute default="EaseOutCirc" name="fade-easing-mode" xmlns:q5="CupkekGames.Luna" type="q5:Tooltip_fade-easing-mode_Type" use="optional" />
+        <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
+        <xs:attribute default="" name="class" type="xs:string" use="optional" />
+        <xs:attribute default="" name="style" type="xs:string" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Tooltip" substitutionGroup="engine:VisualElement" xmlns:q6="CupkekGames.Luna" type="q6:TooltipType" />
+  <xs:complexType name="CircleHoleElementType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="true" name="enabled" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:string" use="optional" />
+        <xs:attribute default="Position" name="picking-mode" type="engine:VisualElement_picking-mode_Type" use="optional" />
+        <xs:attribute default="" name="tooltip" type="xs:string" use="optional" />
+        <xs:attribute default="None" name="usage-hints" type="engine:VisualElement_usage-hints_Type" use="optional" />
+        <xs:attribute default="0" name="tabindex" type="xs:int" use="optional" />
+        <xs:attribute default="false" name="focusable" type="xs:boolean" use="optional" />
+        <xs:attribute default="Inherit" name="language-direction" type="engine:VisualElement_language-direction_Type" use="optional" />
+        <xs:attribute default="" name="data-source" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-path" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-type" type="xs:string" use="optional" />
+        <xs:attribute default="10" name="radius" type="xs:float" use="optional" />
+        <xs:attribute default="10" name="circle-segments" type="xs:int" use="optional" />
+        <xs:attribute default="RGBA(0.000, 0.000, 0.000, 1.000)" name="fill-color" type="xs:string" use="optional" />
+        <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
+        <xs:attribute default="" name="class" type="xs:string" use="optional" />
+        <xs:attribute default="" name="style" type="xs:string" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CircleHoleElement" substitutionGroup="engine:VisualElement" xmlns:q7="CupkekGames.Luna" type="q7:CircleHoleElementType" />
+  <xs:complexType name="CooldownWipeType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="true" name="enabled" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:string" use="optional" />
+        <xs:attribute default="Position" name="picking-mode" type="engine:VisualElement_picking-mode_Type" use="optional" />
+        <xs:attribute default="" name="tooltip" type="xs:string" use="optional" />
+        <xs:attribute default="None" name="usage-hints" type="engine:VisualElement_usage-hints_Type" use="optional" />
+        <xs:attribute default="0" name="tabindex" type="xs:int" use="optional" />
+        <xs:attribute default="false" name="focusable" type="xs:boolean" use="optional" />
+        <xs:attribute default="Inherit" name="language-direction" type="engine:VisualElement_language-direction_Type" use="optional" />
+        <xs:attribute default="" name="data-source" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-path" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-type" type="xs:string" use="optional" />
+        <xs:attribute default="0" name="progress" type="xs:float" use="optional" />
+        <xs:attribute default="RGBA(0.000, 0.000, 0.000, 1.000)" name="fill-color" type="xs:string" use="optional" />
+        <xs:attribute default="20" name="segment-amount" type="xs:int" use="optional" />
+        <xs:attribute default="false" name="reverse-winding" type="xs:boolean" use="optional" />
+        <xs:attribute default="0" name="line-width" type="xs:float" use="optional" />
+        <xs:attribute default="RGBA(0.000, 0.000, 0.000, 1.000)" name="line-color" type="xs:string" use="optional" />
+        <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
+        <xs:attribute default="" name="class" type="xs:string" use="optional" />
+        <xs:attribute default="" name="style" type="xs:string" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CooldownWipe" substitutionGroup="engine:VisualElement" xmlns:q8="CupkekGames.Luna" type="q8:CooldownWipeType" />
+  <xs:simpleType name="TabView_button-color_Type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BASE" />
+      <xs:enumeration value="PRIMARY" />
+      <xs:enumeration value="SECONDARY" />
+      <xs:enumeration value="SLATE" />
+      <xs:enumeration value="GRAY" />
+      <xs:enumeration value="ZINC" />
+      <xs:enumeration value="NEUTRAL" />
+      <xs:enumeration value="STONE" />
+      <xs:enumeration value="RED" />
+      <xs:enumeration value="ORANGE" />
+      <xs:enumeration value="AMBER" />
+      <xs:enumeration value="YELLOW" />
+      <xs:enumeration value="LIME" />
+      <xs:enumeration value="GREEN" />
+      <xs:enumeration value="EMERALD" />
+      <xs:enumeration value="TEAL" />
+      <xs:enumeration value="CYAN" />
+      <xs:enumeration value="SKY" />
+      <xs:enumeration value="BLUE" />
+      <xs:enumeration value="INDIGO" />
+      <xs:enumeration value="VIOLET" />
+      <xs:enumeration value="PURPLE" />
+      <xs:enumeration value="FUCHSIA" />
+      <xs:enumeration value="PINK" />
+      <xs:enumeration value="ROSE" />
+      <xs:enumeration value="TRANSPARENT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="TabView_button-color-selected_Type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="BASE" />
+      <xs:enumeration value="PRIMARY" />
+      <xs:enumeration value="SECONDARY" />
+      <xs:enumeration value="SLATE" />
+      <xs:enumeration value="GRAY" />
+      <xs:enumeration value="ZINC" />
+      <xs:enumeration value="NEUTRAL" />
+      <xs:enumeration value="STONE" />
+      <xs:enumeration value="RED" />
+      <xs:enumeration value="ORANGE" />
+      <xs:enumeration value="AMBER" />
+      <xs:enumeration value="YELLOW" />
+      <xs:enumeration value="LIME" />
+      <xs:enumeration value="GREEN" />
+      <xs:enumeration value="EMERALD" />
+      <xs:enumeration value="TEAL" />
+      <xs:enumeration value="CYAN" />
+      <xs:enumeration value="SKY" />
+      <xs:enumeration value="BLUE" />
+      <xs:enumeration value="INDIGO" />
+      <xs:enumeration value="VIOLET" />
+      <xs:enumeration value="PURPLE" />
+      <xs:enumeration value="FUCHSIA" />
+      <xs:enumeration value="PINK" />
+      <xs:enumeration value="ROSE" />
+      <xs:enumeration value="TRANSPARENT" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="TabViewType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="true" name="enabled" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:string" use="optional" />
+        <xs:attribute default="Position" name="picking-mode" type="engine:VisualElement_picking-mode_Type" use="optional" />
+        <xs:attribute default="" name="tooltip" type="xs:string" use="optional" />
+        <xs:attribute default="None" name="usage-hints" type="engine:VisualElement_usage-hints_Type" use="optional" />
+        <xs:attribute default="0" name="tabindex" type="xs:int" use="optional" />
+        <xs:attribute default="false" name="focusable" type="xs:boolean" use="optional" />
+        <xs:attribute default="Inherit" name="language-direction" type="engine:VisualElement_language-direction_Type" use="optional" />
+        <xs:attribute default="" name="data-source" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-path" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-type" type="xs:string" use="optional" />
+        <xs:attribute default="true" name="horizontal" type="xs:boolean" use="optional" />
+        <xs:attribute default="PRIMARY" name="button-color" xmlns:q9="CupkekGames.Luna" type="q9:TabView_button-color_Type" use="optional" />
+        <xs:attribute default="SECONDARY" name="button-color-selected" xmlns:q10="CupkekGames.Luna" type="q10:TabView_button-color-selected_Type" use="optional" />
+        <xs:attribute default="0" name="active-tab" type="xs:int" use="optional" />
+        <xs:attribute default="true" name="show-input-prompts" type="xs:boolean" use="optional" />
+        <xs:attribute default="UI/Previous" name="input-action-prev" type="xs:string" use="optional" />
+        <xs:attribute default="UI/Next" name="input-action-next" type="xs:string" use="optional" />
+        <xs:attribute default="System.Collections.Generic.List`1[CupkekGames.Core.InputIconControlScheme]" name="hide-input-prompts-if" type="xs:string" use="optional" />
+        <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
+        <xs:attribute default="" name="class" type="xs:string" use="optional" />
+        <xs:attribute default="" name="style" type="xs:string" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TabView" substitutionGroup="engine:VisualElement" xmlns:q11="CupkekGames.Luna" type="q11:TabViewType" />
+  <xs:complexType name="RadialLoadingType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="true" name="enabled" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:string" use="optional" />
+        <xs:attribute default="Position" name="picking-mode" type="engine:VisualElement_picking-mode_Type" use="optional" />
+        <xs:attribute default="" name="tooltip" type="xs:string" use="optional" />
+        <xs:attribute default="None" name="usage-hints" type="engine:VisualElement_usage-hints_Type" use="optional" />
+        <xs:attribute default="0" name="tabindex" type="xs:int" use="optional" />
+        <xs:attribute default="false" name="focusable" type="xs:boolean" use="optional" />
+        <xs:attribute default="Inherit" name="language-direction" type="engine:VisualElement_language-direction_Type" use="optional" />
+        <xs:attribute default="" name="data-source" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-path" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-type" type="xs:string" use="optional" />
+        <xs:attribute default="0.2" name="arc-size" type="xs:float" use="optional" />
+        <xs:attribute default="10" name="line-width" type="xs:float" use="optional" />
+        <xs:attribute default="0.05" name="step" type="xs:float" use="optional" />
+        <xs:attribute default="10" name="update-frequency" type="xs:long" use="optional" />
+        <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
+        <xs:attribute default="" name="class" type="xs:string" use="optional" />
+        <xs:attribute default="" name="style" type="xs:string" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="RadialLoading" substitutionGroup="engine:VisualElement" xmlns:q12="CupkekGames.Luna" type="q12:RadialLoadingType" />
+  <xs:complexType name="ProgressBarType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="true" name="enabled" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:string" use="optional" />
+        <xs:attribute default="Ignore" name="picking-mode" type="engine:VisualElement_picking-mode_Type" use="optional" />
+        <xs:attribute default="" name="tooltip" type="xs:string" use="optional" />
+        <xs:attribute default="None" name="usage-hints" type="engine:VisualElement_usage-hints_Type" use="optional" />
+        <xs:attribute default="0" name="tabindex" type="xs:int" use="optional" />
+        <xs:attribute default="false" name="focusable" type="xs:boolean" use="optional" />
+        <xs:attribute default="Inherit" name="language-direction" type="engine:VisualElement_language-direction_Type" use="optional" />
+        <xs:attribute default="" name="data-source" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-path" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-type" type="xs:string" use="optional" />
+        <xs:attribute default="true" name="instant-positive" type="xs:boolean" use="optional" />
+        <xs:attribute default="true" name="instant-negative" type="xs:boolean" use="optional" />
+        <xs:attribute default="10" name="update-frequency" type="xs:long" use="optional" />
+        <xs:attribute default="0.01" name="step" type="xs:float" use="optional" />
+        <xs:attribute default="0" name="first-delay" type="xs:long" use="optional" />
+        <xs:attribute default="500" name="second-delay" type="xs:long" use="optional" />
+        <xs:attribute default="CupkekGames.Luna.ProgressBarNode[]" name="progress" type="xs:string" use="optional" />
+        <xs:attribute default="CupkekGames.Luna.ProgressBarNode" name="indicator" type="xs:string" use="optional" />
+        <xs:attribute default="RGBA(0.000, 0.000, 0.000, 1.000)" name="color-background" type="xs:string" use="optional" />
+        <xs:attribute default="RGBA(0.000, 1.000, 0.000, 1.000)" name="color-indicator-positive" type="xs:string" use="optional" />
+        <xs:attribute default="RGBA(1.000, 0.000, 0.000, 1.000)" name="color-indicator-negative" type="xs:string" use="optional" />
+        <xs:attribute default="" name="title" type="xs:string" use="optional" />
+        <xs:attribute default="false" name="show-icon" type="xs:boolean" use="optional" />
+        <xs:attribute default="36" name="icon-size" type="xs:int" use="optional" />
+        <xs:attribute default="RGBA(1.000, 1.000, 1.000, 1.000)" name="icon-tint" type="xs:string" use="optional" />
+        <xs:attribute default="false" name="vertical-line" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="overlay-image" type="xs:string" use="optional" />
+        <xs:attribute default="0" name="overlay-image-width" type="xs:int" use="optional" />
+        <xs:attribute default="RGBA(1.000, 1.000, 1.000, 1.000)" name="color-overlay" type="xs:string" use="optional" />
+        <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
+        <xs:attribute default="" name="class" type="xs:string" use="optional" />
+        <xs:attribute default="" name="style" type="xs:string" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProgressBar" substitutionGroup="engine:VisualElement" xmlns:q13="CupkekGames.Luna" type="q13:ProgressBarType" />
+  <xs:complexType name="TabType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="true" name="enabled" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:string" use="optional" />
+        <xs:attribute default="Position" name="picking-mode" type="engine:VisualElement_picking-mode_Type" use="optional" />
+        <xs:attribute default="" name="tooltip" type="xs:string" use="optional" />
+        <xs:attribute default="None" name="usage-hints" type="engine:VisualElement_usage-hints_Type" use="optional" />
+        <xs:attribute default="0" name="tabindex" type="xs:int" use="optional" />
+        <xs:attribute default="false" name="focusable" type="xs:boolean" use="optional" />
+        <xs:attribute default="Inherit" name="language-direction" type="engine:VisualElement_language-direction_Type" use="optional" />
+        <xs:attribute default="" name="data-source" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-path" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-type" type="xs:string" use="optional" />
+        <xs:attribute default="" name="label" type="xs:string" use="optional" />
+        <xs:attribute default="" name="icon-image" type="xs:string" use="optional" />
+        <xs:attribute default="" name="tab-button-content" type="xs:string" use="optional" />
+        <xs:attribute default="(100, 100)" name="content-size-percent" type="xs:string" use="optional" />
+        <xs:attribute default="false" name="overflow" type="xs:boolean" use="optional" />
+        <xs:attribute default="(0, 0)" name="header-min-size" type="xs:string" use="optional" />
+        <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
+        <xs:attribute default="" name="class" type="xs:string" use="optional" />
+        <xs:attribute default="" name="style" type="xs:string" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Tab" substitutionGroup="engine:VisualElement" xmlns:q14="CupkekGames.Luna" type="q14:TabType" />
+</xs:schema>

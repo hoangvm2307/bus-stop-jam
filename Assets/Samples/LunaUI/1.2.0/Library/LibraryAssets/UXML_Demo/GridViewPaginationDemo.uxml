@@ -1,0 +1,9 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="Pagination" src="../UXML/Components/Pagination.uxml?fileID=9197481963319205126&amp;guid=b33c0d9f0e87e66489378d86c2130204&amp;type=3#Pagination" />
+    <engine:VisualElement name="Background" class="bg-slate-900 absolute size-full justify-center items-center" />
+    <engine:Label text="GridView Demo" class="text-5xl" style="-unity-text-align: upper-center;" />
+    <engine:VisualElement name="GridView" style="flex-grow: 1;">
+        <engine:VisualElement name="GridViewSlotContainer" style="flex-grow: 1; align-items: stretch; justify-content: space-evenly; flex-direction: column; flex-wrap: wrap;" />
+        <engine:Instance template="Pagination" name="Pagination" />
+    </engine:VisualElement>
+</engine:UXML>

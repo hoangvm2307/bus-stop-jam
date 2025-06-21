@@ -1,0 +1,100 @@
+.item-display {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+    margin: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.item-display__icon {
+    width: 80px;
+    height: 80px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.store-panel {
+    margin: 8px 0;
+    padding: 20px;
+    min-height: 180px;
+}
+
+.store-panel__items-container {
+    width: 100%;
+    flex-grow: 1;
+    min-height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    -unity-background-scale-mode: stretch-to-fill;
+    align-self: auto;
+}
+
+.store-panel__title {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    flex-grow: 1;
+}
+
+.store-panel__button {
+    min-width: 100px;
+    min-height: 50px;
+    -unity-slice-left: 58;
+    -unity-slice-top: 58;
+    -unity-slice-right: 50;
+    -unity-slice-bottom: 76;
+    -unity-slice-scale: 0.5px;
+}
+
+.item-display__badge {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    padding: 2px 6px;
+    font-size: 14px;
+    -unity-text-align: middle-center;
+    color: rgb(160, 82, 45);
+}
+
+.item-display__icon--no-ads {
+    background-image: url('project://database/Assets/Project Files/Game/Images/IAP/no-ads.png');
+}
+
+.item-display__icon--hearts {
+    background-image: url('project://database/Assets/Project Files/Game/Images/IAP/unlimited-hearts.png');
+}
+
+.item-display__icon--coins {
+    background-image: url('project://database/Assets/Project Files/Game/Images/IAP/coins.png');
+}
+
+.item-display__icon--hint {
+    background-image: url("project://database/Assets/Project%20Files/Game/Images/PowerUps/pu_hint.png?fileID=21300000&guid=8d897474d50966f4797ea6072db7c1a0&type=3#pu_hint");
+}
+
+.item-display__icon--shuffle {
+    background-image: url("project://database/Assets/Project%20Files/Game/Images/PowerUps/pu_shuffle.png?fileID=21300000&guid=bc05c9e359644804ea39b33fdcf4cbb3&type=3#pu_shuffle");
+}
+
+.item-display__icon--undo {
+    background-image: url("project://database/Assets/Project%20Files/Game/Images/PowerUps/pu_undo.png?fileID=21300000&guid=a323e3679e7ff1145b4828972d86518d&type=3#pu_undo");
+}
+
+.item-display--large {
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.item-display--large .item-display__icon {
+    width: 60px;
+    height: 60px;
+}
+
+.currency-display__icon {
+    width: 48px;
+    height: 48px;
+    -unity-background-scale-mode: scale-to-fit;
+    background-image: url('project://database/Assets/Project Files/Game/Images/Currency/coin.png');
+    margin-right: 8px;
+}

@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="Pagination" src="../UXML/Components/Pagination.uxml" />
+    <ui:VisualElement name="Background" class="modal_background" />
+    <ui:VisualElement class="modal_container" style="flex-grow: 1;">
+        <ui:VisualElement name="Modal" class="modal">
+            <ui:VisualElement name="TitleContainer" class="modal_title_container">
+                <ui:Label text="Pagination Demo" display-tooltip-when-elided="true" name="Title" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1;">
+                <ui:VisualElement style="flex-grow: 1;">
+                    <ui:VisualElement name="PaginationElementsContainer" style="flex-grow: 1; align-items: center; justify-content: center;" />
+                </ui:VisualElement>
+                <ui:Instance template="Pagination" name="Pagination" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

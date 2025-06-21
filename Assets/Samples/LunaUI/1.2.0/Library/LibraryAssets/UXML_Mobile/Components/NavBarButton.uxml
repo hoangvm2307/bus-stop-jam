@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Button class="btn nav-bar-button" style="flex-direction: column;">
+        <ui:VisualElement name="Icon" class="icon" />
+        <ui:Label text="Label" name="Title" class="title" />
+    </ui:Button>
+</ui:UXML>

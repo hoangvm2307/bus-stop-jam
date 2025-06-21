@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Samples/LunaUI/1.2.0/Game/LunaUIDemoStandartInitialization.unity
+    guid: 21267be17b67c2546bd2bac59aee1ef4
+  - enabled: 1
+    path: Assets/Samples/LunaUI/1.2.0/Game/Scenes/LunaUIDemoStandartMainMenu.unity
+    guid: bd54563de70eabd4392b7d9f6c9b70fb
+  - enabled: 1
+    path: Assets/Samples/LunaUI/1.2.0/Game/Scenes/LunaUIDemoStandartBase.unity
+    guid: 911ddf00a20eaa746a31b6e0ea13bf30
+  - enabled: 1
     path: Assets/Project Files/Game/Scenes/Init.unity
     guid: cc0b80ce7479f924fa29c695693d8ae8
   - enabled: 1
@@ -13,4 +22,5 @@ EditorBuildSettings:
     guid: 361eea68332b709408fe8391773229a1
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 97736d9a5ad1861479e34b45f1786682, type: 2}
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: d619bd23d9a14ea499e7df8deea459b4, type: 3}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 959fa943ac53d4b4faba64e743a20853, type: 3}
+  m_UseUCBPForAssetBundles: 0

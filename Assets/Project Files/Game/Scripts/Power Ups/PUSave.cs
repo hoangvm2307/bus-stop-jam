@@ -1,4 +1,4 @@
-﻿namespace Watermelon
+namespace Watermelon
 {
     [System.Serializable]
     public class PUSave : ISaveObject
@@ -23,7 +23,7 @@
         {
             if (ES3.KeyExists(SaveKey))
             {
-                ES3.Load<PUSave>(SaveKey, this);
+                ES3.LoadInto<PUSave>(SaveKey, this);
             }
         }
         public void Flush()

@@ -1,0 +1,92 @@
+.vn_page {
+    max-width: 960px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    flex-direction: row;
+}
+
+.vn_background {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: var(--length-32);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    max-height: none;
+    scale: 1 1;
+    overflow: visible;
+}
+
+.vn_background:hover {
+    scale: 1 1;
+}
+
+.vn_background:focus:hover {
+    scale: 1 1;
+}
+
+.speech {
+    white-space: normal;
+    margin-top: var(--length-16);
+    margin-bottom: var(--length-16);
+    margin-left: var(--length-32);
+    margin-right: var(--length-64);
+    font-size: var(--length-28);
+    -unity-font-definition: var(--font-medium);
+    text-overflow: ellipsis;
+    color: var(--color-base-950);
+}
+
+.vn_next_icon {
+    position: absolute;
+    right: 0;
+    bottom: var(--length-80-neg);
+    margin: var(--length-8);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.8s;
+    transition-property: scale;
+    scale: 1 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-left: var(--length-2);
+    padding-right: var(--length-2);
+    max-height: var(--length-96);
+}
+
+.vn_next_icon_anim {
+    scale: 1.16 1.16;
+}
+
+.vn_avatar_parent {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.vn_avatar_parent_left {
+    left: -208px;
+}
+
+.vn_avatar_parent_right {
+    right: -208px;
+}
+
+.vn_avatar_container {
+    padding: var(--length-16);
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: var(--length-192);
+    width: var(--length-192);
+}
+
+.vn_avatar {
+    height: 100%;
+    width: 100%;
+    transition-duration: 1s;
+    transition-property: rotate;
+    rotate: 12deg;
+}
+
+.vn_avatar_anim {
+    rotate: -12deg;
+}

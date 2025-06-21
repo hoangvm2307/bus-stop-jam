@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="flex-direction: row; justify-content: center;">
+        <ui:Button name="Previous" class="btn" style="background-image: url(left.png);" />
+        <ui:VisualElement name="ButtonContainer" style="flex-direction: row; justify-content: space-evenly; align-items: center;" />
+        <ui:Button name="Next" class="btn" style="background-image: url(right.png);" />
+    </ui:VisualElement>
+</ui:UXML>

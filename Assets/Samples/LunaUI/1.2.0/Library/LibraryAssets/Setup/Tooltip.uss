@@ -1,0 +1,9 @@
+.tooltip_container .backdrop {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tooltip_container .backdrop:hover,
+.tooltip_container .backdrop:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: var(--cursor-cross-small);
+}

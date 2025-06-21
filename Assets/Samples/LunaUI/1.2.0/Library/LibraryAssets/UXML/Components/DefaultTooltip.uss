@@ -1,0 +1,63 @@
+.tooltip_item {
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  position: absolute;
+  align-items: flex-start;
+}
+
+.tooltip_item > * {
+  max-width: var(--length-512);
+  padding: var(--length-16);
+  border-radius: var(--length-8);
+  border-width: var(--length-4);
+}
+
+.tooltip_top_container {
+  flex-direction: row;
+}
+
+.tooltip_image_container {
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip_top_text_container {
+  max-width: var(--length-448);
+}
+
+.tooltip_title Label {
+  -unity-font-definition: var(--font-bold);
+  font-size: var(--length-24);
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 1px;
+  padding-bottom: 1px;
+}
+
+.tooltip_body Label {
+  -unity-font-definition: var(--font-medium);
+  font-size: var(--length-20);
+  white-space: normal;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.tooltip_bottom_container > * {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.tooltip_item .ProgressBar {
+  width: 100%;
+  height: var(--length-32);
+}
+
+.tooltip_item .ProgressBar {
+  width: 100%;
+  height: var(--length-32);
+  margin-top: var(--length-8);
+  margin-bottom: var(--length-8);
+}

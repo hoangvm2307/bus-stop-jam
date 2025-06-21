@@ -1,0 +1,677 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df9136c06ef954a4bbd1cf96c60e7ae3, type: 3}
+  m_Name: InputIconDatabase
+  m_EditorClassIdentifier: 
+  _keyboardMouse:
+    _list:
+    - Key: Default
+      Value:
+        Icon: {fileID: 21300000, guid: c847211b023bbf94296ec4b41569fe65, type: 3}
+        Slice: 1
+        Square: 0
+    - Key: upArrow
+      Value:
+        Icon: {fileID: 21300000, guid: 0af3936d92979cd4ea2d2417bd02cbdc, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: downArrow
+      Value:
+        Icon: {fileID: 21300000, guid: a02943732af510b4196db73ef796190b, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftArrow
+      Value:
+        Icon: {fileID: 21300000, guid: aecf955d86a450b4f886a905af29774a, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightArrow
+      Value:
+        Icon: {fileID: 21300000, guid: bda576bff1edb8645ad7a3b2eef11a33, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: tab
+      Value:
+        Icon: {fileID: 21300000, guid: 819949babcf559047bb3a81d4dc94842, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: escape
+      Value:
+        Icon: {fileID: 21300000, guid: 8671aa29960ec3544acde3d14d70fe9d, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftButton
+      Value:
+        Icon: {fileID: 21300000, guid: d37d0b9bc562ced4f9ed1fa136b04904, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightButton
+      Value:
+        Icon: {fileID: 21300000, guid: 5aef7cf49f0f7e14d8f23d8f984bccf5, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: middleButton
+      Value:
+        Icon: {fileID: 21300000, guid: 9aee9b868d0aae64683b6c52488766cd, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: position
+      Value:
+        Icon: {fileID: 21300000, guid: 7b84c962ea500524da39713b033b7834, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: delta
+      Value:
+        Icon: {fileID: 21300000, guid: 7b84c962ea500524da39713b033b7834, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: scroll/up
+      Value:
+        Icon: {fileID: 21300000, guid: 271277a1010650c4dbc0d5b822a87495, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: scroll/down
+      Value:
+        Icon: {fileID: 21300000, guid: b78d2e8204088ad4f9e04f5f1fcf948c, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: anyKey
+      Value:
+        Icon: {fileID: 21300000, guid: 66a7dea136efffe4c9d902fea9acbbab, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: enter
+      Value:
+        Icon: {fileID: 21300000, guid: 6c83469fdc3b0a64aa4e6b9f7775f605, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: del
+      Value:
+        Icon: {fileID: 21300000, guid: fe92114aebffa6346960fa870d73e31e, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: alt
+      Value:
+        Icon: {fileID: 21300000, guid: 7b15b0decc9680947b1cdb9c92a5af00, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: capsLock
+      Value:
+        Icon: {fileID: 21300000, guid: 5a202946e403d12488cabff862fb8ae4, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: home
+      Value:
+        Icon: {fileID: 21300000, guid: 26408c3bc7d76f547afc59743cc72c26, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: insert
+      Value:
+        Icon: {fileID: 21300000, guid: 287d5aa469e13154c9184c72a6d5e341, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: pageUp
+      Value:
+        Icon: {fileID: 21300000, guid: 4cc68e27b8a14e040ba9145dc3041277, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: pageDown
+      Value:
+        Icon: {fileID: 21300000, guid: e1f8f464202f90b4a8f15ccbc086887b, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: backspace
+      Value:
+        Icon: {fileID: 21300000, guid: f3020547c5742ff4f9f7fc68761f501b, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: delete
+      Value:
+        Icon: {fileID: 21300000, guid: fe92114aebffa6346960fa870d73e31e, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: end
+      Value:
+        Icon: {fileID: 21300000, guid: 38daaca33553c8847af29b68d0a2cd6a, type: 3}
+        Slice: 0
+        Square: 0
+  _xbox:
+    _list:
+    - Key: Default
+      Value:
+        Icon: {fileID: 21300000, guid: b5b4ad0ab35f2f849ac9827b88927b25, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: buttonWest
+      Value:
+        Icon: {fileID: 21300000, guid: 93221c5e78978f443a382e543d86bc41, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: buttonNorth
+      Value:
+        Icon: {fileID: 21300000, guid: 3c76e9ef690081b4d891b6851aceceb8, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: buttonEast
+      Value:
+        Icon: {fileID: 21300000, guid: 6cb09fe740f6e994293dbe7d82d1fdc3, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: buttonSouth
+      Value:
+        Icon: {fileID: 21300000, guid: ff2102f33ba21ca4680941b3dcb06f0f, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad
+      Value:
+        Icon: {fileID: 21300000, guid: a6c744027a720454cac5e6854243a8a2, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad/up
+      Value:
+        Icon: {fileID: 21300000, guid: 1770827c834bbc94287215e1d68e864d, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad/down
+      Value:
+        Icon: {fileID: 21300000, guid: b60cd4aee44f0cf40a13b29ad81186c4, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad/left
+      Value:
+        Icon: {fileID: 21300000, guid: 635f45b1178647e4da7074bd6635a152, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad/right
+      Value:
+        Icon: {fileID: 21300000, guid: e09866dfe94c58d43896121336e53eea, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad/x
+      Value:
+        Icon: {fileID: 21300000, guid: 06cacd0f77ad84b43a2d390db3b8d8f5, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad/y
+      Value:
+        Icon: {fileID: 21300000, guid: 477de6e87f8bdaf4a85d4a8bdd5501fb, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftShoulder
+      Value:
+        Icon: {fileID: 21300000, guid: c8f2ebb0948859f47b48312d557c5dc0, type: 3}
+        Slice: 0
+        Square: 1
+    - Key: rightShoulder
+      Value:
+        Icon: {fileID: 21300000, guid: 938bae8caca8dd74ab128305c612bf2a, type: 3}
+        Slice: 0
+        Square: 1
+    - Key: leftTrigger
+      Value:
+        Icon: {fileID: 21300000, guid: 95ffa2bf61d144c419c6bb4d0772c8b6, type: 3}
+        Slice: 0
+        Square: 1
+    - Key: rightTrigger
+      Value:
+        Icon: {fileID: 21300000, guid: 8f8d9ff95859c66469269fed0753d002, type: 3}
+        Slice: 0
+        Square: 1
+    - Key: select
+      Value:
+        Icon: {fileID: 21300000, guid: 985d3be6b2e972547a7171801a234c11, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: start
+      Value:
+        Icon: {fileID: 21300000, guid: dc0f8a53655de7d4aae60d45d045be89, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStickPress
+      Value:
+        Icon: {fileID: 21300000, guid: 1febc0468f32235428c912bdab17829f, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStickPress
+      Value:
+        Icon: {fileID: 21300000, guid: 115ae5550a30b664e9b27a88f8d39e14, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick
+      Value:
+        Icon: {fileID: 21300000, guid: 066fa2a490714cf45a5621a4aa850ebf, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick/x
+      Value:
+        Icon: {fileID: 21300000, guid: d17b654ad6ceeb04b88162ec7933fd96, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick/y
+      Value:
+        Icon: {fileID: 21300000, guid: b241b7afff764a84883775cd928fff3a, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick/up
+      Value:
+        Icon: {fileID: 21300000, guid: 5d6ce8f3d9725304f8e7db1aaca7010b, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick/down
+      Value:
+        Icon: {fileID: 21300000, guid: 437285a5bcc437247bdbfc116bfb45c8, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick/left
+      Value:
+        Icon: {fileID: 21300000, guid: 155f2fa345b539047a41d71b1e1337e4, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick/right
+      Value:
+        Icon: {fileID: 21300000, guid: 1eabf6f5a8d6259469f77810e9c6c573, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick
+      Value:
+        Icon: {fileID: 21300000, guid: a18cbaa65022ff94da2251b0eb89026e, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick/x
+      Value:
+        Icon: {fileID: 21300000, guid: 61a135c26668f4948a97bef9c8227e9d, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick/y
+      Value:
+        Icon: {fileID: 21300000, guid: fe48fd67290e5ab41a8bf45c539879b7, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick/up
+      Value:
+        Icon: {fileID: 21300000, guid: 0e1d3d0d169f3eb41af9474d80670af5, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick/down
+      Value:
+        Icon: {fileID: 21300000, guid: 07eec9c58b710b249be09e3efd51ece8, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick/left
+      Value:
+        Icon: {fileID: 21300000, guid: 8397124766afdb6449c90a3c3f3b4240, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick/right
+      Value:
+        Icon: {fileID: 21300000, guid: 33caa6cbfb98ddf48a9b9c9405321bdb, type: 3}
+        Slice: 0
+        Square: 0
+  _playStation:
+    _list:
+    - Key: Default
+      Value:
+        Icon: {fileID: 21300000, guid: b5b4ad0ab35f2f849ac9827b88927b25, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: buttonWest
+      Value:
+        Icon: {fileID: 21300000, guid: e895bd21263dae04dbfd27c724fae15a, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: buttonNorth
+      Value:
+        Icon: {fileID: 21300000, guid: 2dbcb0e38b546b94ebe034133e80755a, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: buttonEast
+      Value:
+        Icon: {fileID: 21300000, guid: 5bd5c559c3148914f96a4e474891450d, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: buttonSouth
+      Value:
+        Icon: {fileID: 21300000, guid: 19321f2af34a8344da6ebe141870eb81, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad
+      Value:
+        Icon: {fileID: 21300000, guid: 89819014683288c4cb7d803b942d34a8, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad/up
+      Value:
+        Icon: {fileID: 21300000, guid: f196e8eeea6fa74499e2d28a50ee8ff8, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad/down
+      Value:
+        Icon: {fileID: 21300000, guid: 14512356eabbf464faed8a7e37269da5, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad/left
+      Value:
+        Icon: {fileID: 21300000, guid: cad84558f68e3114aab3d383155540a3, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad/right
+      Value:
+        Icon: {fileID: 21300000, guid: bca83328351991d43a95589a4cd0e2d9, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad/x
+      Value:
+        Icon: {fileID: 21300000, guid: 2495833e872dfd546998c2e61d982af4, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad/y
+      Value:
+        Icon: {fileID: 21300000, guid: 9d92344859e0e6d4f96ee1a45f7368b5, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftShoulder
+      Value:
+        Icon: {fileID: 21300000, guid: 52a7e0194cefa0142bcb44f681138ee5, type: 3}
+        Slice: 0
+        Square: 1
+    - Key: rightShoulder
+      Value:
+        Icon: {fileID: 21300000, guid: f21a123a782e28c46b537c1c85203e4e, type: 3}
+        Slice: 0
+        Square: 1
+    - Key: leftTrigger
+      Value:
+        Icon: {fileID: 21300000, guid: bf97b5d6ea9b7304e93685ef25695057, type: 3}
+        Slice: 0
+        Square: 1
+    - Key: rightTrigger
+      Value:
+        Icon: {fileID: 21300000, guid: b6b698e9c9d3b8546889478b51776dd7, type: 3}
+        Slice: 0
+        Square: 1
+    - Key: select
+      Value:
+        Icon: {fileID: 21300000, guid: 3b147c63b9558134babc6bb4e2a58be8, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: start
+      Value:
+        Icon: {fileID: 21300000, guid: 8df54f49aa2d4814d9d6d1607bb160bc, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStickPress
+      Value:
+        Icon: {fileID: 21300000, guid: 21b841b9b9b98154898971b186317256, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStickPress
+      Value:
+        Icon: {fileID: 21300000, guid: 5a5f84cdcca749c49addff5e4019a3f0, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick
+      Value:
+        Icon: {fileID: 21300000, guid: ba3a03237c513754f9e5d52ec4a070ad, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick/x
+      Value:
+        Icon: {fileID: 21300000, guid: 831a69d83d691b04abaea7cf181dc048, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick/y
+      Value:
+        Icon: {fileID: 21300000, guid: 50716950a56b8f049b37d1069c66ce03, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick/up
+      Value:
+        Icon: {fileID: 21300000, guid: cac22daf848e86d4797756495dc50eb6, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick/down
+      Value:
+        Icon: {fileID: 21300000, guid: c433ef54b189a174eb69e2137dc8c695, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick/left
+      Value:
+        Icon: {fileID: 21300000, guid: 4934d6728b95c15458922a42e2ed3ce8, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick/right
+      Value:
+        Icon: {fileID: 21300000, guid: 666e3f9420e3032449f6909ed9d56d75, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick
+      Value:
+        Icon: {fileID: 21300000, guid: f6a7f71cbf87e85488422c597e892598, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick/x
+      Value:
+        Icon: {fileID: 21300000, guid: ab50f298ac4df714ca54c09c9bd1f527, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick/y
+      Value:
+        Icon: {fileID: 21300000, guid: e7be8c0e4c38a4e46ab7e97b76ca93ac, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick/up
+      Value:
+        Icon: {fileID: 21300000, guid: 4964eb31042f42748bfbdceb812742f4, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick/down
+      Value:
+        Icon: {fileID: 21300000, guid: da4f078d105cb9449913063b7ca25e2f, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick/left
+      Value:
+        Icon: {fileID: 21300000, guid: f9a5e821b70214a4f9c4c30492e01931, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick/right
+      Value:
+        Icon: {fileID: 21300000, guid: 96aaba10e11dc384caaa9f7352190537, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: touchpadButton
+      Value:
+        Icon: {fileID: 21300000, guid: 1874068c2eb877444a36d041e5621e9b, type: 3}
+        Slice: 0
+        Square: 0
+  _playStation5:
+    _list:
+    - Key: Default
+      Value:
+        Icon: {fileID: 21300000, guid: b5b4ad0ab35f2f849ac9827b88927b25, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: buttonWest
+      Value:
+        Icon: {fileID: 21300000, guid: e895bd21263dae04dbfd27c724fae15a, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: buttonNorth
+      Value:
+        Icon: {fileID: 21300000, guid: 2dbcb0e38b546b94ebe034133e80755a, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: buttonEast
+      Value:
+        Icon: {fileID: 21300000, guid: 5bd5c559c3148914f96a4e474891450d, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: buttonSouth
+      Value:
+        Icon: {fileID: 21300000, guid: 19321f2af34a8344da6ebe141870eb81, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad
+      Value:
+        Icon: {fileID: 21300000, guid: 89819014683288c4cb7d803b942d34a8, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad/up
+      Value:
+        Icon: {fileID: 21300000, guid: f196e8eeea6fa74499e2d28a50ee8ff8, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad/down
+      Value:
+        Icon: {fileID: 21300000, guid: 14512356eabbf464faed8a7e37269da5, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad/left
+      Value:
+        Icon: {fileID: 21300000, guid: cad84558f68e3114aab3d383155540a3, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad/right
+      Value:
+        Icon: {fileID: 21300000, guid: bca83328351991d43a95589a4cd0e2d9, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad/x
+      Value:
+        Icon: {fileID: 21300000, guid: 2495833e872dfd546998c2e61d982af4, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: dpad/y
+      Value:
+        Icon: {fileID: 21300000, guid: 9d92344859e0e6d4f96ee1a45f7368b5, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftShoulder
+      Value:
+        Icon: {fileID: 21300000, guid: 52a7e0194cefa0142bcb44f681138ee5, type: 3}
+        Slice: 0
+        Square: 1
+    - Key: rightShoulder
+      Value:
+        Icon: {fileID: 21300000, guid: f21a123a782e28c46b537c1c85203e4e, type: 3}
+        Slice: 0
+        Square: 1
+    - Key: leftTrigger
+      Value:
+        Icon: {fileID: 21300000, guid: bf97b5d6ea9b7304e93685ef25695057, type: 3}
+        Slice: 0
+        Square: 1
+    - Key: rightTrigger
+      Value:
+        Icon: {fileID: 21300000, guid: b6b698e9c9d3b8546889478b51776dd7, type: 3}
+        Slice: 0
+        Square: 1
+    - Key: select
+      Value:
+        Icon: {fileID: 21300000, guid: 45d236af94ced9342bea6d8b8d123df7, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: start
+      Value:
+        Icon: {fileID: 21300000, guid: 9acc15afd27667744a6a41ce4c81b929, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStickPress
+      Value:
+        Icon: {fileID: 21300000, guid: 21b841b9b9b98154898971b186317256, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStickPress
+      Value:
+        Icon: {fileID: 21300000, guid: 5a5f84cdcca749c49addff5e4019a3f0, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick
+      Value:
+        Icon: {fileID: 21300000, guid: ba3a03237c513754f9e5d52ec4a070ad, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick/x
+      Value:
+        Icon: {fileID: 21300000, guid: 831a69d83d691b04abaea7cf181dc048, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick/y
+      Value:
+        Icon: {fileID: 21300000, guid: 50716950a56b8f049b37d1069c66ce03, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick/up
+      Value:
+        Icon: {fileID: 21300000, guid: cac22daf848e86d4797756495dc50eb6, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick/down
+      Value:
+        Icon: {fileID: 21300000, guid: c433ef54b189a174eb69e2137dc8c695, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick/left
+      Value:
+        Icon: {fileID: 21300000, guid: 4934d6728b95c15458922a42e2ed3ce8, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: leftStick/right
+      Value:
+        Icon: {fileID: 21300000, guid: 666e3f9420e3032449f6909ed9d56d75, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick
+      Value:
+        Icon: {fileID: 21300000, guid: f6a7f71cbf87e85488422c597e892598, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick/x
+      Value:
+        Icon: {fileID: 21300000, guid: ab50f298ac4df714ca54c09c9bd1f527, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick/y
+      Value:
+        Icon: {fileID: 21300000, guid: e7be8c0e4c38a4e46ab7e97b76ca93ac, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick/up
+      Value:
+        Icon: {fileID: 21300000, guid: 4964eb31042f42748bfbdceb812742f4, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick/down
+      Value:
+        Icon: {fileID: 21300000, guid: da4f078d105cb9449913063b7ca25e2f, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick/left
+      Value:
+        Icon: {fileID: 21300000, guid: f9a5e821b70214a4f9c4c30492e01931, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: rightStick/right
+      Value:
+        Icon: {fileID: 21300000, guid: 96aaba10e11dc384caaa9f7352190537, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: touchpadButton
+      Value:
+        Icon: {fileID: 21300000, guid: d1f77fc8b07a8514ead30aee4415ed18, type: 3}
+        Slice: 0
+        Square: 0
+    - Key: micButton
+      Value:
+        Icon: {fileID: 21300000, guid: 2913f20036f419a439777cc38781ef44, type: 3}
+        Slice: 0
+        Square: 0

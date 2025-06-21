@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="CurrencyBox.uss" />
+    <ui:VisualElement class="currency-box" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="Icon" class="icon" />
+        <ui:Label name="Label" text="Label" />
+    </ui:VisualElement>
+</ui:UXML>

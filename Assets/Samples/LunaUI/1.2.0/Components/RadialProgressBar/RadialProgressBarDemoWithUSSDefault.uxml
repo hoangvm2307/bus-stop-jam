@@ -1,0 +1,14 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement style="flex-grow: 1; align-items: center; justify-content: space-evenly;">
+        <engine:Label text="RadialProgressBar" />
+        <CupkekGames.Luna.RadialProgressBar class="primary" u-i-color-progress="ORANGE|V_400" u-i-color-b-g="SECONDARY|V_900" indicator-negative-color-class="--color-secondary-400-half" b-g-color-class="--color-slate-200-half" indicator-positive-color-class="--color-emerald-400-half" progress-color-class="--color-primary-400-half" background-color="#0F172AFF" indicator-positive-color="#A3E635FF" indicator-negative-color="#F87171FF" progress-color="#4D7C0FFF" target-value="0.4" target-indicator="0.8" style="width: 150px; height: 150px;" />
+        <engine:VisualElement style="width: 30%; flex-grow: 0; height: 300px;">
+            <engine:Label text="Controls" style="-unity-text-align: upper-center;" />
+            <engine:VisualElement style="flex-grow: 1; flex-direction: row; justify-content: space-evenly; align-items: center;">
+                <engine:Button text="-10" name="Damage" class="btn red" />
+                <engine:Button text="+10" name="Heal" class="btn lime" />
+            </engine:VisualElement>
+            <engine:Slider label="Slider" value="42" high-value="1" style="width: 100%;" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

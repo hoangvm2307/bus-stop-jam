@@ -41,7 +41,22 @@ MonoBehaviour:
     - Core.Settings
     - Core.UE
     - CupkekGames.Core
+    - CupkekGames.InventorySystem
     - CupkekGames.Luna
+    - CupkekGames.Luna.Demo.Components
+    - CupkekGames.Luna.Demo.Game.Standart
+    - CupkekGames.Luna.Library
+    - CupkekGames.Systems.Addressables
+    - CupkekGames.Systems.Addressables.Test
+    - CupkekGames.Systems.GameSave
+    - CupkekGames.Systems.PrefabLoader
+    - CupkekGames.Systems.SceneManagement
+    - CupkekGames.Systems.ServiceLocator
+    - CupkekGames.Systems.Settings
+    - CupkekGames.Systems.UI.Generic
+    - CupkekGames.Systems.UI.PrefabLoader
+    - CupkekGames.Systems.UI.Settings
+    - CupkekGames.Systems.UI.WithGameSave
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1

@@ -1,0 +1,31 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="../../Views/Dialogue/VisualNovel.uss?fileID=7433441132597879392&amp;guid=1ceee78e808ac9b4da0a885becbc5340&amp;type=3#VisualNovel" />
+    <ui:VisualElement name="VN_PAGE" picking-mode="Ignore" class="vn_page">
+        <ui:VisualElement class="w-full" style="flex-direction: row;">
+            <ui:VisualElement class="vn_avatar_parent">
+                <ui:VisualElement name="AvatarLeftContainer" class="vn_avatar_container">
+                    <ui:VisualElement name="AvatarLeft" class="vn_avatar" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Container" picking-mode="Ignore" class="vn_container">
+                <ui:Button display-tooltip-when-elided="true" name="ContinueButton" focusable="false" class="btn vn_background" />
+                <ui:VisualElement name="Header" picking-mode="Ignore" class="vn_header">
+                    <ui:Label display-tooltip-when-elided="true" name="CharacterName" text="Character Name" class="vn_header_title" />
+                    <ui:VisualElement class="vn_header_button_container">
+                        <CupkekGames.Luna.InputPrompt icon-image="project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/play-cycle.png?fileID=2800000&amp;guid=4f2c93ce6dc9644409a5799571b39790&amp;type=3#play-cycle" name="RestartButton" input-action-name="UI/Action" />
+                        <CupkekGames.Luna.InputPrompt icon-image="project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/double-right.png?fileID=2800000&amp;guid=dc49aa484acc6dc4089481829a8a20a3&amp;type=3#double-right" name="SkipButton" input-action-name="UI/Interact" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Body" picking-mode="Ignore" class="vn_body">
+                    <ui:Label enable-rich-text="true" name="Speech" picking-mode="Ignore" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." />
+                </ui:VisualElement>
+                <CupkekGames.Luna.InputPrompt name="NextIcon" icon-image="project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/arrow-right-curve.png?fileID=2800000&amp;guid=28789b3231d83414c915ac89623e839f&amp;type=3#arrow-right-curve" class="vn_next_icon" />
+            </ui:VisualElement>
+            <ui:VisualElement class="vn_avatar_parent">
+                <ui:VisualElement name="AvatarRightContainer" class="vn_avatar_container">
+                    <ui:VisualElement name="AvatarRight" class="vn_avatar" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

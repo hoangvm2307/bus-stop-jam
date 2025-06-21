@@ -1,0 +1,65 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="CurrencyBox" src="../Components/CurrencyBox.uxml?fileID=9197481963319205126&amp;guid=591e52411bf6ae04fbcb8c53fa27b671&amp;type=3#CurrencyBox" />
+    <ui:Template name="NavBarButton" src="../Components/NavBarButton.uxml?fileID=9197481963319205126&amp;guid=ce4ced6b8ebf74742adce97d7d935ca7&amp;type=3#NavBarButton" />
+    <ui:Template name="MobileCharacter" src="Sections/MobileCharacter.uxml" />
+    <ui:Template name="ItemPopup" src="../Components/Inventory/ItemPopup.uxml" />
+    <Style src="MobileMain.uss?fileID=7433441132597879392&amp;guid=75ae8ab751bf7da46b85c6fba79f6697&amp;type=3#MobileMain" />
+    <Style src="MobileMain_NavBar.uss?fileID=7433441132597879392&amp;guid=cd46ff860e25ea942965dbceea346a49&amp;type=3#MobileMain_NavBar" />
+    <Style src="MobileMain_Header.uss?fileID=7433441132597879392&amp;guid=2e6ad7fabb27ec7438bf4ed865a9a27d&amp;type=3#MobileMain_Header" />
+    <ui:VisualElement name="Background" class="size-full left-0 absolute background" />
+    <ui:VisualElement name="MainContainer" style="flex-direction: column; justify-content: space-between; flex-grow: 1;">
+        <ui:VisualElement name="MainBackground" class="main_background tint-secondary-100 size-full left-0 absolute" style="-unity-background-scale-mode: scale-and-crop;" />
+        <ui:VisualElement class="header" style="flex-direction: row;">
+            <ui:VisualElement class="player-info">
+                <ui:VisualElement class="player-info-inner">
+                    <CupkekGames.Luna.AspectRatioElement name="PlayerAvatar" class="player-avatar" style="background-image: url(&quot;../../Sprites/mobile/navbar/character2.png&quot;);" />
+                    <ui:Label name="PlayerName" text="Player" class="player-name" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="currency-container">
+                <ui:Instance template="CurrencyBox" picking-mode="Ignore" class="energy">
+                    <AttributeOverrides element-name="Label" text="10/50" />
+                </ui:Instance>
+                <ui:Instance template="CurrencyBox" picking-mode="Ignore" class="gold">
+                    <AttributeOverrides element-name="Label" text="43.24m" />
+                </ui:Instance>
+                <ui:Instance template="CurrencyBox" picking-mode="Ignore" class="gem">
+                    <AttributeOverrides element-name="Label" text="36.51k" />
+                </ui:Instance>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement class="main-content" >
+            <ui:VisualElement name="SectionShop" picking-mode="Ignore" >
+                <ui:Label text="Shop" class="section-title" />
+            </ui:VisualElement>
+            <ui:VisualElement name="SectionWeapon" picking-mode="Ignore" >
+                <ui:Label text="Weapon" class="section-title" />
+            </ui:VisualElement>
+            <ui:VisualElement name="SectionBattle" picking-mode="Ignore" >
+                <ui:Label text="Battle" class="section-title" />
+            </ui:VisualElement>
+            <ui:Instance name="SectionCharacter" template="MobileCharacter" picking-mode="Ignore" />
+            <ui:VisualElement name="SectionBase" picking-mode="Ignore" >
+                <ui:Label text="Base" class="section-title" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Navbar" class="navbar" style="flex-direction: row;">
+            <ui:Instance template="NavBarButton" picking-mode="Ignore" class="first shop">
+                <AttributeOverrides element-name="Title" text="Shop" />
+            </ui:Instance>
+            <ui:Instance template="NavBarButton" picking-mode="Ignore" class="weapon">
+                <AttributeOverrides element-name="Title" text="Weapon" />
+            </ui:Instance>
+            <ui:Instance template="NavBarButton" picking-mode="Ignore" class="battle">
+                <AttributeOverrides element-name="Title" text="Battle" />
+            </ui:Instance>
+            <ui:Instance template="NavBarButton" picking-mode="Ignore" class="character active">
+                <AttributeOverrides element-name="Title" text="Character" />
+            </ui:Instance>
+            <ui:Instance template="NavBarButton" picking-mode="Ignore" class="last base">
+                <AttributeOverrides element-name="Title" text="Base" />
+            </ui:Instance>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Instance template="ItemPopup" name="ItemPopupContainer" picking-mode="Ignore" class="size-full absolute" />
+</ui:UXML>

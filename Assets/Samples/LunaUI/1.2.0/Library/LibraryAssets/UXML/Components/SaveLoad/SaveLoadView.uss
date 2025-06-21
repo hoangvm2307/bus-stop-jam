@@ -1,0 +1,57 @@
+#LoadListView {
+    background-color: var(--color-base-600);
+    margin: var(--length-8);
+}
+
+#Sidebar {
+    background-color: var(--color-base-700);
+    border-radius: var(--length-16);
+    padding: var(--length-16);
+    height: auto;
+    min-width: var(--length-384);
+}
+
+#Sidebar Toggle {
+    margin-top: var(--length-16);
+    margin-left: var(--length-4);
+    margin-right: var(--length-4);
+    background-color: var(--color-base-800);
+    padding: var(--length-24);
+    border-radius: var(--length-16);
+}
+
+#Sidebar .unity-toggle > .unity-label {
+  font-size: var(--length-28);
+}
+
+#Sidebar InputPrompt {
+    justify-content: flex-start;
+}
+
+#NewSave {
+    margin-bottom: var(--length-16);
+    margin-right: var(--length-32);
+    margin-left: var(--length-12);
+    height: var(--length-144);
+    max-height: var(--length-144);
+    border-width: var(--length-8);
+    border-color: var(--color-base-500);
+}
+
+#NewSave:hover,
+#NewSave:focus,
+#NewSave:hover:enabled,
+#NewSave:focus:enabled {
+  border-color: var(--color-base-300);
+  scale: 1;
+}
+
+#NewSave:disabled,
+#NewSave:disabled:hover {
+  border-color: var(--color-base-700);
+}
+
+#NewSave:focus,
+#NewSave:focus:enabled {
+  border-color: var(--color-base-100);
+}

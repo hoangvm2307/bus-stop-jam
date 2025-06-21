@@ -1,0 +1,19 @@
+{
+    "name": "CupkekGames.Systems.UI.Generic",
+    "rootNamespace": "",
+    "references": [
+        "GUID:38afbb2359e489e4fa79dc88f61428b5",
+        "GUID:8c5a58f4ceeaeff428a5333f02ab4313",
+        "GUID:c537e6a6eccff7243864b815159fd373",
+        "GUID:752808c53c3d81843885752c43109b93"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

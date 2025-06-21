@@ -1,0 +1,20 @@
+{
+    "name": "CupkekGames.Luna.Demo.Components",
+    "rootNamespace": "",
+    "references": [
+        "GUID:38afbb2359e489e4fa79dc88f61428b5",
+        "GUID:8c5a58f4ceeaeff428a5333f02ab4313",
+        "GUID:06575cf1cd244cc48802ac8f3d79750c",
+        "GUID:6dfb60cfba2c9d24d97f393c4cac15ae",
+        "GUID:3890a94ef1e0bca4fbe1cff67362dafd"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

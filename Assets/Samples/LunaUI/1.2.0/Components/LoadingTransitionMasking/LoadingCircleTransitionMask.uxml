@@ -1,0 +1,8 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="Loading" src="Loading.uxml?fileID=9197481963319205126&amp;guid=807b2fc4d3642304dbaef0f1a50cc886&amp;type=3#Loading" />
+    <Style src="LoadingCircleTransitionMask.uss" />
+    <engine:VisualElement class="bg-slate-600" style="flex-grow: 1;" />
+    <engine:VisualElement name="LoadingMask" class="loading_mask absolute size-full" style="flex-grow: 1; background-image: url(&quot;circle.svg?fileID=7388822144124034973&amp;guid=402591f4ad1d0be40a78834c76e245e6&amp;type=3#circle&quot;); overflow: hidden;">
+        <engine:Instance template="Loading" class="size-full" />
+    </engine:VisualElement>
+</engine:UXML>

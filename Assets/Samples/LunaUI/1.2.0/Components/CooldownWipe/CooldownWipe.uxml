@@ -1,0 +1,5 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement style="flex-grow: 1; align-items: center; justify-content: center;">
+        <CupkekGames.Luna.CooldownWipe progress="0.85" radius="166.3" circle-segments="75" reverse-winding="true" fill-color="#00000080" line-width="8" line-color="#FFFFFFFF" class="size-256 border-8 border-red-400" style="visibility: visible; overflow: hidden; background-image: url(&quot;../../Library/LibraryAssets/Sprites/portrait.png?fileID=2800000&amp;guid=9ec3e8a441a147048bfa2ee0abcf5dd4&amp;type=3#portrait&quot;);" />
+    </engine:VisualElement>
+</engine:UXML>

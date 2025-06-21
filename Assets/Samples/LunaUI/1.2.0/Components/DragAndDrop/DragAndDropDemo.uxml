@@ -1,0 +1,19 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="Background" class="bg-slate-900 absolute size-full justify-center items-center" />
+    <engine:VisualElement style="flex-grow: 1;">
+        <engine:Label text="Drag Starters" class="text-5xl" style="-unity-text-align: upper-center;" />
+        <engine:VisualElement style="flex-grow: 1; align-items: center; justify-content: space-evenly; flex-direction: row;">
+            <engine:VisualElement name="DragStarter" class="bg-red-400 size-128 rounded-lg" style="background-image: url(&quot;project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/composition.png?fileID=2800000&amp;guid=343f361314848fb4b9808a3f665eafb1&amp;type=3#composition&quot;);" />
+            <engine:VisualElement name="DragStarter" class="bg-red-400 size-128 rounded-lg" style="background-image: url(&quot;project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/game-handle.png?fileID=2800000&amp;guid=51188cb17f96c0e449f6473db577affc&amp;type=3#game-handle&quot;);" />
+            <engine:VisualElement name="DragStarter" class="bg-red-400 size-128 rounded-lg" style="background-image: url(&quot;project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/like.png?fileID=2800000&amp;guid=5603d1d5c8bc093408071c4dadf95055&amp;type=3#like&quot;);" />
+            <engine:VisualElement name="DragStarter" class="bg-red-400 size-128 rounded-lg" style="background-image: url(&quot;project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/play.png?fileID=2800000&amp;guid=79faaf9877c32d7488c4c2513a1868a4&amp;type=3#play&quot;);" />
+        </engine:VisualElement>
+        <engine:Label text="Drop Slots" class="text-5xl" style="-unity-text-align: upper-center;" />
+        <engine:VisualElement style="flex-grow: 1; align-items: center; justify-content: space-evenly; flex-direction: row;">
+            <engine:VisualElement name="DropSlot" class="size-128 rounded-lg bg-teal-400" />
+            <engine:VisualElement name="DropSlot" class="size-128 rounded-lg bg-teal-400" />
+            <engine:VisualElement name="DropSlot" class="size-128 rounded-lg bg-teal-400" />
+            <engine:VisualElement name="DropSlot" class="size-128 rounded-lg bg-teal-400" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

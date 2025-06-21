@@ -1,0 +1,11 @@
+.notification_button_modal {
+  -unity-slice-scale: 12px;
+  -unity-slice-left: 1;
+  -unity-slice-top: 1;
+  -unity-slice-right: 1;
+  -unity-slice-bottom: 1;
+  width: 96px;
+  height: 96px;
+  max-width: 96px;
+  max-height: 96px;
+}

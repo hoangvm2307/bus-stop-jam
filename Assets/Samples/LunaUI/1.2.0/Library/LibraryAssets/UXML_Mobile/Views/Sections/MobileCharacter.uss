@@ -1,0 +1,189 @@
+.character-container {
+    flex: 11;
+}
+
+.inventory-container {
+    flex: 16;
+    background-color: var(--color-indigo-900);
+}
+
+.inventory-header {
+    flex: 1;
+    background-color: var(--color-indigo-600);
+    border-bottom-width: var(--length-4);
+    border-top-width: var(--length-4);
+    border-color: var(--color-indigo-950);
+    flex-direction: row;
+    align-items: center;
+    padding-left: var(--length-24);
+    padding-right: var(--length-24);
+}
+
+.inventory-list {
+    flex: 7;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.inventory-list .grid-line {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.inventory-list .grid-line > * {
+  flex: 1;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+}
+
+.inventory-pagination {
+    flex: 7;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inventory-filter-container {
+    flex: 14;
+    background-color: var(--color-indigo-900);
+    height: 80%;
+    margin-right: var(--length-16);
+    border-radius: var(--length-8);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inventory-craft-button {
+    flex: 4;
+    max-height: 80%;
+    height: 80%;
+    font-size: var(--length-32);
+    -unity-font-definition: var(--font-bold);
+}
+
+.inventory-filter-container > Button {
+    max-height: 100%;
+    height: 80%;
+    flex: 1;
+    -unity-background-scale-mode: scale-to-fit;
+    background-color: transparent;
+}
+
+.inventory-filter-container > Button.selected {
+    background-color: var(--color-indigo-400);
+    border-width: var(--length-8);
+    border-color: var(--color-base-50);
+}
+
+.inventory-filter-container > .all {
+    background-image: url("../../../Sprites/mobile/inventory/item_type/all.png?fileID=21300000&guid=3cbae08ac937f4a4d8ec9b695104a156&type=3#all");
+}
+
+.inventory-filter-container > .hand {
+    background-image: url("../../../Sprites/mobile/inventory/item_type/hand.png?fileID=21300000&guid=cce8e89ed57dbe041beb9e98cb326001&type=3#hand");
+}
+
+.inventory-filter-container > .shield {
+    background-image: url("../../../Sprites/mobile/inventory/item_type/shield.png?fileID=21300000&guid=625e1e18654e8ce4d8467d1dce0c3e8e&type=3#shield");
+}
+
+.inventory-filter-container > .amulet {
+    background-image: url("../../../Sprites/mobile/inventory/item_type/amulet.png?fileID=21300000&guid=2ba6b7162300b5f43b207c7cef3eae38&type=3#amulet");
+}
+
+.inventory-filter-container > .chest {
+    background-image: url("../../../Sprites/mobile/inventory/item_type/chest.png?fileID=21300000&guid=dd71f173ca971cd46af756b60006e65c&type=3#chest");
+}
+
+.inventory-filter-container > .pants {
+    background-image: url("../../../Sprites/mobile/inventory/item_type/pants.png?fileID=21300000&guid=194be4f5db9e5d544b7622981aab2f12&type=3#pants");
+}
+
+.inventory-filter-container > .boots {
+    background-image: url("../../../Sprites/mobile/inventory/item_type/boots.png?fileID=21300000&guid=3f2c154d086bdf943bc3848070610771&type=3#boots");
+}
+
+.equipment-slot-container {
+  flex-direction: row;
+}
+
+.equipment-slot-container > .equipment-slot-line {
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.equipment-slot-container > .equipment-slot-middle {
+  flex: 1;
+}
+
+.equipment-slot-container > .equipment-slot-line > * {
+  flex: 1;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+.character-container > .character-top-container {
+    flex: 6;
+}
+
+.character-container > .character-bottom-container {
+    flex: 2;
+}
+
+.character-info-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.character-info-container > .combat-proficiency {
+    flex-direction: row;
+}
+
+.character-info-container > .combat-proficiency Label {
+    font-size: var(--length-24);
+    -unity-text-align: middle-center;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.character-info-container > .combat-proficiency .icon {
+    background-color: var(--color-yellow-500);
+    border-radius: var(--length-16);
+    rotate: 45deg;
+    position: absolute;
+    left: -12%;
+}
+
+.character-info-container > .combat-proficiency .icon > * {
+    rotate: -45deg;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../Sprites/mobile/inventory/item_type/shield.png");
+}
+
+.character-info-container > .combat-proficiency .label-container {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-left: var(--length-48);
+    padding-right: var(--length-16);
+    padding-top: var(--length-8);
+    padding-bottom: var(--length-8);
+    border-radius: var(--length-16);
+    border-width: 0;
+}
+
+.character-info-container > .combat-proficiency .label-container #AttributeLine {
+    justify-content: center;
+}

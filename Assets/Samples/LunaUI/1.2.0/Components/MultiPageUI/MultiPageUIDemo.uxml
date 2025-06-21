@@ -1,0 +1,24 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement name="Background" class="bg-slate-900 absolute size-full justify-center items-center">
+        <engine:Label text="Check the code comments or go to documentataion for explanation." />
+        <engine:Label text="https://www.docs.cupkek.games/luna/framework/examplemultipage" />
+        <engine:Button text="Open Modal" name="OpenModal" class="btn" />
+    </engine:VisualElement>
+    <engine:VisualElement name="Modal" class="absolute size-full items-center justify-center" style="display: flex;">
+        <engine:VisualElement class="size-90p rounded-2xl bg-purple-950">
+            <engine:Label text="Modal Title" class="text-center text-6xl" style="-unity-text-align: upper-center;" />
+            <engine:VisualElement name="PageContainer" style="flex-grow: 1;">
+                <engine:VisualElement name="Page1" class="absolute size-full justify-center">
+                    <engine:Label text="Page 1" class="text-center text-6xl" style="-unity-text-align: upper-center;" />
+                </engine:VisualElement>
+                <engine:VisualElement name="Page2" class="absolute size-full justify-center">
+                    <engine:Label text="Page 2" class="text-center text-6xl" style="-unity-text-align: upper-center;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="ButtonContainer" class="flex-row justify-evenly m-16 p-16">
+                <engine:Button text="Previous" name="Prev" class="btn" />
+                <engine:Button text="Next" name="Next" class="btn" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

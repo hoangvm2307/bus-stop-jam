@@ -1,0 +1,28 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="ReturnButton" src="../../Components/ReturnButton.uxml?fileID=9197481963319205126&amp;guid=a8de097dfd8277d4f9cf3bc261327ac5&amp;type=3#ReturnButton" />
+    <Style src="TutorialModal.uss?fileID=7433441132597879392&amp;guid=0830893e045d0d24e8cb44a4d620031f&amp;type=3#TutorialModal" />
+    <ui:VisualElement name="VN_PAGE" picking-mode="Ignore" class="modal_container">
+        <ui:VisualElement class="modal">
+            <ui:VisualElement name="TitleContainer" class="modal_title_container">
+                <ui:Label text="Title" display-tooltip-when-elided="true" name="Title" />
+                <ui:Button display-tooltip-when-elided="true" name="ReturnButton" class="btn primary">
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:VisualElement class="vn_image_parent">
+                <ui:VisualElement name="Image" class="vn_image" />
+            </ui:VisualElement>
+            <ui:Label text="Subtitle" display-tooltip-when-elided="true" name="Subtitle" class="subtitle" />
+            <ui:VisualElement name="Container" picking-mode="Ignore" class="vn_container">
+                <ui:VisualElement name="Body" picking-mode="Ignore" class="vn_body">
+                    <ui:Label enable-rich-text="true" name="Speech" picking-mode="Ignore" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-direction: row; justify-content: space-between;">
+                <CupkekGames.Luna.InputPrompt name="PreviousButton" label-text="Previous" input-action-name="UI/Action" />
+                <CupkekGames.Luna.InputPrompt name="ContinueButton" label-text="Next" input-action-name="UI/Interact" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Instance template="ReturnButton" name="ReturnButton" picking-mode="Ignore" class="size-full" />
+</ui:UXML>

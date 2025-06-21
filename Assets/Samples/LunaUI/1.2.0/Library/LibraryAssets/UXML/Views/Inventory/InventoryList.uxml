@@ -1,0 +1,19 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:VisualElement class="h-full">
+        <engine:VisualElement name="TitleContainer" class="modal_title_container">
+            <engine:Label text="Inventory" display-tooltip-when-elided="true" name="Title" />
+        </engine:VisualElement>
+        <engine:VisualElement style="flex-direction: row; justify-content: space-evenly;">
+            <CupkekGames.Luna.InputPrompt enabled="false" input-action-name="UI/Previous" name="FilterItemPrevious" style="flex: 1;" />
+            <engine:Button name="FilterItemType" icon-image="../../../Sprites/mobile/inventory/item_type/hand.png" class="btn" style="flex: 1;" />
+            <engine:Button name="FilterItemType" icon-image="../../../Sprites/mobile/inventory/item_type/shield.png" class="btn" style="flex: 1;" />
+            <engine:Button name="FilterItemType" icon-image="../../../Sprites/mobile/inventory/item_type/amulet.png" class="btn" style="flex: 1;" />
+            <engine:Button name="FilterItemType" icon-image="../../../Sprites/mobile/inventory/item_type/chest.png" class="btn" style="flex: 1;" />
+            <engine:Button name="FilterItemType" icon-image="../../../Sprites/mobile/inventory/item_type/pants.png" class="btn" style="flex: 1;" />
+            <engine:Button name="FilterItemType" icon-image="../../../Sprites/mobile/inventory/item_type/boots.png" class="btn" style="flex: 1;" />
+            <engine:Button name="FilterItemType" icon-image="project://database/Packages/com.cupkekgames.luna/Runtime/Images/Icons/composition.png" class="btn" style="flex: 1;" />
+            <CupkekGames.Luna.InputPrompt enabled="false" input-action-name="UI/Next" name="FilterItemNext" style="flex: 1;" />
+        </engine:VisualElement>
+        <engine:ListView name="InventorySlotContainer" fixed-item-height="200" class="grow-1 justify-evenly" />
+    </engine:VisualElement>
+</engine:UXML>

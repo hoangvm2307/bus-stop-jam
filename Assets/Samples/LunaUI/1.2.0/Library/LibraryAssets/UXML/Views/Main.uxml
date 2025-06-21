@@ -1,0 +1,41 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="ChoicePopup" src="../Components/ChoicePopup.uxml" />
+    <Style src="Main.uss" />
+    <ui:VisualElement name="Background" class="main_background tint-secondary-100 size-full left-0 absolute" />
+    <ui:VisualElement class="main_button_container_outer h-full absolute justify-center items-center border-base-400">
+        <ui:VisualElement name="Title" class="main_title icon_game_logo animation w-full">
+            <ui:Label text="LunaUI" style="font-size: 96px;" />
+            <ui:Label text="A UI framework that offers simple solutions for common challenges without restricting the capabilities of the UI Toolkit." style="white-space: normal;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="container" class="main_container p-48">
+            <ui:VisualElement name="MainButtonContainer" class="main_button_container animation grow-1">
+                <ui:Button display-tooltip-when-elided="true" name="ButtonContinue" class="btn btn-lg secondary">
+                    <ui:VisualElement class="icon-play size-48" />
+                    <ui:Label text="Continue" display-tooltip-when-elided="true" class="_text" />
+                </ui:Button>
+                <ui:Button display-tooltip-when-elided="true" name="ButtonLoad" class=" btn btn-lg primary">
+                    <ui:VisualElement class="icon-save size-48" />
+                    <ui:Label text="Load Game" display-tooltip-when-elided="true" class="_text" />
+                </ui:Button>
+                <ui:Button display-tooltip-when-elided="true" name="ButtonNewGame" class=" btn btn-lg primary">
+                    <ui:VisualElement class="icon-plus size-48" />
+                    <ui:Label text="New Game" display-tooltip-when-elided="true" class="_text" />
+                </ui:Button>
+                <ui:Button display-tooltip-when-elided="true" name="ButtonCredits" class=" btn btn-lg primary">
+                    <ui:VisualElement class="icon-like size-48" />
+                    <ui:Label text="Credits" display-tooltip-when-elided="true" class="_text" />
+                </ui:Button>
+                <ui:Button display-tooltip-when-elided="true" name="ButtonSettings" class=" btn btn-lg primary">
+                    <ui:VisualElement picking-mode="Ignore" class="icon-setting size-48" />
+                    <ui:Label text="Settings" display-tooltip-when-elided="true" class="_text" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="BottomContainer" class="main_bottom_container animation" style="flex-grow: 1;">
+        <ui:Button display-tooltip-when-elided="true" name="ButtonQuit" class=" btn tooltip-top secondary">
+            <ui:VisualElement picking-mode="Ignore" class="icon-power size-48" />
+        </ui:Button>
+    </ui:VisualElement>
+    <ui:Instance template="ChoicePopup" picking-mode="Ignore" class="size-full absolute" />
+</ui:UXML>

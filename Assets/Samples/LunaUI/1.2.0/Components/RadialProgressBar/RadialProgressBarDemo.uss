@@ -1,0 +1,6 @@
+.radial-progress {
+  --radial-progress-bg-color: var(--color-base-800);
+  --radial-progress-progress-color: var(--color-primary-600);
+  --radial-progress-indicator-positive-color: var(--color-primary-400);
+  --radial-progress-indicator-negative-color: var(--color-red-600);
+}

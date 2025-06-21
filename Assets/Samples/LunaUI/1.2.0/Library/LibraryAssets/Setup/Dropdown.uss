@@ -1,0 +1,5 @@
+:root {
+  --color-dropdown-bg: var(--color-slate-600);
+  --color-dropdown-hover: var(--color-slate-400);
+  --color-dropdown-active: var(--color-primary-400);
+}
