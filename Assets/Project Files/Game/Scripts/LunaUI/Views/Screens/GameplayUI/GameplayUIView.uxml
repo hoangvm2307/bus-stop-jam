@@ -1,0 +1,31 @@
+<engine:UXML xmlns:engine="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Project%20Files/Game/Scripts/LunaUI/Views/Screens/GameplayUIStyle.uss?fileID=7433441132597879392&amp;guid=f9e2f646c2c50d342a31a8163fd2dad8&amp;type=3#GameplayUIStyle" />
+    <engine:VisualElement name="gameplay-ui" class="gameplay-ui">
+        <!-- Top HUD Section -->
+        <engine:VisualElement name="gameplay-hud" class="gameplay-hud">
+            <!-- Lives Display -->
+            <engine:VisualElement name="hearts-container" class="hearts-container bounce-in">
+                <engine:VisualElement name="hearts-icon" class="hearts-icon" />
+                <engine:Label text="FULL" name="hearts-text" class="hearts-text" />
+            </engine:VisualElement>
+            
+            <!-- Level Display -->
+            <engine:VisualElement name="level-container" class="level-container bounce-in">
+                <engine:Label text="LEVEL 1" name="level-text" class="level-text" />
+            </engine:VisualElement>
+            
+            <!-- Coins Display -->
+            <engine:VisualElement name="coins-container" class="coins-container bounce-in">
+                <engine:VisualElement name="coins-icon" class="coins-icon" />
+                <engine:Label text="0" name="coins-text" class="coins-text" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        
+        <!-- Side Action Buttons -->
+        <engine:VisualElement name="side-buttons" class="side-buttons">
+            <engine:Button name="store-button" class="side-button side-button--store bounce-in" />
+            <engine:Button name="equipment-button" class="side-button side-button--equipment bounce-in" />
+            <engine:Button name="no-ads-button" class="side-button side-button--no-ads bounce-in" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 865605332615591820}
   - component: {fileID: 6171217906585434273}
   m_Layer: 0
-  m_Name: UI IAP Store
+  m_Name: LunaUI IAP Store
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

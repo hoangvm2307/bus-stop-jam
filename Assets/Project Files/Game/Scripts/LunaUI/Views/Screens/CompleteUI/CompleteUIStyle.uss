@@ -1,0 +1,294 @@
+/* =================================
+   Level Complete UI Styling
+   ================================= */
+
+/* === ROOT CONTAINER === */
+.complete-ui {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(45, 55, 95);
+    background-image: linear-gradient(135deg, rgb(45, 55, 95) 0%, rgb(65, 88, 130) 50%, rgb(85, 120, 165) 100%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+/* === TOP CURRENCY SECTION === */
+.top-currency {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.currency-container {
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    padding: 8px 16px;
+    border-width: 2px;
+    border-color: rgba(241, 196, 15, 0.8);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    animation-name: slideInFromTop;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out;
+}
+
+.coin-icon {
+    width: 32px;
+    height: 32px;
+    background-image: url("project://database/Assets/Project%20Files/Game/Images/Base/Currency/coin.png?fileID=2800000&guid=66be956892120a84bbda15b783d05267&type=3#coin");
+    -unity-background-scale-mode: scale-to-fit;
+    margin-right: 8px;
+}
+
+.currency-amount {
+    -unity-font-definition: url("project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&guid=10a77611699281f4ead51d19d2036adf&type=3#FredokaOne");
+    font-size: 28px;
+    color: rgb(241, 196, 15);
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* === MAIN CONTENT SECTION === */
+.main-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* === LEVEL TITLE === */
+.level-title-line {
+    -unity-font-definition: url("project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&guid=10a77611699281f4ead51d19d2036adf&type=3#FredokaOne");
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    margin-bottom: 5px;
+    animation-name: bounceInScale;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+}
+ 
+/* === REWARD CONTAINER === */
+.reward-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    animation-name: bounceInScale;
+    animation-duration: 0.8s;
+    animation-delay: 0.4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+.reward-coin-icon {
+    width: 48px;
+    height: 48px;
+    background-image: url("project://database/Assets/Project%20Files/Game/Images/Base/Currency/coin.png?fileID=2800000&guid=66be956892120a84bbda15b783d05267&type=3#coin");
+    -unity-background-scale-mode: scale-to-fit;
+    margin-right: 12px;
+}
+
+.reward-amount {
+    -unity-font-definition: url("project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&guid=10a77611699281f4ead51d19d2036adf&type=3#FredokaOne");
+    font-size: 64px;
+    color: rgb(241, 196, 15);
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* === ACTION BUTTONS === */
+.action-buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* === WATCH VIDEO BUTTON === */
+.watch-video-btn {
+    width: 250px;
+    height: 60px;
+    background-color: rgb(155, 89, 182);
+    background-image: linear-gradient(135deg, rgb(155, 89, 182) 0%, rgb(142, 68, 173) 100%);
+    border-radius: 30px;
+    border-width: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px rgba(155, 89, 182, 0.4);
+    transition-duration: 0.2s;
+    animation-name: slideInFromBottom;
+    animation-duration: 0.6s;
+    animation-delay: 0.6s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+.watch-video-btn:hover {
+    scale: 1.05;
+    box-shadow: 0 6px 20px rgba(155, 89, 182, 0.6);
+}
+
+.watch-video-btn:active {
+    scale: 0.95;
+    box-shadow: 0 2px 8px rgba(155, 89, 182, 0.4);
+}
+
+.video-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url("project://database/Assets/Project%20Files/Game/Images/Base/General%20UI/ic_video.png");
+    -unity-background-scale-mode: scale-to-fit;
+    margin-right: 8px;
+    -unity-background-tint-color: rgb(255, 255, 255);
+}
+
+.video-btn-text {
+    -unity-font-definition: url("project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&guid=10a77611699281f4ead51d19d2036adf&type=3#FredokaOne");
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* === NO THANKS BUTTON === */
+.no-thanks-btn {
+    background-color: rgba(255, 255, 255, 0);
+    border-width: 0;
+    padding: 15px 30px;
+    transition-duration: 0.2s;
+    animation-name: fadeInUp;
+    animation-duration: 0.6s;
+    animation-delay: 0.8s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+}
+
+.no-thanks-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.no-thanks-btn:active {
+    scale: 0.95;
+}
+
+.no-thanks-text {
+    -unity-font-definition: url("project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&guid=10a77611699281f4ead51d19d2036adf&type=3#FredokaOne");
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+}
+
+/* === ANIMATIONS === */
+@keyframes slideInFromTop {
+    0% {
+        translate: 0 -100px;
+        opacity: 0;
+    }
+    100% {
+        translate: 0 0;
+        opacity: 1;
+    }
+}
+
+@keyframes bounceInScale {
+    0% {
+        scale: 0;
+        opacity: 0;
+    }
+    60% {
+        scale: 1.2;
+        opacity: 0.8;
+    }
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        translate: 0 100px;
+        opacity: 0;
+    }
+    100% {
+        translate: 0 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        translate: 0 50px;
+        opacity: 0;
+    }
+    100% {
+        translate: 0 0;
+        opacity: 1;
+    }
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+    .complete-ui {
+        padding: 30px 15px;
+    }
+    
+    .level-title-line {
+        font-size: 36px;
+    }
+    
+    .reward-amount {
+        font-size: 48px;
+    }
+    
+    .watch-video-btn {
+        width: 200px;
+        height: 50px;
+    }
+    
+    .video-btn-text {
+        font-size: 20px;
+    }
+    
+    .currency-amount {
+        font-size: 24px;
+    }
+}
+
+/* === SPECIAL EFFECTS === */
+.reward-container.pulse-effect {
+    animation-name: pulseGlow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes pulseGlow {
+    0% {
+        filter: drop-shadow(0 0 10px rgba(241, 196, 15, 0.5));
+    }
+    50% {
+        filter: drop-shadow(0 0 20px rgba(241, 196, 15, 0.8));
+    }
+    100% {
+        filter: drop-shadow(0 0 10px rgba(241, 196, 15, 0.5));
+    }
+}

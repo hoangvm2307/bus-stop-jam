@@ -1,0 +1,28 @@
+<engine:UXML xmlns:engine="UnityEngine.UIElements" editor-extension-mode="False">
+    <engine:Style src="project://database/Assets/Project%20Files/Game/Scripts/LunaUI/Views/Screens/CompleteUI/CompleteUIStyle.uss?fileID=7433441132597879392&amp;guid=3cb52a40e6f2b12428f0b7fe6bf94172&amp;type=3#CompleteUIStyle" />
+    <engine:VisualElement name="complete-ui" class="complete-ui" style="background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/Store/background_gradient_store.png?fileID=21300000&amp;guid=bcb3485bc794e8040b3f9475cb8f8c7d&amp;type=3#background_gradient_store&quot;);">
+        <engine:VisualElement name="top-currency" class="top-currency">
+            <engine:VisualElement name="currency-container" class="currency-container">
+                <engine:VisualElement name="coin-icon" class="coin-icon" />
+                <engine:Label text="500" name="currency-amount" class="currency-amount" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="main-content" class="main-content">
+            <engine:Label text="LEVEL" name="level-text-1" class="level-title-line" />
+            <engine:Label text="COMPLETED" name="level-text-2" class="level-title-line" />
+            <engine:VisualElement name="reward-container" class="reward-container">
+                <engine:VisualElement name="reward-coin-icon" class="reward-coin-icon" />
+                <engine:Label text="90" name="reward-amount" class="reward-amount" />
+            </engine:VisualElement>
+            <engine:VisualElement name="action-buttons" class="action-buttons">
+                <engine:Button name="watch-video-btn" class="watch-video-btn" style="background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/General%20UI/btn_purple.png?fileID=21300000&amp;guid=2ed0f924f4b5cd943b85a87245462d49&amp;type=3#btn_purple&quot;); -unity-slice-left: 58; -unity-slice-top: 58; -unity-slice-right: 50; -unity-slice-bottom: 76; -unity-slice-scale: 0.5px;">
+                    <engine:VisualElement name="video-icon" class="video-icon" />
+                    <engine:Label text="GET X3" name="video-btn-text" class="video-btn-text" />
+                </engine:Button>
+                <engine:Button name="no-thanks-btn" class="no-thanks-btn">
+                    <engine:Label text="NO, THANKS" name="no-thanks-text" class="no-thanks-text" />
+                </engine:Button>
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
