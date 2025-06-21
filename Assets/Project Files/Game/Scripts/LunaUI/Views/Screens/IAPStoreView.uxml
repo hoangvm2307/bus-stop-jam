@@ -1,77 +1,130 @@
 <engine:UXML xmlns:engine="UnityEngine.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/Project%20Files/Game/Scripts/LunaUI/Views/Screens/IAPStoreStyle.uss?fileID=7433441132597879392&amp;guid=68eb58faaaa437441a35a48f1cc9d930&amp;type=3#IAPStoreStyle" />
-    <engine:VisualElement name="store-container" class="store" style="background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/Store/background_gradient_store.png?fileID=2800000&amp;guid=bcb3485bc794e8040b3f9475cb8f8c7d&amp;type=3#background_gradient_store&quot;); flex-direction: column; height: auto; justify-content: space-around; align-items: flex-start; flex-wrap: nowrap; flex-grow: 1;">
-        <engine:VisualElement name="header" class="store__header" style="height: 281px; align-items: stretch; justify-content: flex-start; width: 100%;">
-            <engine:VisualElement name="currency-display" class="currency-display" style="flex-direction: row; justify-content: flex-end; padding-top: 10px; padding-bottom: 10px; margin-bottom: 8px; flex-grow: 0; height: 82px;">
-                <engine:Label text="60" name="currency-label" class="currency-display__label" style="padding-right: 75px; -unity-font-definition: url(&quot;project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&amp;guid=10a77611699281f4ead51d19d2036adf&amp;type=3#FredokaOne&quot;); background-image: none; -unity-slice-left: 100; -unity-slice-top: 68; -unity-slice-right: 100; -unity-slice-bottom: 39; -unity-slice-scale: initial; padding-left: 24px; -unity-text-align: middle-left; font-size: 32px; -unity-slice-type: sliced; -unity-background-scale-mode: scale-to-fit; background-position-y: center 0; background-position-x: left 0; height: 50px; width: 168px; background-color: rgb(255, 255, 255); color: rgb(24, 24, 24); border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; margin-right: 12px;">
-                    <engine:VisualElement name="currency-icon" class="currency-display__icon" style="background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/Currency/coin.png?fileID=2800000&amp;guid=66be956892120a84bbda15b783d05267&amp;type=3#coin&quot;); left: -50px; position: absolute; top: -9px; width: 70px; height: 70px;" />
+    
+    <!-- Main Store Container -->
+    <engine:VisualElement name="store-container" class="store">
+        
+        <!-- Header Section -->
+        <engine:VisualElement name="header" class="store__header">
+            
+            <!-- Currency Display -->
+            <engine:VisualElement name="currency-display" class="currency-display">
+                <engine:Label text="60" name="currency-label" class="currency-display__label">
+                    <engine:VisualElement name="currency-icon" class="currency-display__icon" />
                 </engine:Label>
             </engine:VisualElement>
-            <engine:VisualElement style="flex-grow: 0; flex-direction: row; height: 144px;">
-                <engine:VisualElement name="blinder" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/Store/blinder.png?fileID=21300000&amp;guid=0d0fb6d7da994b54299587e00a2aca22&amp;type=3#blinder&quot;); min-height: 0; height: 167px;" />
-                <engine:Label text="STORE" class="store__title" style="position: absolute; top: -28px; left: 33%; right: 33%; -unity-text-align: upper-center; -unity-font-definition: url(&quot;project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&amp;guid=10a77611699281f4ead51d19d2036adf&amp;type=3#FredokaOne&quot;); color: rgb(255, 255, 255); font-size: 50px; background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/Store/header_orange.png?fileID=21300000&amp;guid=9d5494aa6d724994cb89b4e7ea28e6ba&amp;type=3#header_orange&quot;); -unity-background-scale-mode: stretch-to-fill; -unity-slice-type: sliced; -unity-slice-left: 80; -unity-slice-top: 80; -unity-slice-right: 80; -unity-slice-bottom: 80; -unity-slice-scale: 0.3px; background-repeat: no-repeat no-repeat; padding-left: 0; padding-right: 0; height: auto; translate: 0% 0;" />
-                <engine:Button name="close-button" class="store__close-button" style="background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/General%20UI/btn_close.png?fileID=2800000&amp;guid=8eb84762d00580348ad4e5586eef66f2&amp;type=3#btn_close&quot;); background-color: rgba(188, 188, 188, 0); position: absolute; top: -16px; right: 16px; min-width: 80px; min-height: 80px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+            
+            <!-- Header Content -->
+            <engine:VisualElement class="store__header-content">
+                <engine:VisualElement name="blinder" class="store__blinder" />
+                <engine:Label text="STORE" class="store__title" />
+                <engine:Button name="close-button" class="store__close-button" />
             </engine:VisualElement>
+            
         </engine:VisualElement>
-        <engine:ScrollView name="ScrollView" class="store__body" style="height: 100%; flex-grow: 1; padding: 10px; margin-right: 0; margin-left: 0; width: 100%; margin-top: 0; margin-bottom: 0; padding-right: 20px; padding-left: 20px;">
-            <engine:VisualElement name="starter-pack" class="store-panel" style="background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/Store/panel_blue_store.png?fileID=21300000&amp;guid=3249f9e2f5b69e1478a31b9d203a411b&amp;type=3#panel_blue_store&quot;); -unity-slice-left: 80; -unity-slice-top: 80; -unity-slice-right: 80; -unity-slice-bottom: 80; -unity-slice-scale: 0.5px; min-height: 300px;">
-                <engine:VisualElement name="items" class="store-panel__items-container" style="flex-direction: row; align-items: stretch;">
-                    <engine:VisualElement class="item-display" style="width: auto; height: auto; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
-                        <engine:VisualElement name="icon-no-ads" class="item-display__icon item-display__icon--no-ads" style="width: 100%; height: 100%; background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/General%20UI/no_ads.png?fileID=2800000&amp;guid=e9da7f14e336254428efd41f37278ab9&amp;type=3#no_ads&quot;);" />
+        
+        <!-- Store Body with Scroll -->
+        <engine:ScrollView name="ScrollView" class="store__body">
+            
+            <!-- Starter Pack Panel -->
+            <engine:VisualElement name="starter-pack" class="store-panel store-panel--blue">
+                
+                <!-- Items Container -->
+                <engine:VisualElement name="items" class="store-panel__items-container">
+                    
+                    <!-- No Ads Item -->
+                    <engine:VisualElement class="item-display">
+                        <engine:VisualElement name="icon-no-ads" class="item-display__icon item-display__icon--no-ads" />
                     </engine:VisualElement>
-                    <engine:VisualElement class="item-display" style="height: auto; width: auto; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
-                        <engine:VisualElement name="icon-shuffle" class="item-display__icon item-display__icon--shuffle" style="width: 100%; height: 100%;" />
-                        <engine:Label text="x5" class="item-display__badge" style="background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/Store/badge_orange.png?fileID=2800000&amp;guid=e5e73549c2718684c9b04dd4e86eb951&amp;type=3#badge_orange&quot;); -unity-font-definition: url(&quot;project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&amp;guid=10a77611699281f4ead51d19d2036adf&amp;type=3#FredokaOne&quot;); left: 25%; bottom: 0; right: 25%; font-size: 24px;" />
+                    
+                    <!-- Shuffle Item -->
+                    <engine:VisualElement class="item-display">
+                        <engine:VisualElement name="icon-shuffle" class="item-display__icon item-display__icon--shuffle" />
+                        <engine:Label text="x5" class="item-display__badge" />
                     </engine:VisualElement>
-                    <engine:VisualElement class="item-display" style="width: auto; height: auto; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
-                        <engine:VisualElement name="icon-hearts" class="item-display__icon item-display__icon--hearts" style="width: 100%; height: 100%; background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/General%20UI/heart.png?fileID=21300000&amp;guid=c30e696c126969e4a9d020b50ee8fc24&amp;type=3#heart&quot;);" />
-                        <engine:Label text="2hrs" class="item-display__badge" style="background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/Store/badge_orange.png?fileID=2800000&amp;guid=e5e73549c2718684c9b04dd4e86eb951&amp;type=3#badge_orange&quot;); -unity-font-definition: url(&quot;project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&amp;guid=10a77611699281f4ead51d19d2036adf&amp;type=3#FredokaOne&quot;); left: 25%; right: 25%; font-size: 24px;" />
+                    
+                    <!-- Hearts Item -->
+                    <engine:VisualElement class="item-display">
+                        <engine:VisualElement name="icon-hearts" class="item-display__icon item-display__icon--hearts" />
+                        <engine:Label text="2hrs" class="item-display__badge" />
                     </engine:VisualElement>
-                    <engine:VisualElement class="item-display" style="width: auto; height: auto; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
-                        <engine:VisualElement name="icon-coins" class="item-display__icon item-display__icon--coins" style="width: 100%; height: 100%; background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/Store/ic_coins_pack_3.png?fileID=21300000&amp;guid=8453a3416047bb447add08ac5ce7be02&amp;type=3#ic_coins_pack_3&quot;);" />
-                        <engine:Label text="x400" class="item-display__badge" style="background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/Store/badge_orange.png?fileID=2800000&amp;guid=e5e73549c2718684c9b04dd4e86eb951&amp;type=3#badge_orange&quot;); -unity-font-definition: url(&quot;project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&amp;guid=10a77611699281f4ead51d19d2036adf&amp;type=3#FredokaOne&quot;); font-size: 24px; left: 25%; right: 25%;" />
+                    
+                    <!-- Coins Item -->
+                    <engine:VisualElement class="item-display">
+                        <engine:VisualElement name="icon-coins" class="item-display__icon item-display__icon--coins" />
+                        <engine:Label text="x400" class="item-display__badge" />
                     </engine:VisualElement>
+                    
                 </engine:VisualElement>
-                <engine:VisualElement style="flex-direction: row; align-items: center; justify-content: space-between; padding: 10px;">
-                    <engine:Label text="STARTER PACK" class="store-panel__title" style="-unity-font-definition: url(&quot;project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&amp;guid=10a77611699281f4ead51d19d2036adf&amp;type=3#FredokaOne&quot;); flex-grow: 0; font-size: 42px;" />
-                    <engine:Button name="buy-starter-pack" class="store-panel__button" style="background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/General%20UI/btn_green.png?fileID=21300000&amp;guid=707f4a8cd16084649b85184ef96d4c21&amp;type=3#btn_green&quot;); background-color: rgba(255, 255, 255, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; padding-left: 20px; padding-right: 20px; padding-top: 12px; padding-bottom: 12px;">
-                        <engine:Label text="USD 0.00" style="-unity-font-definition: url(&quot;project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&amp;guid=10a77611699281f4ead51d19d2036adf&amp;type=3#FredokaOne&quot;); color: rgb(255, 255, 255); font-size: 32px;" />
+                
+                <!-- Panel Footer -->
+                <engine:VisualElement class="store-panel__footer">
+                    <engine:Label text="STARTER PACK" class="store-panel__title" />
+                    <engine:Button name="buy-starter-pack" class="store-panel__button">
+                        <engine:Label text="USD 0.00" class="store-panel__button-text" />
                     </engine:Button>
                 </engine:VisualElement>
+                
             </engine:VisualElement>
-            <engine:VisualElement name="power-pack" class="store-panel" style="background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/Store/panel_purple_store.png?fileID=21300000&amp;guid=afcb18a24c52f8f40806fdf76c55c929&amp;type=3#panel_purple_store&quot;); -unity-slice-left: 80; -unity-slice-top: 80; -unity-slice-right: 80; -unity-slice-bottom: 80; -unity-slice-scale: 0.5px; min-height: 300px;">
-                <engine:VisualElement name="items" class="store-panel__items-container" style="flex-direction: row; align-items: stretch;">
+            
+            <!-- Power Pack Panel -->
+            <engine:VisualElement name="power-pack" class="store-panel store-panel--purple">
+                
+                <!-- Items Container -->
+                <engine:VisualElement name="items" class="store-panel__items-container">
+                    
+                    <!-- Hint Item -->
                     <engine:VisualElement class="item-display">
-                        <engine:VisualElement name="icon-hint" class="item-display__icon item-display__icon--hint" style="width: 100%; height: 100%;" />
-                        <engine:Label text="x5" class="item-display__badge" style="background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/Store/badge_orange.png?fileID=2800000&amp;guid=e5e73549c2718684c9b04dd4e86eb951&amp;type=3#badge_orange&quot;); -unity-font-definition: url(&quot;project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&amp;guid=10a77611699281f4ead51d19d2036adf&amp;type=3#FredokaOne&quot;); font-size: 24px; right: 50px; bottom: 0;" />
+                        <engine:VisualElement name="icon-hint" class="item-display__icon item-display__icon--hint" />
+                        <engine:Label text="x5" class="item-display__badge" />
                     </engine:VisualElement>
+                    
+                    <!-- Shuffle Item -->
                     <engine:VisualElement class="item-display">
-                        <engine:VisualElement name="icon-shuffle" class="item-display__icon item-display__icon--shuffle" style="width: 100%; height: 100%;" />
-                        <engine:Label text="x5" class="item-display__badge" style="background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/Store/badge_orange.png?fileID=2800000&amp;guid=e5e73549c2718684c9b04dd4e86eb951&amp;type=3#badge_orange&quot;); -unity-font-definition: url(&quot;project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&amp;guid=10a77611699281f4ead51d19d2036adf&amp;type=3#FredokaOne&quot;); font-size: 24px; right: 50px; bottom: 0;" />
+                        <engine:VisualElement name="icon-shuffle" class="item-display__icon item-display__icon--shuffle" />
+                        <engine:Label text="x5" class="item-display__badge" />
                     </engine:VisualElement>
+                    
+                    <!-- Undo Item -->
                     <engine:VisualElement class="item-display">
-                        <engine:VisualElement name="icon-undo" class="item-display__icon item-display__icon--undo" style="width: 100%; height: 100%;" />
-                        <engine:Label text="x5" class="item-display__badge" style="background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/Store/badge_orange.png?fileID=2800000&amp;guid=e5e73549c2718684c9b04dd4e86eb951&amp;type=3#badge_orange&quot;); -unity-font-definition: url(&quot;project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&amp;guid=10a77611699281f4ead51d19d2036adf&amp;type=3#FredokaOne&quot;); font-size: 24px; right: 50px; bottom: 0;" />
+                        <engine:VisualElement name="icon-undo" class="item-display__icon item-display__icon--undo" />
+                        <engine:Label text="x5" class="item-display__badge" />
                     </engine:VisualElement>
+                    
                 </engine:VisualElement>
-                <engine:VisualElement style="flex-direction: row; align-items: center; justify-content: space-between; padding: 10px;">
-                    <engine:Label text="POWER PACK" class="store-panel__title" style="-unity-font-definition: url(&quot;project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&amp;guid=10a77611699281f4ead51d19d2036adf&amp;type=3#FredokaOne&quot;); font-size: 42px; flex-grow: 0;" />
-                    <engine:Button name="buy-power-pack" class="store-panel__button" style="background-color: rgba(255, 255, 255, 0); background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/General%20UI/btn_green.png?fileID=21300000&amp;guid=707f4a8cd16084649b85184ef96d4c21&amp;type=3#btn_green&quot;); border-top-width: 0; border-bottom-width: 0; border-left-width: 0; border-right-width: 0; padding-top: 12px; padding-right: 20px; padding-bottom: 12px; padding-left: 20px;">
-                        <engine:Label text="USD 0.00" style="-unity-font-definition: url(&quot;project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&amp;guid=10a77611699281f4ead51d19d2036adf&amp;type=3#FredokaOne&quot;); color: rgb(255, 255, 255); font-size: 32px;" />
+                
+                <!-- Panel Footer -->
+                <engine:VisualElement class="store-panel__footer">
+                    <engine:Label text="POWER PACK" class="store-panel__title" />
+                    <engine:Button name="buy-power-pack" class="store-panel__button">
+                        <engine:Label text="USD 0.00" class="store-panel__button-text" />
                     </engine:Button>
                 </engine:VisualElement>
+                
             </engine:VisualElement>
-            <engine:VisualElement name="no-ads-pack" class="store-panel" style="background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/Store/panel_red_white.png?fileID=21300000&amp;guid=26d17f4f00399d04f9248fa4dd3387e2&amp;type=3#panel_red_white&quot;); -unity-slice-left: 80; -unity-slice-top: 80; -unity-slice-right: 80; -unity-slice-bottom: 80; -unity-slice-scale: 0.5px; min-height: 300px; width: 100%;">
-                <engine:VisualElement style="flex-direction: row; align-items: center; justify-content: space-evenly; flex-grow: 1; padding: 10px;">
-                    <engine:VisualElement name="VisualElement" class="item-display item-display--large" style="flex-direction: row; flex-grow: 0; width: 567px; justify-content: flex-start; align-items: stretch; align-self: center; flex-shrink: 0;">
-                        <engine:VisualElement name="icon-no-ads" class="item-display__icon item-display__icon--no-ads" style="background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/General%20UI/no_ads.png?fileID=21300000&amp;guid=e9da7f14e336254428efd41f37278ab9&amp;type=3#no_ads&quot;); width: 288px; height: 100%; flex-grow: 0; align-items: auto; flex-shrink: 0; justify-content: space-between; align-self: stretch;" />
-                        <engine:Label text="NO ADS" class="store-panel__title" style="-unity-font-definition: url(&quot;project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&amp;guid=10a77611699281f4ead51d19d2036adf&amp;type=3#FredokaOne&quot;); font-size: 32px; color: rgb(87, 87, 87); flex-grow: 0;" />
+            
+            <!-- No Ads Pack Panel -->
+            <engine:VisualElement name="no-ads-pack" class="store-panel store-panel--red-white">
+                
+                <!-- No Ads Content -->
+                <engine:VisualElement class="no-ads-panel__content">
+                    
+                    <!-- No Ads Item Large -->
+                    <engine:VisualElement class="item-display item-display--large">
+                        <engine:VisualElement name="icon-no-ads" class="item-display__icon item-display__icon--no-ads item-display__icon--large" />
+                        <engine:Label text="NO ADS" class="store-panel__title store-panel__title--small" />
                     </engine:VisualElement>
-                    <engine:Button name="buy-no-ads" class="store-panel__button" style="background-color: rgba(188, 188, 188, 0); background-image: url(&quot;project://database/Assets/Project%20Files/Game/Images/Base/General%20UI/btn_green.png?fileID=21300000&amp;guid=707f4a8cd16084649b85184ef96d4c21&amp;type=3#btn_green&quot;); align-self: flex-end;">
-                        <engine:Label text="USD 0.00" style="-unity-font-definition: url(&quot;project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&amp;guid=10a77611699281f4ead51d19d2036adf&amp;type=3#FredokaOne&quot;); color: rgb(255, 255, 255); font-size: 32px;" />
+                    
+                    <!-- Purchase Button -->
+                    <engine:Button name="buy-no-ads" class="store-panel__button no-ads-panel__button">
+                        <engine:Label text="USD 0.00" class="store-panel__button-text" />
                     </engine:Button>
+                    
                 </engine:VisualElement>
+                
             </engine:VisualElement>
+            
         </engine:ScrollView>
+        
     </engine:VisualElement>
 </engine:UXML>
