@@ -138,80 +138,15 @@ namespace Watermelon
 
             UIController.HidePage<UIGame>();
 
-            // Use new CompleteUIView instead of old UIComplete
-            ShowCompleteUI();
+            // Use the new, clean, self-contained method from CompleteUIView
+            CompleteUIView.ShowView();
 
             AudioController.PlaySound(AudioController.AudioClips.completeSound);
-            Debug.Log("[GameController]: Level completed!");
+            Debug.Log("[GameController]: Level completed! Requested CompleteUIView to show.");
 
             SaveManager.SaveAll();
         }
-
-        /// <summary>
-        /// Show the new CompleteUIView using UIPrefabLoaderString with reuse logic
-        /// </summary>
-        private static void ShowCompleteUI()
-        {
-            try
-            {
-                if (UIPrefabLoaderString.Instance == null)
-                {
-                    Debug.LogWarning("[GameController]: UIPrefabLoaderString.Instance is null. Falling back to old UIComplete.");
-                    UIController.ShowPage<UIComplete>();
-                    return;
-                }
-
-                // Check if CompleteUI instance already exists
-                var existingInstances = UIPrefabLoaderString.Instance.GetInstances("CompleteUI");
-                if (existingInstances != null && existingInstances.Count > 0)
-                {
-                    // Reuse existing instance
-                    var existingCompleteUI = existingInstances[0]?.GetComponent<CompleteUIView>();
-                    if (existingCompleteUI != null)
-                    {
-                        // Refresh currency and reward data
-                        existingCompleteUI.RefreshCurrencyDisplay();
-                        existingCompleteUI.SetReward(LevelController.CurrentReward);
-
-                        // Show the existing instance
-                        existingCompleteUI.Fade.FadeIn();
-                        Debug.Log("[GameController]: Reusing existing CompleteUI instance");
-                        return;
-                    }
-                }
-
-                // Create new instance if none exists
-
-            }
-            catch (System.Exception ex)
-            {
-                Debug.LogError($"[GameController]: Error showing CompleteUI: {ex.Message}. Falling back to old UIComplete.");
-                // UIController.ShowPage<UIComplete>();
-            }
-            var newCompleteUIObject = UIPrefabLoaderString.Instance.Instantiate("CompleteUI");
-            if (newCompleteUIObject != null)
-            {
-                var newCompleteUI = newCompleteUIObject.GetComponent<CompleteUIView>();
-                if (newCompleteUI != null)
-                {
-                    // Set reward and show
-                    newCompleteUI.SetReward(LevelController.CurrentReward);
-                    newCompleteUI.Fade.FadeIn();
-                    Debug.Log("[GameController]: Created new CompleteUI instance");
-                }
-                else
-                {
-                    Debug.LogWarning("[GameController]: CompleteUIView component not found on instantiated object");
-                    UIController.ShowPage<UIComplete>();
-                }
-            }
-            else
-            {
-                Debug.LogWarning("[GameController]: Failed to instantiate CompleteUI. Falling back to old UIComplete.");
-                UIController.ShowPage<UIComplete>();
-            }
-        }
-
+      
         public static void LoadNextLevel()
         {
             if (isGameActive)

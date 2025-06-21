@@ -21,7 +21,7 @@ public class CompleteUIView : UIViewComponent
     private Button _watchVideoBtn;
     private Button _noThanksBtn;
     private Label _noThanksText;
-    
+
     // Containers for animations
     private VisualElement _rewardContainer;
     private VisualElement _currencyContainer;
@@ -101,7 +101,7 @@ public class CompleteUIView : UIViewComponent
         {
             return LevelController.CurrentReward;
         }
-        
+
         // Fallback calculation based on current level
         int currentLevel = GetCurrentLevel();
         return Mathf.Max(50, currentLevel * 10); // Minimum 50 coins, increasing by 10 per level
@@ -187,20 +187,20 @@ public class CompleteUIView : UIViewComponent
         if (success)
         {
             Debug.Log("Ad watched successfully - giving multiplied reward");
-            
+
             // Mark as watched
             _hasWatchedAd = true;
-            
+
             // Give multiplied reward
             int multipliedReward = _currentReward * rewardMultiplier;
             GiveReward(multipliedReward, true);
-            
+
             // Change button text to continue
             if (_noThanksText != null)
             {
                 _noThanksText.text = CONTINUE_TEXT;
             }
-            
+
             // Hide watch video button
             if (_watchVideoBtn != null)
             {
@@ -210,10 +210,10 @@ public class CompleteUIView : UIViewComponent
         else
         {
             Debug.Log("Ad failed or was skipped");
-            
+
             // Re-enable buttons and continue normally
             SetButtonsInteractable(true);
-            
+
             // Show message
             SystemMessage.ShowMessage("Ad not available. Please try again later.");
         }
@@ -235,19 +235,19 @@ public class CompleteUIView : UIViewComponent
     {
         // Update reward display
         DisplayReward(amount);
-        
+
         // Add currency to player
         CurrencyController.Add(CurrencyType.Coins, amount);
-        
+
         // Update currency display
         UpdateCurrencyDisplay();
-        
+
         // Wait for animation
         yield return new WaitForSeconds(0.5f);
-        
+
         // Re-enable no thanks button
         SetButtonsInteractable(true);
-        
+
         // If not multiplied, allow continuing immediately
         if (!isMultiplied)
         {
@@ -263,29 +263,28 @@ public class CompleteUIView : UIViewComponent
     private void ContinueToNextLevel()
     {
         Debug.Log("Continuing to next level");
-        
+
         // Unlock life (from original UIComplete logic)
         LivesSystem.UnlockLife(false);
-        
+
         // Hide this screen with fade out
         Fade.FadeOut();
-        
-        // Optional: Destroy the CompleteUI instance after fade out to free memory
-        // This ensures fresh state for next level completion
+
+        // The DestroyAfterFadeOut coroutine will clean up the instance.
         StartCoroutine(DestroyAfterFadeOut());
-        
+
         // Load next level
         GameController.LoadNextLevel();
     }
-    
+
     /// <summary>
     /// Destroy the CompleteUI instance after fade out animation completes
     /// </summary>
     private IEnumerator DestroyAfterFadeOut()
     {
         // Wait for fade out animation to complete
-        yield return new WaitForSeconds(0.5f);
-        
+        yield return new WaitForSeconds(0.25f);
+
         // Destroy this CompleteUI instance to ensure fresh state next time
         if (UIPrefabLoaderString.Instance != null)
         {
@@ -295,7 +294,37 @@ public class CompleteUIView : UIViewComponent
     }
 
     #endregion
+    public static void ShowView()
+    {
+        try
+        {
+            if (UIPrefabLoaderString.Instance == null)
+            {
+                Debug.LogError("[CompleteUIView]: UIPrefabLoaderString.Instance is null. Cannot create UI.");
+                return;
+            }
 
+            var newCompleteUIObject = UIPrefabLoaderString.Instance.Instantiate("CompleteUI");
+            if (newCompleteUIObject == null) return;
+
+            var newCompleteUI = newCompleteUIObject.GetComponent<CompleteUIView>();
+            if (newCompleteUI != null)
+            {
+                Debug.Log("[CompleteUIView]: Created and showed a new CompleteUI instance.");
+                newCompleteUI.Fade.FadeIn();
+            }
+            else
+            {
+                Debug.LogError("[CompleteUIView]: CompleteUIView component not found on instantiated object. Falling back to old UIComplete.");
+                UIController.ShowPage<UIComplete>();
+            }
+        }
+        catch (System.Exception ex)
+        {
+            Debug.LogError($"[CompleteUIView]: A critical error occurred while showing the view: {ex.Message}");
+
+        }
+    }
     #region Helper Methods
 
     private void SetButtonsInteractable(bool interactable)
@@ -317,7 +346,7 @@ public class CompleteUIView : UIViewComponent
     private IEnumerator AddPulseEffectDelayed()
     {
         yield return new WaitForSeconds(1f);
-        
+
         if (_rewardContainer != null)
         {
             _rewardContainer.AddToClassList("pulse-effect");
