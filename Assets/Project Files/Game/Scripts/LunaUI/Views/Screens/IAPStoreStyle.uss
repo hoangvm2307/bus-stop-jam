@@ -132,6 +132,11 @@
     background-image: url("project://database/Assets/Project%20Files/Game/Images/Base/Store/panel_red_white.png?fileID=21300000&guid=26d17f4f00399d04f9248fa4dd3387e2&type=3#panel_red_white");
 }
 
+.store-panel--green {
+    background-image: url("project://database/Assets/Project%20Files/Game/Images/Base/Store/panel_blue_store.png?fileID=21300000&guid=3249f9e2f5b69e1478a31b9d203a411b&type=3#panel_blue_store");
+    opacity: 0.9;
+}
+
 .store-panel__items-container {
     flex-direction: row;
     align-items: stretch;
@@ -180,6 +185,128 @@
     -unity-font-definition: url("project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&guid=10a77611699281f4ead51d19d2036adf&type=3#FredokaOne");
     color: rgb(255, 255, 255);
     font-size: 32px;
+}
+
+/* === COIN PACKS SECTION === */
+.coin-packs {
+    margin: 12px 0;
+    min-height: 280px;
+}
+
+.coin-packs__title {
+    -unity-font-definition: url("project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&guid=10a77611699281f4ead51d19d2036adf&type=3#FredokaOne");
+    font-size: 38px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.coin-packs__grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+}
+
+.coin-pack {
+    width: 48%;
+    margin: 1%;
+    padding: 15px;
+    min-height: 120px;
+    border-radius: 12px;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.3);
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.coin-pack--small {
+    background-color: rgba(52, 152, 219, 0.8);
+}
+
+.coin-pack--medium {
+    background-color: rgba(142, 68, 173, 0.8);
+}
+
+.coin-pack--large {
+    background-color: rgba(231, 76, 60, 0.8);
+}
+
+.coin-pack--free {
+    background-color: rgba(46, 204, 113, 0.8);
+    border-color: rgba(39, 174, 96, 0.8);
+}
+
+.coin-pack--ad {
+    background-color: rgba(241, 196, 15, 0.8);
+    border-color: rgba(243, 156, 18, 0.8);
+}
+
+.coin-pack__header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.coin-pack__icon {
+    width: 40px;
+    height: 40px;
+    background-image: url("project://database/Assets/Project%20Files/Game/Images/Base/Currency/coin.png?fileID=2800000&guid=66be956892120a84bbda15b783d05267&type=3#coin");
+    -unity-background-scale-mode: scale-to-fit;
+    margin-right: 8px;
+}
+
+.coin-pack__amount {
+    -unity-font-definition: url("project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&guid=10a77611699281f4ead51d19d2036adf&type=3#FredokaOne");
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+}
+
+.coin-pack__button {
+    background-image: url("project://database/Assets/Project%20Files/Game/Images/Base/General%20UI/btn_green.png?fileID=21300000&guid=707f4a8cd16084649b85184ef96d4c21&type=3#btn_green");
+    background-color: rgba(255, 255, 255, 0);
+    border-width: 0;
+    padding: 8px 16px;
+    min-width: 80px;
+    min-height: 35px;
+    -unity-slice-left: 58;
+    -unity-slice-top: 58;
+    -unity-slice-right: 50;
+    -unity-slice-bottom: 76;
+    -unity-slice-scale: 0.3px;
+}
+
+.coin-pack__button-text {
+    -unity-font-definition: url("project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&guid=10a77611699281f4ead51d19d2036adf&type=3#FredokaOne");
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    -unity-text-align: middle-center;
+}
+
+.coin-pack__button--free {
+    background-image: url("project://database/Assets/Project%20Files/Game/Images/Base/General%20UI/btn_green.png?fileID=21300000&guid=707f4a8cd16084649b85184ef96d4c21&type=3#btn_green");
+}
+
+.coin-pack__button--ad {
+    background-image: url("project://database/Assets/Project%20Files/Game/Images/Base/General%20UI/btn_green.png?fileID=21300000&guid=707f4a8cd16084649b85184ef96d4c21&type=3#btn_green");
+}
+
+.coin-pack__badge {
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    padding: 2px 8px;
+    background-color: rgba(231, 76, 60, 0.9);
+    border-radius: 10px;
+    -unity-font-definition: url("project://database/Assets/Project%20Files/Game/Fonts/FredokaOne/FredokaOne.ttf?fileID=12800000&guid=10a77611699281f4ead51d19d2036adf&type=3#FredokaOne");
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
 }
 
 /* === ITEM DISPLAYS === */

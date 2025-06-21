@@ -20,7 +20,11 @@ UIStoreManager
          └── IAPManager Integration
              ├── ProductData binding
              ├── Price updates
-             └── Purchase handling
+             ├── Purchase handling
+             └── Coin Packs System
+                 ├── IAP Packs (Small/Medium/Large)
+                 ├── Free Pack (24h cooldown)
+                 └── AD Pack (Watch rewarded video)
 ```
 
 ## 🚀 Quick Start
@@ -70,6 +74,7 @@ UIController.HidePage<UIStore>();
 // - Cập nhật giá real-time
 // - Xử lý purchase events
 // - Quản lý currency display
+// - Handle coin packs system
 ```
 
 ### 3. Product Mapping
@@ -78,6 +83,13 @@ Luna UI buttons được map với ProductKeyType:
 - `buy-no-ads` → `ProductKeyType.NoAds`
 - `buy-starter-pack` → `ProductKeyType.StarterPack`
 - `buy-power-pack` → `ProductKeyType.PUPack`
+
+**Coin Packs Mapping:**
+- `buy-coins-small` → `ProductKeyType.GoldSmall` (150 coins)
+- `buy-coins-medium` → `ProductKeyType.GoldMedium` (450 coins)
+- `buy-coins-large` → `ProductKeyType.GoldBig` (1000 coins)
+- `buy-coins-free` → `ProductKeyType.CoinsFreePack` (100 coins - 24h cooldown)
+- `buy-coins-ad` → `ProductKeyType.CoinsAdPack` (100 coins - Watch AD)
 
 ## 📱 Features
 
@@ -104,6 +116,18 @@ Luna UI buttons được map với ProductKeyType:
 - Fade animations
 - Responsive design
 
+✅ **Coin Packs System** 🆕
+- **5 Coin Pack Types:**
+  - Pack 1: 150 coins (IAP)
+  - Pack 2: 450 coins (IAP) + "BEST VALUE" badge
+  - Pack 3: 1000 coins (IAP)
+  - Pack 4: 100 coins (FREE) - 24h cooldown
+  - Pack 5: 100 coins (WATCH AD) - Rewarded video
+- **Grid Layout** với color-coded packs
+- **Smart Cooldown System** cho Free pack
+- **AD Integration** với AdsManager
+- **Real-time Price Updates** cho IAP packs
+
 ### Legacy Store Support
 
 ✅ **Backward Compatibility**
@@ -129,6 +153,56 @@ Demo functionality:
 - Currency testing
 - Integration showcase
 
+## 🪙 Coin Packs System Details
+
+### Pack Types & Rewards
+
+```csharp
+// IAP Packs
+ProductKeyType.GoldSmall    → 150 coins  (Paid)
+ProductKeyType.GoldMedium   → 450 coins  (Paid) 
+ProductKeyType.GoldBig      → 1000 coins (Paid)
+
+// Special Packs
+ProductKeyType.CoinsFreePack → 100 coins (Free, 24h cooldown)
+ProductKeyType.CoinsAdPack   → 100 coins (Watch AD reward)
+```
+
+### Free Pack Cooldown System
+
+```csharp
+// Constants
+private const string FREE_PACK_COOLDOWN_KEY = "free_pack_cooldown";
+private const float FREE_PACK_COOLDOWN_HOURS = 24f;
+
+// Usage
+float lastClaimTime = PlayerPrefs.GetFloat(FREE_PACK_COOLDOWN_KEY, 0f);
+bool canClaim = (Time.time - lastClaimTime) >= (24 * 3600f);
+```
+
+### AD Pack Integration
+
+```csharp
+// Show rewarded video
+AdsManager.ShowRewardBasedVideo(success =>
+{
+    if (success)
+    {
+        CurrencyController.Add(CurrencyType.Coins, 100);
+        Debug.Log("AD reward coins granted: 100");
+    }
+});
+```
+
+### Visual Design
+
+**Color Coding:**
+- 🔵 Small Pack: Blue (`rgba(52, 152, 219, 0.8)`)
+- 🟣 Medium Pack: Purple (`rgba(142, 68, 173, 0.8)`)
+- 🔴 Large Pack: Red (`rgba(231, 76, 60, 0.8)`)
+- 🟢 Free Pack: Green (`rgba(46, 204, 113, 0.8)`)
+- 🟡 AD Pack: Yellow (`rgba(241, 196, 15, 0.8)`)
+
 ## 🔄 Migration Guide
 
 ### Phase 1: Setup (Hiện tại)
@@ -136,12 +210,14 @@ Demo functionality:
 - [x] UIStoreManager cho dual system
 - [x] Developer tools
 - [x] Testing infrastructure
+- [x] Coin Packs System 🆕
 
 ### Phase 2: Gradual Migration
 - [ ] Update store opening calls to use UIStoreManager
 - [ ] A/B testing implementation
 - [ ] Performance comparison
 - [ ] User feedback collection
+- [ ] Coin packs analytics
 
 ### Phase 3: Full Migration
 - [ ] Switch default to Luna UI
@@ -158,6 +234,9 @@ Demo functionality:
 | Animations | Tween | Fade System |
 | Responsiveness | Fixed | Flexible |
 | Memory | Higher | Lower |
+| Coin Packs | ❌ Not supported | ✅ Full support |
+| AD Integration | Manual | Automated |
+| Cooldown System | ❌ None | ✅ Built-in |
 
 ## 🐛 Troubleshooting
 
@@ -171,7 +250,7 @@ if (!IAPManager.IsInitialized) {
 }
 
 // Check product data
-var productData = IAPManager.GetProductData(ProductKeyType.NoAds);
+var productData = IAPManager.GetProductData(ProductKeyType.GoldSmall);
 if (productData == null) {
     Debug.Log("Product data not found");
 }
@@ -200,6 +279,29 @@ if (!Monetization.IsActive) {
 // Check product configuration in Monetization Settings
 ```
 
+**4. Free Pack cooldown issues** 🆕
+```csharp
+// Check cooldown time
+float lastClaim = PlayerPrefs.GetFloat("free_pack_cooldown", 0f);
+float timeSince = Time.time - lastClaim;
+Debug.Log($"Time since last claim: {timeSince / 3600f} hours");
+
+// Reset cooldown (for testing)
+PlayerPrefs.DeleteKey("free_pack_cooldown");
+```
+
+**5. AD Pack không hoạt động** 🆕
+```csharp
+// Check AdsManager state
+if (!AdsManager.IsInitialized) {
+    Debug.Log("AdsManager not initialized");
+}
+
+// Check rewarded video availability
+bool hasRewardedVideo = AdsManager.IsRewardBasedVideoAvailable();
+Debug.Log($"Rewarded video available: {hasRewardedVideo}");
+```
+
 ## 🎯 Best Practices
 
 ### 1. Store Type Management
@@ -223,6 +325,13 @@ if (!Monetization.IsActive) {
 - Check different screen sizes
 - Test edge cases (no internet, etc.)
 
+### 5. Coin Packs Best Practices 🆕
+- **Free Pack**: Test cooldown system thoroughly
+- **AD Pack**: Handle ad failure gracefully
+- **IAP Packs**: Always validate purchase completion
+- **UI Feedback**: Show clear success/failure states
+- **Analytics**: Track pack popularity và conversion rates
+
 ## 📞 Integration Points
 
 ### With Existing Systems
@@ -243,7 +352,18 @@ IAPManager.PurchaseCompleted += OnPurchaseCompleted;
 IAPManager.PurchaseFailed += OnPurchaseFailed;
 
 // Get product data
-ProductData product = IAPManager.GetProductData(ProductKeyType.NoAds);
+ProductData product = IAPManager.GetProductData(ProductKeyType.GoldSmall);
+```
+
+**AdsManager** 🆕
+```csharp
+// Show rewarded video
+AdsManager.ShowRewardBasedVideo(success => {
+    if (success) {
+        // Grant reward
+        CurrencyController.Add(CurrencyType.Coins, 100);
+    }
+});
 ```
 
 **AudioController & Haptic**
@@ -260,19 +380,30 @@ AudioController.PlaySound(AudioController.AudioClips.buttonSound);
 
 ### 1. Rủi Ro Lớn Nhất
 - **Complexity**: Maintain 2 hệ thống store song song
-- **Testing burden**: Phải test cả 2 stores
+- **Testing burden**: Phải test cả 2 stores + coin packs system
 - **Code duplication**: Một số logic có thể bị duplicate
+- **AD Dependency**: Phụ thuộc vào AdsManager stability 🆕
 
 ### 2. Technical Debt
 - **FindObjectOfType usage**: Có thể slow, nên cache hoặc dùng singleton
 - **UI Toolkit learning curve**: Team cần học UI Toolkit
 - **Dependency management**: Luna UI phụ thuộc nhiều systems
+- **PlayerPrefs usage**: Free pack cooldown dùng PlayerPrefs (không secure) 🆕
+- **Hard-coded values**: Coin amounts và cooldown times được hard-code 🆕
+
+### 3. Coin Packs Specific Risks 🆕
+- **Free Pack Exploitation**: User có thể manipulate system time
+- **AD Revenue Dependency**: AD pack phụ thuộc vào ad network availability
+- **Price Balance**: Coin pack pricing cần continuous balancing
+- **Storage**: PlayerPrefs có thể bị clear, mất cooldown data
 
 ### Recommendation: 
 - **Short term**: Keep dual system for safety
 - **Long term**: Migrate hoàn toàn sang Luna UI khi stable
 - **Monitoring**: Implement analytics để compare performance
+- **Security**: Implement server-side validation cho free pack cooldowns 🆕
+- **Flexibility**: Make coin amounts configurable via ScriptableObject 🆕
 
 ---
 
-*Created for Bus Stop Jam project - Luna UI Integration* 
+*Created for Bus Stop Jam project - Luna UI Integration v2.0 with Coin Packs System* 

@@ -103,6 +103,76 @@
                 
             </engine:VisualElement>
             
+            <!-- Coin Packs Section -->
+            <engine:VisualElement name="coin-packs" class="coin-packs">
+                
+                <!-- Section Title -->
+                <engine:Label text="COIN PACKS" class="coin-packs__title" />
+                
+                <!-- Coin Packs Grid -->
+                <engine:VisualElement class="coin-packs__grid">
+                    
+                    <!-- Pack 1: 150 Coins (Small) -->
+                    <engine:VisualElement name="coin-pack-small" class="coin-pack coin-pack--small">
+                        <engine:VisualElement class="coin-pack__header">
+                            <engine:VisualElement class="coin-pack__icon" />
+                            <engine:Label text="150" class="coin-pack__amount" />
+                        </engine:VisualElement>
+                        <engine:Button name="buy-coins-small" class="coin-pack__button">
+                            <engine:Label text="USD 0.99" class="coin-pack__button-text" />
+                        </engine:Button>
+                    </engine:VisualElement>
+                    
+                    <!-- Pack 2: 450 Coins (Medium) -->
+                    <engine:VisualElement name="coin-pack-medium" class="coin-pack coin-pack--medium">
+                        <engine:VisualElement class="coin-pack__header">
+                            <engine:VisualElement class="coin-pack__icon" />
+                            <engine:Label text="450" class="coin-pack__amount" />
+                        </engine:VisualElement>
+                        <engine:Button name="buy-coins-medium" class="coin-pack__button">
+                            <engine:Label text="USD 2.99" class="coin-pack__button-text" />
+                        </engine:Button>
+                        <engine:Label text="BEST VALUE" class="coin-pack__badge" />
+                    </engine:VisualElement>
+                    
+                    <!-- Pack 3: 1000 Coins (Large) -->
+                    <engine:VisualElement name="coin-pack-large" class="coin-pack coin-pack--large">
+                        <engine:VisualElement class="coin-pack__header">
+                            <engine:VisualElement class="coin-pack__icon" />
+                            <engine:Label text="1000" class="coin-pack__amount" />
+                        </engine:VisualElement>
+                        <engine:Button name="buy-coins-large" class="coin-pack__button">
+                            <engine:Label text="USD 4.99" class="coin-pack__button-text" />
+                        </engine:Button>
+                    </engine:VisualElement>
+                    
+                    <!-- Pack 4: 100 Coins (Free) -->
+                    <engine:VisualElement name="coin-pack-free" class="coin-pack coin-pack--free">
+                        <engine:VisualElement class="coin-pack__header">
+                            <engine:VisualElement class="coin-pack__icon" />
+                            <engine:Label text="100" class="coin-pack__amount" />
+                        </engine:VisualElement>
+                        <engine:Button name="buy-coins-free" class="coin-pack__button coin-pack__button--free">
+                            <engine:Label text="FREE" class="coin-pack__button-text" />
+                        </engine:Button>
+                        <engine:Label text="FREE" class="coin-pack__badge" />
+                    </engine:VisualElement>
+                    
+                    <!-- Pack 5: 100 Coins (Watch AD) -->
+                    <engine:VisualElement name="coin-pack-ad" class="coin-pack coin-pack--ad">
+                        <engine:VisualElement class="coin-pack__header">
+                            <engine:VisualElement class="coin-pack__icon" />
+                            <engine:Label text="100" class="coin-pack__amount" />
+                        </engine:VisualElement>
+                        <engine:Button name="buy-coins-ad" class="coin-pack__button coin-pack__button--ad">
+                            <engine:Label text="WATCH AD" class="coin-pack__button-text" />
+                        </engine:Button>
+                    </engine:VisualElement>
+                    
+                </engine:VisualElement>
+                
+            </engine:VisualElement>
+            
             <!-- No Ads Pack Panel -->
             <engine:VisualElement name="no-ads-pack" class="store-panel store-panel--red-white">
                 

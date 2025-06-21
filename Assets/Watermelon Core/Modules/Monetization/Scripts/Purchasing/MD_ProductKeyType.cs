@@ -7,6 +7,8 @@
         GoldSmall = 2,
         GoldMedium = 3,
         GoldBig = 4,
-        PUPack = 5
+        PUPack = 5,
+        CoinsFreePack = 6,
+        CoinsAdPack = 7
     }
 }
